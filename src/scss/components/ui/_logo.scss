@@ -1,0 +1,37 @@
+.logo {
+  display: block;
+
+  &--right-line-black {
+    position: relative;
+    padding-right: 18px;
+
+    &::after {
+      content: '';
+      position: absolute;
+      right: 0;
+      top: 0;
+      display: block;
+      width: 1px;
+      height: 39px;
+      background-color: var(--black-color);
+      opacity: 0.4;
+    }
+  }
+
+  &--right-line-white {
+    position: relative;
+    padding-right: 18px;
+
+    &::after {
+      content: '';
+      position: absolute;
+      right: 0;
+      top: 0;
+      display: block;
+      width: 1px;
+      height: 39px;
+      background-color: var(--white-color);
+      opacity: 0.4;
+    }
+  }
+}

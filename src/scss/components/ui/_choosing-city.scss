@@ -1,0 +1,28 @@
+.choosing-city {
+  display: flex;
+  font-size: 16px;
+  font-family: 'RobotoBold';
+  transition: color 0.3s;
+
+  &__mark {
+    margin-right: 4px;
+  }
+
+  &__arrow {
+    margin-left: 4px;
+
+    path {
+      transition: all 0.3s;
+    }
+  }
+
+  &:hover {
+    color: var(--accent-color);
+
+    .choosing-city__arrow {
+      path {
+        stroke: var(--accent-color);
+      }
+    }
+  }
+}

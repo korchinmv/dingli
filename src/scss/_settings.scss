@@ -17,7 +17,7 @@
   display: flex;
   flex-direction: column;
   margin: 0;
-  min-width: 360px;
+  min-width: 345px;
   min-height: 100%;
   font-size: 18px;
   overflow: hidden;
@@ -25,6 +25,10 @@
   &--no-scroll {
     overflow: hidden;
   }
+}
+
+main {
+  flex-grow: 1;
 }
 
 img {
@@ -67,32 +71,65 @@ ul {
   padding: 0;
 }
 
-.text {
-  line-height: 1.4;
+.cropped-corner {
+  position: relative;
 
-  &--margin {
-    margin-bottom: 32px;
+  &:after {
+    content: '';
+    width: 50px;
+    height: 30px;
+    position: absolute;
+    transform: rotate(50deg);
+    right: -38px;
+    bottom: -25px;
+    background-color: var(--black-color);
+  }
 
-    @media screen and (width <= 576px) {
-      font-size: 24px;
+  &--black {
+    &:after {
+      background-color: var(--black-color);
     }
   }
 
-  @media screen and (width <= 576px) {
-    font-size: 16px;
+  &--white {
+    &:after {
+      background-color: var(--white-color);
+    }
+  }
+
+  &--light-grey {
+    &:after {
+      background-color: var(--grey-light-bg-color);
+    }
   }
 }
+
+// .text {
+//   line-height: 1.4;
+
+//   &--margin {
+//     margin-bottom: 32px;
+
+//     @media screen and (width <= 576px) {
+//       font-size: 24px;
+//     }
+//   }
+
+//   @media screen and (width <= 576px) {
+//     font-size: 16px;
+//   }
+// }
 
 .container {
   margin: 0 auto;
   padding: 0 var(--container-offset);
   max-width: var(--container-width);
 
-  &--none {
-    @media screen and (width <= 576px) {
-      padding: 0;
-    }
-  }
+  // &--none {
+  //   @media screen and (width <= 576px) {
+  //     padding: 0;
+  //   }
+  // }
 }
 
 // .state {

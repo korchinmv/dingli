@@ -1,16 +1,21 @@
 // базовые подключения
-@import "vars";
-@import "mixins";
-@import "fonts";
-@import "settings";
+@import 'vars';
+@import 'mixins';
+@import 'fonts';
+@import 'settings';
 
 // подключения компонентов страницы
-@import "./components/header";
+@import './components/header';
+@import './components/footer';
 
-// тестовые стили, удалите их
-.page__body {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: var(--vh);
-}
+@import './components/menu/header-menu';
+
+@import './components/ui/choosing-city';
+@import './components/ui/button-orange';
+@import './components/ui/logo';
+@import './components/ui/form';
+
+@import './components/elements/logo-block';
+@import './components/elements/socials';
+
+@import './components/sections/hero';

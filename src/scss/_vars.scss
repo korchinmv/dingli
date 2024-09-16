@@ -1,11 +1,14 @@
 :root {
   // base
-  --font-family: 'NeverMindRegular', sans-serif;
-  --content-width: 1310px;
+  --font-family: 'OswaldSemiBold', sans-serif;
+  --content-width: 1240px;
   --container-offset: 16px;
   --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
 
   // colors
   --accent-color: #ed6c00;
   --black-color: #3e3a39;
+  --black-color-dark: #000;
+  --grey-light-bg-color: #f1f1f1;
+  --white-color: #fff;
 }

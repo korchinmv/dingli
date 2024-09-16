@@ -1,1 +1,89 @@
-// ваш код
+.header {
+  padding: 16px 0 14px 0;
+  position: relative;
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 19px;
+  }
+
+  &__top-left {
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+  }
+
+  &__choosing-city {
+    margin-right: 60px;
+  }
+
+  &__company {
+    font-size: 13px;
+    font-family: 'RobotoRegular';
+    line-height: 1.4;
+    opacity: 0.6;
+  }
+  &__top-right {
+    display: flex;
+    column-gap: 24px;
+  }
+
+  &__top-link {
+    font-size: 16px;
+    font-family: 'RobotoBold';
+    display: flex;
+    align-items: center;
+    transition: color 0.3s;
+
+    svg {
+      margin-right: 4px;
+
+      path {
+        transition: all 0.3s;
+      }
+    }
+
+    &:hover {
+      color: var(--accent-color);
+
+      svg {
+        path {
+          fill: var(--accent-color);
+        }
+      }
+    }
+  }
+
+  &__bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__bottom-left {
+    display: flex;
+    margin-right: 20px;
+  }
+
+  &__nav {
+    display: flex;
+    align-items: center;
+  }
+
+  &__search-btn {
+    svg {
+      path {
+        transition: all 0.3s;
+      }
+    }
+
+    &:hover {
+      svg {
+        path {
+          stroke: var(--accent-color);
+        }
+      }
+    }
+  }
+}
