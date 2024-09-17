@@ -72,131 +72,22 @@ ul {
 }
 
 .cropped-corner {
-  position: relative;
-
-  &:after {
-    content: '';
-    width: 50px;
-    height: 30px;
-    position: absolute;
-    transform: rotate(50deg);
-    right: -38px;
-    bottom: -25px;
-    background-color: var(--black-color);
-  }
-
-  &--black {
-    &:after {
-      background-color: var(--black-color);
-    }
-  }
-
-  &--white {
-    &:after {
-      background-color: var(--white-color);
-    }
-  }
-
-  &--light-grey {
-    &:after {
-      background-color: var(--grey-light-bg-color);
-    }
-  }
+  clip-path: polygon(100% 0%, 0% 0%, 0% 100%, 95% 100%, 100% 70%);
 }
 
-// .text {
-//   line-height: 1.4;
+input {
+  border: none;
+}
 
-//   &--margin {
-//     margin-bottom: 32px;
-
-//     @media screen and (width <= 576px) {
-//       font-size: 24px;
-//     }
-//   }
-
-//   @media screen and (width <= 576px) {
-//     font-size: 16px;
-//   }
-// }
+.title {
+  text-transform: uppercase;
+  font-size: 40px;
+  font-family: 'OswaldBold';
+  line-height: 1.2;
+}
 
 .container {
   margin: 0 auto;
   padding: 0 var(--container-offset);
   max-width: var(--container-width);
-
-  // &--none {
-  //   @media screen and (width <= 576px) {
-  //     padding: 0;
-  //   }
-  // }
 }
-
-// .state {
-//   outline: transparent;
-//   transition:
-//     color 0.3s,
-//     opacity 0.3s,
-//     text-decoration-color 0.3s,
-//     box-shadow 0.3s,
-//     transform 0.3s,
-//     background-color 0.3s;
-
-//   &:focus {
-//     box-shadow: 0 0 0 2px var(--accent-color);
-//   }
-
-//   &:active {
-//     box-shadow: 0 0 0 2px var(--accent-color);
-//     opacity: 0.7;
-//   }
-
-//   &:hover {
-//     color: var(--green-dark-color);
-//   }
-// }
-
-// .title-block {
-//   font-family: 'OswaldBold';
-//   font-size: 40px;
-//   text-transform: uppercase;
-//   line-height: 1.2;
-
-//   @media screen and (width <= 1024px) {
-//     font-size: 34px;
-//   }
-
-//   @media (max-width: (768px)) {
-//     font-size: 28px;
-//   }
-
-//   @media screen and (width <= 576px) {
-//     font-size: 24px;
-//   }
-// }
-
-// .subtitle {
-//   font-family: 'OswaldSemiBold';
-//   font-size: 24px;
-//   text-transform: uppercase;
-
-//   @media screen and (width <= 1024px) {
-//     font-size: 20px;
-//   }
-
-//   @media (max-width: (768px)) {
-//     font-size: 22px;
-//   }
-
-//   @media screen and (width <= 576px) {
-//     font-size: 18px;
-//   }
-// }
-
-// section {
-//   padding: 80px 0;
-
-//   @media screen and (width <= 768px) {
-//     padding: 48px 0;
-//   }
-// }

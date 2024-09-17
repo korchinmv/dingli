@@ -15,6 +15,10 @@
       height: 39px;
       background-color: var(--black-color);
       opacity: 0.4;
+
+      @media screen and (max-width: 1065px) {
+        height: 29px;
+      }
     }
   }
 

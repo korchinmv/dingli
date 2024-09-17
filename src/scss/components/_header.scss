@@ -1,11 +1,20 @@
 .header {
   padding: 16px 0 14px 0;
   position: relative;
+  z-index: 999;
+
+  @media screen and (max-width: 1024px) {
+    padding: 12px 0;
+  }
 
   &__top {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 19px;
+    padding-bottom: 19px;
+
+    @media screen and (max-width: 1024px) {
+      display: none;
+    }
   }
 
   &__top-left {
@@ -24,6 +33,7 @@
     line-height: 1.4;
     opacity: 0.6;
   }
+
   &__top-right {
     display: flex;
     column-gap: 24px;
@@ -64,14 +74,29 @@
   &__bottom-left {
     display: flex;
     margin-right: 20px;
+
+    @media screen and (max-width: 1165px) {
+      width: 253px;
+    }
   }
 
   &__nav {
     display: flex;
     align-items: center;
+    justify-content: end;
+    flex-grow: 1;
+    position: relative;
+
+    @media screen and (max-width: 1024px) {
+      display: none;
+    }
   }
 
   &__search-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
     svg {
       path {
         transition: all 0.3s;
@@ -84,6 +109,28 @@
           stroke: var(--accent-color);
         }
       }
+    }
+
+    &--hide {
+      display: none;
+    }
+  }
+
+  &__search-form {
+    transition: all 0.3s;
+    align-items: center;
+    display: flex;
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(-300%);
+    position: absolute;
+
+    &--active {
+      visibility: visible;
+      opacity: 1;
+      max-width: 755px;
+      width: 100%;
+      transform: translateX(0);
     }
   }
 }

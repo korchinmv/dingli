@@ -2,15 +2,14 @@
   <div class="container">
     <div class="header__top">
       <div class="header__top-left">
-        <button class="header__choosing-city choosing-city">
+        <button class="header__choosing-city choosing-city" data-graph-path="city-modal">
           <svg class="choosing-city__mark" width="16" height="16" viewBox="0 0 16 16" fill="none"
             xmlns="http://www.w3.org/2000/svg">
             <path
               d="M13.0057 9.66004C13.4419 8.84137 13.6691 7.92766 13.6673 7.00004C13.6673 3.87037 11.1303 1.33337 8.00066 1.33337C4.87099 1.33337 2.33399 3.87037 2.33399 7.00004C2.33164 8.33681 2.80417 9.63096 3.66733 10.6517L3.67399 10.66L3.67999 10.6667H3.66733L7.02999 14.2367C7.15465 14.369 7.30504 14.4745 7.47194 14.5465C7.63883 14.6186 7.8187 14.6558 8.00049 14.6558C8.18228 14.6558 8.36215 14.6186 8.52905 14.5465C8.69594 14.4745 8.84634 14.369 8.97099 14.2367L12.334 10.6667H12.3213L12.3267 10.6604L12.3273 10.6597C12.3513 10.631 12.3752 10.6022 12.399 10.573C12.6303 10.2889 12.8334 9.98338 13.0057 9.66004ZM8.00233 9.16637C7.47189 9.16637 6.96319 8.95566 6.58811 8.58059C6.21304 8.20551 6.00233 7.69681 6.00233 7.16637C6.00233 6.63594 6.21304 6.12723 6.58811 5.75216C6.96319 5.37709 7.47189 5.16637 8.00233 5.16637C8.53276 5.16637 9.04147 5.37709 9.41654 5.75216C9.79161 6.12723 10.0023 6.63594 10.0023 7.16637C10.0023 7.69681 9.79161 8.20551 9.41654 8.58059C9.04147 8.95566 8.53276 9.16637 8.00233 9.16637Z"
               fill="#ED6C00" />
           </svg>
-
-          Москва
+          <span class="choosing-city__name">Москва</span>
 
           <svg class="choosing-city__arrow" width="16" height="16" viewBox="0 0 16 16" fill="none"
             xmlns="http://www.w3.org/2000/svg">
@@ -71,8 +70,44 @@
 
       <div class="header__nav">
         <ul class="header-menu">
-          <li class="header-menu__item header-menu__item--active">
+          <li class="header-menu__item lifts-menu">
             <a class="header-menu__link" href="#">Подъемники</a>
+
+            <ul class="lifts-menu__dropdown">
+              <li class="lifts-menu__item"><a class="lifts-menu__link" href="#">Ножничные <svg class="hero__button-icon"
+                    width="17" height="14" viewBox="0 0 19 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 8H17M17 8L10 1M17 8L10 15" stroke="white" stroke-width="2.5" />
+                  </svg></a></li>
+              <li class="lifts-menu__item"><a class="lifts-menu__link" href="#">Коленчатые <svg
+                    class="hero__button-icon" width="17" height="14" viewBox="0 0 19 16" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 8H17M17 8L10 1M17 8L10 15" stroke="white" stroke-width="2.5" />
+                  </svg></a></li>
+              <li class="lifts-menu__item"><a class="lifts-menu__link" href="#">Телескопические <svg
+                    class="hero__button-icon" width="17" height="14" viewBox="0 0 19 16" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 8H17M17 8L10 1M17 8L10 15" stroke="white" stroke-width="2.5" />
+                  </svg></a></li>
+              <li class="lifts-menu__item"><a class="lifts-menu__link" href="#">Мачтовые <svg class="hero__button-icon"
+                    width="17" height="14" viewBox="0 0 19 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 8H17M17 8L10 1M17 8L10 15" stroke="white" stroke-width="2.5" />
+                  </svg></a></li>
+              <li class="lifts-menu__item"><a class="lifts-menu__link" href="#">Самоходные <svg
+                    class="hero__button-icon" width="17" height="14" viewBox="0 0 19 16" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 8H17M17 8L10 1M17 8L10 15" stroke="white" stroke-width="2.5" />
+                  </svg></a></li>
+              <li class="lifts-menu__item"><a class="lifts-menu__link" href="#">Cпайдер вышки <svg
+                    class="hero__button-icon" width="17" height="14" viewBox="0 0 19 16" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 8H17M17 8L10 1M17 8L10 15" stroke="white" stroke-width="2.5" />
+                  </svg></a></li>
+              <li class="lifts-menu__item"><a class="lifts-menu__link" href="#">Телескопические погрузчики <svg
+                    class="hero__button-icon" width="17" height="14" viewBox="0 0 19 16" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 8H17M17 8L10 1M17 8L10 15" stroke="white" stroke-width="2.5" />
+                  </svg></a></li>
+            </ul>
           </li>
           <li class="header-menu__item">
             <a class="header-menu__link" href="#">О компании</a>
@@ -91,6 +126,28 @@
           </li>
         </ul>
 
+        <div class="header__search-form search-form">
+          <form class="search-form__form" action="#">
+            <input class="search-form__input" required type="text" placeholder="Поиск по сайту">
+            <button class="search-form__search-btn">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g opacity="0.6">
+                  <path
+                    d="M21.0002 21L16.6572 16.657M16.6572 16.657C17.4001 15.9141 17.9894 15.0321 18.3914 14.0615C18.7935 13.0909 19.0004 12.0506 19.0004 11C19.0004 9.94936 18.7935 8.90905 18.3914 7.93842C17.9894 6.96779 17.4001 6.08585 16.6572 5.34296C15.9143 4.60007 15.0324 4.01078 14.0618 3.60874C13.0911 3.20669 12.0508 2.99976 11.0002 2.99976C9.9496 2.99976 8.90929 3.20669 7.93866 3.60874C6.96803 4.01078 6.08609 4.60007 5.34321 5.34296C3.84288 6.84329 3 8.87818 3 11C3 13.1217 3.84288 15.1566 5.34321 16.657C6.84354 18.1573 8.87842 19.0002 11.0002 19.0002C13.122 19.0002 15.1569 18.1573 16.6572 16.657Z"
+                    stroke="#3E3A39" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </g>
+              </svg>
+            </button>
+          </form>
+
+          <button class="search-form__close-btn">
+            <div class="search-form__hamburger-lines hamburger-lines hamburger-lines--active hamburger-lines--dark">
+              <span class="hamburger-lines__line line1"></span>
+              <span class="hamburger-lines__line line2"></span>
+              <span class="hamburger-lines__line line3"></span>
+            </div>
+          </button>
+        </div>
         <button class="header__search-btn">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g opacity="0.6">
@@ -102,5 +159,10 @@
         </button>
       </div>
 
+      <button class="hamburger-lines hamburger-lines--mobile-menu">
+        <span class="hamburger-lines__line line1"></span>
+        <span class="hamburger-lines__line line2"></span>
+        <span class="hamburger-lines__line line3"></span>
+      </button>
     </div>
 </header>

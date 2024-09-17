@@ -1,0 +1,35 @@
+.button {
+  font-size: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 10px;
+  transition:
+    background-color 0.3s ease-in-out,
+    color 0.3s ease-in-out;
+
+  &--orange {
+    background-color: var(--accent-color);
+    color: var(--white-color);
+
+    &:hover {
+      background-color: var(--orange-dark-color);
+    }
+  }
+
+  &--white {
+    background-color: var(--white-color);
+    color: var(--black-color);
+
+    svg {
+      transition: all;
+    }
+
+    &:hover {
+      color: var(--accent-color);
+
+      svg {
+        fill: var(--accent-color);
+      }
+    }
+  }
+}
