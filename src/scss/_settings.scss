@@ -91,3 +91,24 @@ input {
   padding: 0 var(--container-offset);
   max-width: var(--container-width);
 }
+
+.title-block {
+  font-size: 40px;
+  text-transform: uppercase;
+
+  @media screen and (width <= 1024px) {
+    font-size: 38px;
+  }
+
+  @media screen and (width <= 990px) {
+    font-size: 32px;
+  }
+
+  @media screen and (width <= 768px) {
+    font-size: 28px;
+  }
+
+  @media screen and (width <= 576px) {
+    font-size: 24px;
+  }
+}

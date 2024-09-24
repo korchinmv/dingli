@@ -3,9 +3,22 @@
   text-transform: uppercase;
   text-align: center;
   padding: 10px;
+  display: flex;
+  align-items: center;
+  padding: 12px 32px 12px 25px;
+  width: fit-content;
+  line-height: 1.2;
   transition:
     background-color 0.3s ease-in-out,
     color 0.3s ease-in-out;
+
+  @media screen and (width <= 768px) {
+    font-size: 16px;
+  }
+
+  svg {
+    margin-left: 8px;
+  }
 
   &--orange {
     background-color: var(--accent-color);
@@ -22,6 +35,10 @@
 
     svg {
       transition: all;
+
+      path {
+        transition: all 0.3s;
+      }
     }
 
     &:hover {
@@ -29,6 +46,12 @@
 
       svg {
         fill: var(--accent-color);
+      }
+
+      svg {
+        path {
+          stroke: var(--accent-color);
+        }
       }
     }
   }
