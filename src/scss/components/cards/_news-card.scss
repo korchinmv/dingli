@@ -1,0 +1,88 @@
+.news-card {
+  display: flex;
+  flex-direction: column;
+  min-height: 444px;
+  width: 100%;
+
+  @media screen and (width <= 768px) {
+    min-height: auto;
+  }
+
+  &__img {
+    margin-bottom: 16px;
+
+    @media screen and (width <= 768px) {
+      width: 100%;
+    }
+  }
+
+  &__content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__date {
+    color: var(--accent-color);
+    margin-bottom: 16px;
+    font-size: 16px;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    font-family: 'RobotoBold';
+
+    svg {
+      margin-right: 4px;
+    }
+  }
+
+  &__title {
+    font-family: 'OswaldBold';
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+
+    @media screen and (width <= 768px) {
+      font-size: 18px;
+    }
+  }
+
+  &__text {
+    font-size: 16px;
+    font-family: 'RobotoRegular';
+    margin-bottom: 16px;
+    opacity: 0.6;
+    align-self: flex-end;
+  }
+
+  &__link {
+    margin-top: auto;
+    text-transform: uppercase;
+    font-size: 20px;
+    display: block;
+    align-items: center;
+    transition: color 0.3s;
+
+    @media screen and (width <= 768px) {
+      font-size: 16px;
+    }
+
+    &:hover {
+      color: var(--accent-color);
+
+      .news-card__icon {
+        path {
+          stroke: var(--accent-color);
+        }
+      }
+    }
+  }
+
+  &__icon {
+    margin-left: 8px;
+
+    path {
+      transition: all 0.3s;
+    }
+  }
+}

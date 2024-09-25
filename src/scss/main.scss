@@ -25,8 +25,16 @@
 @import './components/elements/logo-block';
 @import './components/elements/socials';
 @import './components/elements/popup';
-@import './components/elements/catalog-product';
+
+@import './components/cards/catalog-product';
+@import './components/cards/service-card';
+@import './components/cards/news-card';
+@import './components/cards/technic-card';
 
 @import './components/sections/hero';
 @import './components/sections/catalog';
 @import './components/sections/about';
+@import './components/sections/services';
+@import './components/sections/clients';
+@import './components/sections/news';
+@import './components/sections/in-stock';

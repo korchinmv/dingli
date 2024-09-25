@@ -5,7 +5,9 @@
   transition: background-color 0.3s ease-in-out;
 
   svg {
-    transition: all 0.3s;
+    path {
+      transition: all 0.3s;
+    }
   }
 
   &:hover {
@@ -27,6 +29,20 @@
 
     svg {
       transform: rotate(180deg);
+    }
+  }
+}
+
+.swiper-button-disabled {
+  cursor: default;
+
+  &:hover {
+    background-color: var(--grey-dark-bg-color);
+  }
+
+  svg {
+    path {
+      stroke: var(--white-color);
     }
   }
 }
