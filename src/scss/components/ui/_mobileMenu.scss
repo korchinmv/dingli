@@ -185,6 +185,51 @@
     column-gap: 16px;
     max-width: 128px;
   }
+
+  &__search {
+    margin-bottom: 32px;
+    border: 1px solid var(--grey-light-bg-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__input {
+    padding: 13px 9px;
+    height: 44px;
+    width: 100%;
+    outline: transparent;
+    font-size: 16px;
+
+    &::placeholder {
+      font-size: 16px;
+      font-family: 'RobotoRegular';
+      opacity: 0.6;
+    }
+  }
+
+  &__icon {
+    path {
+      transition: all 0.3s;
+    }
+  }
+
+  &__button {
+    width: 56px;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+
+    &:hover {
+      .mobile-menu__icon {
+        path {
+          stroke: var(--accent-color);
+        }
+      }
+    }
+  }
 }
 
 @keyframes showAnimation {
