@@ -1,0 +1,43 @@
+.breadcrumbs {
+  font-size: 16px;
+  font-family: 'RobotoMedium';
+
+  @media screen and (width <= 991px) {
+    font-size: 14px;
+  }
+
+  &__list {
+    display: inline-flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+
+    &::-webkit-scrollbar {
+      width: 0;
+    }
+  }
+
+  &__item {
+    color: var(--black-light-color);
+    opacity: 0.7;
+    position: relative;
+    flex-shrink: 0;
+
+    &:not(:last-child) {
+      padding-right: 14px;
+      margin-right: 8px;
+
+      &:after {
+        content: '/';
+        position: absolute;
+        right: 0;
+      }
+    }
+
+    &--active {
+      opacity: 1;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  }
+}

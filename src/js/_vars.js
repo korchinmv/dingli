@@ -9,6 +9,10 @@ const mobileMenu = document?.querySelector(".mobile-menu");
 const burgerButton = document?.querySelector(".hamburger-lines--mobile-menu");
 const overlay = document?.querySelector(".overlay");
 const dropdown = document?.querySelectorAll(".dropdown");
+const selectMenu = document?.querySelector(".select-menu");
+const selectBtn = selectMenu?.querySelector(".select-menu__btn");
+const selectBtnWrapper = selectMenu?.querySelector(".select-menu__btn-wrapper");
+const selectArrayOptions = selectMenu?.querySelectorAll(".select-menu__option");
 
 export {
   body,
@@ -22,4 +26,8 @@ export {
   burgerButton,
   overlay,
   dropdown,
+  selectBtn,
+  selectBtnWrapper,
+  selectMenu,
+  selectArrayOptions,
 };

@@ -22,5 +22,13 @@
       grid-template-columns: repeat(2, 1fr);
       gap: 16px;
     }
+
+    &--service-page {
+      display: flex;
+
+      @media screen and (width <= 768px) {
+        flex-direction: column-reverse;
+      }
+    }
   }
 }

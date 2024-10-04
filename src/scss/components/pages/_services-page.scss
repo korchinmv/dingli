@@ -1,0 +1,31 @@
+.services-page {
+  padding: 40px 0 100px 0;
+
+  @media screen and (width <= 768px) {
+    padding: 16px 0 56px 0;
+  }
+
+  &__breadcrumbs {
+    margin-bottom: 80px;
+
+    @media screen and (width <= 990px) {
+      margin-bottom: 60px;
+    }
+
+    @media screen and (width <= 768px) {
+      margin-bottom: 40px;
+    }
+  }
+
+  &__title {
+    margin-bottom: 80px;
+
+    @media screen and (width <= 990px) {
+      margin-bottom: 70px;
+    }
+
+    @media screen and (width <= 768px) {
+      margin-bottom: 56px;
+    }
+  }
+}

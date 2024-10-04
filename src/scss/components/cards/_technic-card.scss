@@ -7,6 +7,35 @@
   flex-direction: column;
   position: relative;
 
+  &--horizontal {
+    background-color: var(--grey-light-bg-color);
+    flex-direction: row;
+    max-width: 100%;
+
+    .technic-card__img {
+      margin-right: 32px;
+      margin-bottom: 0;
+    }
+
+    .technic-card__content {
+      width: 100%;
+    }
+
+    .technic-card__price {
+      margin-bottom: 0;
+    }
+
+    .technic-card__bot {
+      width: 258px;
+    }
+
+    .technic-card__bts-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+
   &__badge {
     position: absolute;
     display: flex;
@@ -107,6 +136,7 @@
   &__price {
     font-size: 20px;
     font-family: 'OswaldBold';
+    text-transform: uppercase;
     margin-bottom: 24px;
     display: block;
 
