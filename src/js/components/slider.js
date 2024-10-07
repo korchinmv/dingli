@@ -41,6 +41,26 @@ const newsSwiper = new Swiper(".news__slider", {
   },
 });
 
+const readItSwiper = new Swiper(".read-it__slider", {
+  slidesPerView: 1,
+  spaceBetween: 10,
+  navigation: {
+    nextEl: ".read-it__slider-controls-next",
+    prevEl: ".read-it__slider-controls-prev",
+  },
+  pagination: {
+    el: ".read-it__pagination",
+    clickable: true,
+  },
+  breakpoints: {
+    // when window width is >= 990px
+    990: {
+      slidesPerView: 3,
+      spaceBetween: 32,
+    },
+  },
+});
+
 const inStockSwiper = new Swiper(".in-stock__slider", {
   slidesPerView: 1,
   spaceBetween: 10,
@@ -87,5 +107,21 @@ const clientsMobileSwiper = new Swiper(".clients__slider-mobile", {
   pagination: {
     el: ".clients__pagination-mobile",
     clickable: true,
+  },
+});
+
+const technicCardSwiper = new Swiper(".technic-card__slider", {
+  enabled: false,
+  slidesPerView: 1,
+  spaceBetween: 10,
+  pagination: {
+    el: ".technic-card__pagination",
+    clickable: true,
+  },
+  breakpoints: {
+    // when window width is >= 1200px
+    768: {
+      enabled: true,
+    },
   },
 });
