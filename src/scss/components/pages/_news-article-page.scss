@@ -155,6 +155,16 @@
     }
   }
 
+  &__text-block {
+    &:not(:last-child) {
+      margin-bottom: 40px;
+
+      @media screen and (width <= 768px) {
+        margin-bottom: 10px;
+      }
+    }
+  }
+
   &__service {
     background-color: var(--grey-light-bg-color);
     padding: 24px 19px 24px 24px;

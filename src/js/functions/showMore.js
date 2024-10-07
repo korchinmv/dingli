@@ -1,16 +1,22 @@
-const blockText = document?.querySelector(".text-block");
-const moreBtn = document?.querySelector(".more-button");
 const pharagraphs = document?.querySelectorAll(".text-block__text");
+const moreBtn = document?.querySelector(".more-button");
 
 const showMoreText = (block, btn, qtyParagraphs) => {
-  if (pharagraphs.length > qtyParagraphs) {
-    for (let i = qtyParagraphs; i < pharagraphs.length + 1; i++) {
-      console.log(pharagraphs[i]);
-
-      pharagraphs[i].classList.add("hidden");
-      btn.classList.add("hidden");
+  if (document.documentElement.clientWidth < 768) {
+    if (block.length > qtyParagraphs) {
+      for (let i = qtyParagraphs; i < block.length; i++) {
+        block[i].classList.add("text-block__text--hidden");
+      }
     }
   }
+
+  btn.addEventListener("click", () => {
+    btn.classList.toggle("more-button--active");
+
+    for (let i = qtyParagraphs; i < block.length; i++) {
+      block[i].classList.toggle("text-block__text--hidden");
+    }
+  });
 };
 
-showMoreText(blockText, moreBtn, 3);
+showMoreText(pharagraphs, moreBtn, 3);

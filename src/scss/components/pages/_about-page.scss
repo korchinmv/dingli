@@ -85,6 +85,10 @@
     display: block;
     transition: color 0.3s ease;
 
+    @media screen and (width <= 768px) {
+      font-size: 16px;
+    }
+
     &:hover {
       color: var(--black-color);
     }
@@ -94,6 +98,10 @@
     display: flex;
     align-items: center;
     font-family: 'RobotoMedium';
+
+    @media screen and (width <= 768px) {
+      font-size: 16px;
+    }
 
     svg {
       margin-right: 6px;
@@ -114,11 +122,33 @@
     }
   }
 
+  &__text-block {
+    &:not(:last-child) {
+      margin-bottom: 40px;
+
+      @media screen and (width <= 768px) {
+        margin-bottom: 10px;
+      }
+    }
+  }
+
   &__video-block {
     display: none;
 
     @media screen and (width <= 990px) {
       display: block;
+    }
+  }
+
+  &__iframe {
+    width: 100%;
+  }
+
+  &__show-more {
+    display: none;
+
+    @media screen and (width <= 768px) {
+      display: flex;
     }
   }
 }
