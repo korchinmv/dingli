@@ -1,0 +1,124 @@
+.about-page {
+  &__head {
+    background-color: var(--grey-light-bg-color);
+    padding: 40px 0 48px;
+
+    @media screen and (width <= 768px) {
+      padding: 16px 0 24px;
+    }
+  }
+
+  &__breadcrumbs {
+    margin-bottom: 80px;
+
+    @media screen and (width <= 1100px) {
+      margin-bottom: 60px;
+    }
+
+    @media screen and (width <= 768px) {
+      margin-bottom: 40px;
+    }
+  }
+
+  &__title {
+    font-size: 64px;
+    margin-bottom: 40px;
+
+    @media screen and (width <= 1024px) {
+      font-size: 48px;
+    }
+
+    @media screen and (width <= 768px) {
+      font-size: 32px;
+    }
+  }
+
+  &__img {
+    @media screen and (width <= 576px) {
+      height: 192px;
+      object-fit: cover;
+    }
+  }
+
+  &__content {
+    padding: 48px 0 80px;
+    display: flex;
+    justify-content: space-between;
+
+    @media screen and (width <= 990px) {
+      flex-direction: column;
+    }
+  }
+
+  &__left {
+    margin-right: 32px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__subtitle {
+    font-size: 24px;
+    text-transform: uppercase;
+    font-family: 'OswaldSemiBold';
+    margin-bottom: 24px;
+    color: var(--accent-color);
+
+    &--black {
+      margin-bottom: 16px;
+      color: var(--black);
+    }
+  }
+
+  &__presentation {
+    background-color: var(--grey-light-bg-color);
+    padding: 16px;
+
+    @media screen and (width <= 990px) {
+      margin-bottom: 56px;
+    }
+  }
+
+  &__presentation-link {
+    color: var(--accent-color);
+    font-family: 'RobotoMedium';
+    margin-bottom: 8px;
+    display: block;
+    transition: color 0.3s ease;
+
+    &:hover {
+      color: var(--black-color);
+    }
+  }
+
+  &__presentation-info {
+    display: flex;
+    align-items: center;
+    font-family: 'RobotoMedium';
+
+    svg {
+      margin-right: 6px;
+    }
+  }
+
+  &__left-bot {
+    margin-top: auto;
+
+    @media screen and (width <= 990px) {
+      display: none;
+    }
+  }
+
+  &__right {
+    @media screen and (width <= 990px) {
+      margin-bottom: 56px;
+    }
+  }
+
+  &__video-block {
+    display: none;
+
+    @media screen and (width <= 990px) {
+      display: block;
+    }
+  }
+}

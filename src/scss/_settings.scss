@@ -133,3 +133,31 @@ input {
     font-size: 32px;
   }
 }
+
+.text-block {
+  &:not(:last-child) {
+    margin-bottom: 40px;
+
+    @media screen and (width <= 768px) {
+      margin-bottom: 32px;
+    }
+  }
+
+  &__text {
+    font-family: 'RobotoRegular';
+    color: var(--black-text-color);
+    opacity: 1;
+
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+
+    @media screen and (width <= 768px) {
+      font-size: 16px;
+    }
+
+    &--bold {
+      font-family: 'RobotoBold';
+    }
+  }
+}

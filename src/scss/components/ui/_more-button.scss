@@ -1,0 +1,18 @@
+.more-button {
+  color: var(--accent-color);
+  font-family: 'RobotoMedium';
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+
+  &--active {
+    svg {
+      transform: rotate(180deg);
+    }
+  }
+
+  svg {
+    transition: transform ease 0.3s;
+    margin-left: 8px;
+  }
+}

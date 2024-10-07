@@ -1,0 +1,23 @@
+.copy {
+  svg {
+    path {
+      transition: all 0.3s ease;
+    }
+  }
+
+  &:hover {
+    svg {
+      path {
+        fill: var(--accent-color);
+      }
+    }
+  }
+
+  &--active {
+    svg {
+      path {
+        fill: var(--accent-color);
+      }
+    }
+  }
+}

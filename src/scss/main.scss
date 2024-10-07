@@ -24,10 +24,13 @@
 @import './components/ui/breadcrumbs';
 @import './components/ui/select-menu';
 @import './components/ui/pagination';
+@import './components/ui/copyBtn';
+@import './components/ui/more-button';
 
 @import './components/pages/services-page';
 @import './components/pages/news-page';
 @import './components/pages/news-article-page';
+@import './components/pages/about-page';
 
 @import './components/elements/logo-block';
 @import './components/elements/socials';
@@ -46,3 +49,4 @@
 @import './components/sections/news';
 @import './components/sections/in-stock';
 @import './components/sections/read-it';
+@import './components/sections/requisites';
