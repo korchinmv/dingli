@@ -10,6 +10,7 @@
 
   &__top {
     display: flex;
+    align-items: center;
     justify-content: space-between;
     padding-bottom: 19px;
 
@@ -37,6 +38,7 @@
 
   &__top-right {
     display: flex;
+    align-items: center;
     column-gap: 24px;
   }
 
@@ -132,6 +134,23 @@
       max-width: 755px;
       width: 100%;
       transform: translateX(0);
+    }
+  }
+
+  &__top-socials {
+    display: flex;
+    align-items: center;
+    column-gap: 12px;
+
+    .socials__link {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .socials__img {
+      width: 23px;
+      height: 23px;
     }
   }
 }

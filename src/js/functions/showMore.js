@@ -10,13 +10,15 @@ const showMoreText = (block, btn, qtyParagraphs) => {
     }
   }
 
-  btn.addEventListener("click", () => {
-    btn.classList.toggle("more-button--active");
+  if (btn) {
+    btn.addEventListener("click", () => {
+      btn.classList.toggle("more-button--active");
 
-    for (let i = qtyParagraphs; i < block.length; i++) {
-      block[i].classList.toggle("text-block__text--hidden");
-    }
-  });
+      for (let i = qtyParagraphs; i < block.length; i++) {
+        block[i].classList.toggle("text-block__text--hidden");
+      }
+    });
+  }
 };
 
 showMoreText(pharagraphs, moreBtn, 3);

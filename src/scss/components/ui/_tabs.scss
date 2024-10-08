@@ -1,0 +1,173 @@
+.tabs {
+  font-family: 'OswaldBold';
+  text-transform: uppercase;
+
+  &__head {
+    margin-bottom: 32px;
+    padding-bottom: 10px;
+    position: relative;
+
+    @media screen and (width <= 768px) {
+      margin-bottom: 24px;
+      padding-bottom: 0;
+    }
+
+    &::after {
+      content: '';
+      display: block;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 1px;
+      background-color: var(--grey-light-bg-color);
+    }
+  }
+
+  &__nav-item {
+    &::after {
+      content: '';
+      display: block;
+      background-color: var(--accent-color);
+      visibility: hidden;
+      opacity: 0;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      height: 2px;
+      z-index: 2;
+      width: 100%;
+      transition:
+        visibility 0.3s,
+        opacity 0.3s;
+    }
+
+    &:not(:last-child) {
+      margin-right: 40px;
+
+      @media screen and (width <= 768px) {
+        margin-right: 24px;
+      }
+    }
+
+    &--active {
+      position: relative;
+      padding-bottom: 16px;
+
+      .tabs__nav-btn {
+        color: var(--accent-color);
+        opacity: 1;
+      }
+
+      &::after {
+        @media screen and (width <= 768px) {
+          visibility: visible;
+          opacity: 1;
+        }
+      }
+    }
+  }
+
+  &__nav-btn {
+    color: var(--black-color);
+    font-size: 24px;
+    text-transform: uppercase;
+    opacity: 0.6;
+    transition: color ease 0.3s;
+
+    @media screen and (width <= 768px) {
+      font-size: 18px;
+    }
+  }
+
+  &__map {
+    width: 100%;
+  }
+
+  &__underline {
+    display: block;
+    background: var(--accent-color);
+    position: absolute;
+    bottom: 0;
+    height: 2px;
+    z-index: 2;
+    transition:
+      left 0.3s ease,
+      width 0.3s ease;
+
+    @media screen and (width <= 768px) {
+      display: none;
+    }
+  }
+
+  &__item {
+    @media screen and (width <= 768px) {
+      font-size: 16px;
+    }
+
+    span {
+      display: flex;
+      align-items: center;
+
+      svg {
+        flex-shrink: 0;
+
+        @media screen and (width <= 768px) {
+          align-self: flex-start;
+        }
+      }
+    }
+
+    svg {
+      margin-right: 8px;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 16px;
+    }
+
+    &:first-child {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    & > .tabs__item-socials {
+      @media screen and (width <= 768px) {
+        display: none;
+      }
+    }
+  }
+
+  &__panel {
+    display: none;
+
+    &--active {
+      display: block;
+    }
+  }
+
+  &__socials-block {
+    display: none;
+
+    &.socials {
+      justify-content: start;
+    }
+
+    @media screen and (width <= 768px) {
+      display: flex;
+    }
+  }
+
+  &__content-wrap {
+    &:not(:last-child) {
+      margin-bottom: 40px;
+    }
+
+    @media screen and (width <= 768px) {
+      &:not(:last-child) {
+        margin-bottom: 32px;
+      }
+    }
+  }
+}
