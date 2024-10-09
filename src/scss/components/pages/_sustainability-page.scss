@@ -1,0 +1,46 @@
+.sustainability {
+  &__head {
+    background-color: var(--grey-dark-bg-color);
+    padding: 40px 0 80px;
+
+    @media screen and (width <= 1024px) {
+      padding: 24px 0 70px;
+    }
+
+    @media screen and (width <= 768px) {
+      padding: 16px 0 56px;
+    }
+  }
+
+  &__breadcrumbs {
+    margin-bottom: 80px;
+
+    @media screen and (width <= 1024px) {
+      margin-bottom: 60px;
+    }
+
+    @media screen and (width <= 768px) {
+      margin-bottom: 40px;
+    }
+  }
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+    padding: 64px 0 80px;
+
+    @media screen and (width <= 768px) {
+      flex-direction: column;
+      padding: 56px 0;
+    }
+  }
+
+  &__video {
+    width: 100%;
+
+    @media screen and (width <= 768px) {
+      height: 193px;
+    }
+  }
+}
