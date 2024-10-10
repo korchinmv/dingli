@@ -21,6 +21,11 @@
     opacity: 0.7;
     position: relative;
     flex-shrink: 0;
+    transition: color 0.3s ease;
+
+    &:hover {
+      color: var(--accent-color);
+    }
 
     &:not(:last-child) {
       padding-right: 14px;
@@ -38,6 +43,10 @@
       white-space: nowrap;
       overflow: hidden;
       text-overflow: ellipsis;
+
+      &:hover {
+        color: var(--black-light-color);
+      }
     }
   }
 }

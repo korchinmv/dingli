@@ -1,11 +1,13 @@
 .technic-card {
   background-color: var(--white-color);
   padding: 24px;
-  max-width: 286px;
-  width: 100%;
   display: flex;
   flex-direction: column;
   position: relative;
+
+  @media screen and (width <= 768px) {
+    padding: 16px;
+  }
 
   &--horizontal {
     background-color: var(--grey-light-bg-color);
@@ -61,7 +63,6 @@
     .technic-card__slider {
       flex-shrink: 0;
       width: 262px;
-      overflow: hidden;
       margin-right: 10px;
       z-index: 1;
 
@@ -88,19 +89,53 @@
     position: absolute;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     top: 24px;
     left: 24px;
+    z-index: 2;
+  }
+
+  &__badge-info {
     width: 100px;
     height: 28px;
     padding: 4px 16px;
+    display: flex;
+    align-items: center;
     color: var(--white-color);
     font-size: 14px;
     font-family: 'RobotoMedium';
-    z-index: 2;
+    margin-right: 10px;
+
+    @media screen and (width <= 768px) {
+      margin-right: 8px;
+    }
 
     &--orange {
       background-color: var(--accent-color);
+    }
+
+    &--green {
+      background-color: var(--green-color);
+    }
+  }
+
+  &__badge-type {
+    width: 28px;
+    height: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &--orange {
+      background-color: var(--accent-color);
+    }
+
+    &--dark-blue {
+      background-color: var(--dark-blue-color);
+    }
+
+    &--blue {
+      background-color: var(--blue-color);
     }
   }
 
@@ -110,14 +145,6 @@
     @media screen and (width <= 768px) {
       display: block;
     }
-  }
-
-  @media screen and (width <= 1200px) {
-    max-width: 100%;
-  }
-
-  @media screen and (width <= 768px) {
-    padding: 16px;
   }
 
   &__img {

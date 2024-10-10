@@ -52,6 +52,11 @@
     margin-top: 8px;
     left: 0;
     width: 205px;
+
+    &--grey {
+      background-color: var(--grey-light-bg-color);
+      z-index: 3;
+    }
   }
 
   &__option {

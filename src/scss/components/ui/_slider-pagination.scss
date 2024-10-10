@@ -6,6 +6,21 @@
   max-width: 273px;
   width: 100%;
 
+  &--small-grey {
+    column-gap: 8px;
+
+    .swiper-pagination-bullet {
+      transform: skew(0) !important;
+      background-color: var(--grey-light-bg-color) !important;
+      width: 40px !important;
+      height: 2px !important;
+    }
+
+    .swiper-pagination-bullet-active {
+      background-color: var(--grey-dark-bg-color) !important;
+    }
+  }
+
   .swiper-pagination-bullet {
     background-color: #d9d9d9;
     opacity: 1;

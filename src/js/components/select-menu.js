@@ -6,9 +6,9 @@ import {
 } from "../_vars.js";
 
 if (selectBtnWrapper) {
-  selectBtnWrapper.addEventListener("click", () =>
-    selectMenu.classList.toggle("select-menu--active")
-  );
+  selectBtnWrapper.addEventListener("click", () => {
+    selectMenu.classList.toggle("select-menu--active");
+  });
 }
 
 if (selectArrayOptions) {
