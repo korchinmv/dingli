@@ -1,0 +1,188 @@
+.used-lifts {
+  &__head {
+    background-color: var(--grey-dark-bg-color);
+    padding: 40px 0 80px;
+
+    @media screen and (width <= 1024px) {
+      padding: 24px 0 70px;
+    }
+
+    @media screen and (width <= 768px) {
+      padding: 16px 0 56px;
+    }
+  }
+
+  &__breadcrumbs {
+    margin-bottom: 80px;
+
+    @media screen and (width <= 1024px) {
+      margin-bottom: 60px;
+    }
+
+    @media screen and (width <= 768px) {
+      margin-bottom: 40px;
+    }
+  }
+
+  &__content {
+    padding: 64px 0 80px;
+
+    @media screen and (width <= 768px) {
+      padding: 56px 0;
+    }
+  }
+
+  &__text {
+    font-family: 'RobotoRegular';
+    margin-bottom: 40px;
+
+    @media screen and (width <= 768px) {
+      font-size: 16px;
+      margin-bottom: 30px;
+    }
+  }
+
+  &__pagination {
+    display: none;
+
+    .slider-pagination {
+      column-gap: 8px;
+    }
+
+    .swiper-pagination-bullet {
+      width: 40px;
+      height: 2px;
+    }
+
+    .swiper-pagination-bullet-active {
+      background-color: var(--white-color);
+    }
+
+    @media screen and (width <= 768px) {
+      position: absolute;
+      bottom: 8px !important;
+      left: 50% !important;
+      transform: translateX(-50%) !important;
+      z-index: 3;
+      display: flex;
+    }
+  }
+
+  &__item {
+    &:not(:last-child) {
+      margin-bottom: 32px;
+    }
+  }
+
+  &__card {
+    background-color: var(--grey-light-bg-color);
+    padding: 24px;
+    overflow: hidden;
+  }
+
+  &__card-title {
+    font-size: 20px;
+    font-family: 'OswaldBold';
+    text-transform: uppercase;
+    margin-bottom: 8px;
+
+    @media screen and (width <= 768px) {
+      font-size: 18px;
+    }
+  }
+
+  &__card-descr {
+    font-size: 16px;
+    font-family: 'RobotoRegular';
+    margin-bottom: 24px;
+
+    @media screen and (width <= 768px) {
+      font-size: 16px;
+      margin-bottom: 16px;
+    }
+  }
+
+  &__card-slider {
+    margin-bottom: 24px;
+
+    @media screen and (width <= 768px) {
+      margin-bottom: 16px;
+      position: relative;
+    }
+  }
+
+  .swiper-slide {
+    cursor: grab;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      height: 250px;
+    }
+  }
+
+  &__card-options {
+    margin-bottom: 24px;
+
+    @media screen and (width <= 768px) {
+      margin-bottom: 16px;
+    }
+  }
+
+  &__card-strong,
+  &__card-meaning {
+    font-size: 16px;
+
+    @media screen and (width <= 768px) {
+      font-size: 14px;
+    }
+  }
+
+  &__card-strong {
+    font-family: 'RobotoBold';
+  }
+
+  &__card-meaning {
+    font-family: 'RobotoRegular';
+  }
+
+  &__card-bot {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media screen and (width <= 768px) {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+
+  &__card-price {
+    font-size: 20px;
+    text-transform: uppercase;
+    font-family: 'OswaldBold';
+    margin-right: 20px;
+
+    @media screen and (width <= 768px) {
+      font-family: 'OswaldSemiBold';
+      font-size: 18px;
+      margin-bottom: 16px;
+    }
+  }
+
+  &__card-btn {
+    svg {
+      display: none;
+    }
+
+    @media screen and (width <= 768px) {
+      width: 100%;
+      justify-content: center;
+
+      svg {
+        display: block;
+      }
+    }
+  }
+}

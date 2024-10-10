@@ -125,3 +125,19 @@ const technicCardSwiper = new Swiper(".technic-card__slider", {
     },
   },
 });
+
+const usedLiftCardSwiper = new Swiper(".used-lifts__card-slider", {
+  slidesPerView: 1,
+  spaceBetween: 20,
+  pagination: {
+    el: ".used-lifts__pagination",
+    clickable: false,
+  },
+  breakpoints: {
+    // when window width is >= 1200px
+    768: {
+      slidesPerView: 3,
+      spaceBetween: 8,
+    },
+  },
+});
