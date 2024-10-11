@@ -9,10 +9,28 @@ const mobileMenu = document?.querySelector(".mobile-menu");
 const burgerButton = document?.querySelector(".hamburger-lines--mobile-menu");
 const overlay = document?.querySelector(".overlay");
 const dropdown = document?.querySelectorAll(".dropdown");
+const filterDropdown = document?.querySelectorAll(".filter__dropdown");
 const selectMenu = document?.querySelector(".select-menu");
 const selectBtn = selectMenu?.querySelector(".select-menu__btn");
 const selectBtnWrapper = selectMenu?.querySelector(".select-menu__btn-wrapper");
 const selectArrayOptions = selectMenu?.querySelectorAll(".select-menu__option");
+const filterHeightRangeSlider = document?.getElementById("filter-height-range");
+const filterWeightRangeSlider = document?.getElementById("filter-weight-range");
+const inputFirstHeightRangeSlider = document?.getElementById(
+  "filter-height-input-first"
+);
+const inputSecondHeightRangeSlider = document?.getElementById(
+  "filter-height-input-second"
+);
+const inputFirstWeightRangeSlider = document?.getElementById(
+  "filter-weight-input-first"
+);
+const inputSecondWeightRangeSlider = document?.getElementById(
+  "filter-weight-input-second"
+);
+const openFilterBtn = document?.querySelector(".filter-btn");
+const filterElement = document?.querySelector(".catalog-page__filter");
+const closeFilterBtn = document?.querySelector(".catalog-page__close-btn");
 
 export {
   body,
@@ -30,4 +48,14 @@ export {
   selectBtnWrapper,
   selectMenu,
   selectArrayOptions,
+  filterDropdown,
+  filterHeightRangeSlider,
+  filterWeightRangeSlider,
+  inputFirstHeightRangeSlider,
+  inputSecondHeightRangeSlider,
+  inputFirstWeightRangeSlider,
+  inputSecondWeightRangeSlider,
+  openFilterBtn,
+  filterElement,
+  closeFilterBtn,
 };

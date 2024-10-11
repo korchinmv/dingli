@@ -3,6 +3,7 @@ import "./functions/menu/mobileMenu.js";
 import "./functions/copy.js";
 import "./functions/showMore.js";
 import "./functions/validate-forms.js";
+import "./functions/filter.js";
 import "./components/popup.js";
 import "./components/slider.js";
 import "./components/select-menu.js";

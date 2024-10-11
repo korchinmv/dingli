@@ -1,0 +1,71 @@
+.custom-select {
+  color: rgba($color: #3a3a3a, $alpha: 0.6);
+  position: relative;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+
+  &::after {
+    content: '';
+    position: absolute;
+    right: 22px;
+    top: 50%;
+    display: block;
+    width: 16px;
+    height: 8px;
+    background-image: url('./img/svg/arrow-down.svg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transform: translateY(-50%);
+    transition: 0.25s all ease;
+  }
+
+  //Сбрасываем стили дефолтного селекта
+  &__select {
+    cursor: pointer;
+    appearance: none;
+    display: block;
+    outline: 0;
+    border: 0;
+    box-shadow: none;
+    color: inherit;
+    background: none;
+    font-size: 14px;
+    font-family: 'RobotoRegular';
+    width: 100%;
+    padding-right: 42px;
+  }
+
+  &--sort {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    outline: transparent;
+    border: 1px solid var(--accent-color);
+    padding: 14px 0 12px 8px;
+    color: var(--black-color);
+    opacity: 1;
+    height: 43px;
+    transition: color 0.3s;
+
+    &:hover {
+      color: var(--accent-color);
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      right: 12px;
+      top: 55%;
+      display: block;
+      width: 15px;
+      height: 11px;
+      background-image: url('../../../img/svg/arrow-down.svg');
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      transition: 0.25s all ease;
+    }
+  }
+}

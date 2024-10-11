@@ -1,0 +1,20 @@
+.filter-btn {
+  background-color: var(--accent-color);
+  color: var(--white-color);
+  clip-path: polygon(100% 0%, 0% 0%, 0% 100%, 90% 100%, 100% 70%);
+  padding: 13px 25px;
+  font-family: 'OswaldSemiBold';
+  font-size: 16px;
+  display: flex;
+  transition: background-color 0.3s;
+  height: 43px;
+  text-transform: uppercase;
+
+  &:hover {
+    background-color: var(--orange-dark-color);
+  }
+
+  &__icon {
+    margin-right: 8px;
+  }
+}
