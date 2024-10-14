@@ -1,6 +1,18 @@
 .tabs {
   font-family: 'OswaldBold';
-  text-transform: uppercase;
+
+  &__nav {
+    display: inline-flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    overflow: -moz-scrollbars-none;
+    -ms-overflow-style: none;
+    -webkit-overflow-scrolling: touch;
+
+    &::-webkit-scrollbar {
+      display: none; /*Safari and Chrome*/
+    }
+  }
 
   &__head {
     margin-bottom: 32px;
@@ -25,6 +37,8 @@
   }
 
   &__nav-item {
+    flex: 0 0 auto;
+
     &::after {
       content: '';
       display: block;
@@ -169,5 +183,11 @@
         margin-bottom: 32px;
       }
     }
+  }
+
+  &__video-list {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 32px;
   }
 }

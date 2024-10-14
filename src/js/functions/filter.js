@@ -34,56 +34,60 @@ if (openFilterBtn) {
 }
 
 //Слайдер фильтра по высоте
-noUiSlider.create(filterHeightRangeSlider, {
-  start: [4, 180],
-  step: 1,
-  range: {
-    min: [4],
-    max: [180],
-  },
-  format: {
-    to: (v) => v | 0,
-    from: (v) => v | 0,
-  },
-});
+if (filterHeightRangeSlider) {
+  noUiSlider.create(filterHeightRangeSlider, {
+    start: [4, 180],
+    step: 1,
+    range: {
+      min: [4],
+      max: [180],
+    },
+    format: {
+      to: (v) => v | 0,
+      from: (v) => v | 0,
+    },
+  });
 
-filterHeightRangeSlider.noUiSlider.on("update", function (values, handle) {
-  inputsHeightRangeSlider[handle].value = values[handle];
-});
+  filterHeightRangeSlider.noUiSlider.on("update", function (values, handle) {
+    inputsHeightRangeSlider[handle].value = values[handle];
+  });
 
-inputFirstHeightRangeSlider.addEventListener("change", function () {
-  filterHeightRangeSlider.noUiSlider.set([this.value, null]);
-});
+  inputFirstHeightRangeSlider.addEventListener("change", function () {
+    filterHeightRangeSlider.noUiSlider.set([this.value, null]);
+  });
 
-inputSecondHeightRangeSlider.addEventListener("change", function () {
-  filterHeightRangeSlider.noUiSlider.set([null, this.value]);
-});
+  inputSecondHeightRangeSlider.addEventListener("change", function () {
+    filterHeightRangeSlider.noUiSlider.set([null, this.value]);
+  });
+}
 
 //Слайдер фильтра по весу
-noUiSlider.create(filterWeightRangeSlider, {
-  start: [0, 1800],
-  step: 1,
-  range: {
-    min: [135],
-    max: [1800],
-  },
-  format: {
-    to: (v) => v | 0,
-    from: (v) => v | 0,
-  },
-});
+if (filterWeightRangeSlider) {
+  noUiSlider.create(filterWeightRangeSlider, {
+    start: [0, 1800],
+    step: 1,
+    range: {
+      min: [135],
+      max: [1800],
+    },
+    format: {
+      to: (v) => v | 0,
+      from: (v) => v | 0,
+    },
+  });
 
-filterWeightRangeSlider.noUiSlider.on("update", function (values, handle) {
-  inputsWeightRangeSlider[handle].value = values[handle];
-});
+  filterWeightRangeSlider.noUiSlider.on("update", function (values, handle) {
+    inputsWeightRangeSlider[handle].value = values[handle];
+  });
 
-inputFirstWeightRangeSlider.addEventListener("change", function () {
-  filterWeightRangeSlider.noUiSlider.set([this.value, null]);
-});
+  inputFirstWeightRangeSlider.addEventListener("change", function () {
+    filterWeightRangeSlider.noUiSlider.set([this.value, null]);
+  });
 
-inputSecondWeightRangeSlider.addEventListener("change", function () {
-  filterWeightRangeSlider.noUiSlider.set([null, this.value]);
-});
+  inputSecondWeightRangeSlider.addEventListener("change", function () {
+    filterWeightRangeSlider.noUiSlider.set([null, this.value]);
+  });
+}
 
 //Дропдауны с чекбоксами в фильтре
 if (filterDropdown) {

@@ -173,23 +173,6 @@
       padding: 40px 0;
     }
 
-    .tabs__nav {
-      display: inline-flex;
-      flex-wrap: nowrap;
-      overflow-x: auto;
-      overflow: -moz-scrollbars-none;
-      -ms-overflow-style: none;
-      -webkit-overflow-scrolling: touch;
-
-      &::-webkit-scrollbar {
-        display: none; /*Safari and Chrome*/
-      }
-    }
-
-    .tabs__nav-item {
-      flex: 0 0 auto;
-    }
-
     @media screen and (width <= 768px) {
       .tabs__nav-btn {
         font-size: 18px;

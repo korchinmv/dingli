@@ -141,3 +141,34 @@ const usedLiftCardSwiper = new Swiper(".used-lifts__card-slider", {
     },
   },
 });
+
+const productPageSwiperThumbs = new Swiper(".product__swiper-thumbs", {
+  spaceBetween: 8,
+  slidesPerView: 3,
+  slideToClickedSlide: true,
+  direction: "vertical",
+  // breakpoints: {
+  //   // when window width is >= 768px
+  //   768: {
+  //     spaceBetween: 8,
+  //   },
+  // },
+});
+
+const productPageSwiper = new Swiper(".product__swiper", {
+  spaceBetween: 4,
+  loop: true,
+  // navigation: {
+  //   nextEl: ".swiper-news-article-next",
+  //   prevEl: ".swiper-news-article-prev",
+  // },
+  // breakpoints: {
+  //   // when window width is >= 768px
+  //   768: {
+  //     spaceBetween: 8,
+  //   },
+  // },
+  thumbs: {
+    swiper: productPageSwiperThumbs,
+  },
+});
