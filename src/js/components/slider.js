@@ -146,22 +146,24 @@ const productPageSwiperThumbs = new Swiper(".product__swiper-thumbs", {
   spaceBetween: 8,
   slidesPerView: 3,
   slideToClickedSlide: true,
-  direction: "vertical",
-  // breakpoints: {
-  //   // when window width is >= 768px
-  //   768: {
-  //     spaceBetween: 8,
-  //   },
-  // },
+  loop: true,
+
+  breakpoints: {
+    // when window width is >= 768px
+    768: {
+      spaceBetween: 8,
+      direction: "vertical",
+    },
+  },
 });
 
 const productPageSwiper = new Swiper(".product__swiper", {
   spaceBetween: 4,
   loop: true,
-  // navigation: {
-  //   nextEl: ".swiper-news-article-next",
-  //   prevEl: ".swiper-news-article-prev",
-  // },
+  navigation: {
+    nextEl: ".product__swiper-next",
+    prevEl: ".product__swiper-prev",
+  },
   // breakpoints: {
   //   // when window width is >= 768px
   //   768: {

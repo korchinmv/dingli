@@ -31,6 +31,7 @@
   &__info {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding-bottom: 18px;
     position: relative;
     margin-bottom: 40px;
@@ -38,6 +39,7 @@
     @media screen and (width <= 768px) {
       flex-direction: column;
       padding-bottom: 16px;
+      margin-bottom: 16px;
     }
 
     &::after {
@@ -69,6 +71,10 @@
     display: flex;
     column-gap: 16px;
     align-self: flex-start;
+
+    @media screen and (width <= 768px) {
+      width: 100%;
+    }
   }
 
   &__flag {
@@ -90,6 +96,10 @@
   }
 
   &__print-btn {
+    @media screen and (width <= 768px) {
+      margin-left: auto;
+    }
+
     svg {
       path {
         transition: all 0.3s;
@@ -108,10 +118,22 @@
   &__specifications {
     max-width: 445px;
     width: 100%;
+
+    @media screen and (width <= 1024px) {
+      max-width: 100%;
+    }
   }
 
   &__specifications-list {
     margin-bottom: 68px;
+
+    @media screen and (width <= 1024px) {
+      margin-bottom: 30px;
+    }
+
+    @media screen and (width <= 768px) {
+      margin-bottom: 16px;
+    }
   }
 
   &__specifications-item {
@@ -121,6 +143,11 @@
     font-size: 16px;
     padding-bottom: 16px;
     position: relative;
+
+    @media screen and (width <= 768px) {
+      font-size: 14px;
+      padding-bottom: 7px;
+    }
 
     &::after {
       content: '';
@@ -135,6 +162,10 @@
 
     &:not(:last-child) {
       margin-bottom: 16px;
+
+      @media screen and (width <= 768px) {
+        margin-bottom: 7px;
+      }
     }
   }
 
@@ -143,6 +174,7 @@
     align-items: center;
     font-family: 'RobotoRegular';
     opacity: 0.6;
+    margin-right: 10px;
 
     svg {
       margin-right: 4px;
@@ -159,30 +191,88 @@
     font-family: 'OswaldBold';
     text-transform: uppercase;
     margin-bottom: 24px;
+
+    @media screen and (width <= 768px) {
+      margin-bottom: 16px;
+      font-size: 18px;
+    }
   }
 
   &__specifications-price-name {
     opacity: 0.6;
+
+    @media screen and (width <= 768px) {
+      display: none;
+    }
   }
 
   &__inner {
     display: flex;
     justify-content: space-between;
+
+    @media screen and (width <= 1024px) {
+      flex-direction: column;
+    }
+  }
+
+  &__slider {
+    width: 100%;
+
+    @media screen and (width <= 1024px) {
+      margin-bottom: 16px;
+    }
   }
 
   &__slider-wrapper {
     display: flex;
-    column-gap: 32px;
+
+    @media screen and (width <= 768px) {
+      margin-left: auto;
+      flex-direction: column-reverse;
+    }
   }
 
   &__swiper-thumbs {
     height: 316px;
     width: 127px;
+
+    @media screen and (width <= 768px) {
+      height: auto;
+      width: 100%;
+    }
+
+    .product__img {
+      cursor: pointer;
+    }
   }
 
   &__swiper {
     max-width: 604px;
     width: 100%;
+    margin-right: 32px;
+
+    @media screen and (width <= 768px) {
+      margin-bottom: 8px;
+    }
+  }
+
+  &__swiper-next,
+  &__swiper-prev {
+    display: none;
+
+    @media screen and (width <= 768px) {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  &__swiper-prev {
+    left: 0px;
+  }
+
+  &__swiper-next {
+    right: 0px;
   }
 
   &__specifications-buy-btn {
@@ -190,22 +280,36 @@
     align-items: center;
     max-width: 286px;
     width: 100%;
-  }
 
-  &__content {
+    @media screen and (width <= 768px) {
+      max-width: 100%;
+    }
   }
 
   &__tabs {
     padding: 80px 0;
 
+    @media screen and (width <= 768px) {
+      padding: 40px 0;
+    }
+
     .tabs__content-wrap {
       display: flex;
       column-gap: 32px;
+
+      @media screen and (width <= 768px) {
+        flex-direction: column;
+      }
     }
 
     .tabs__content-inner {
       max-width: 922px;
       width: 100%;
+
+      @media screen and (width <= 768px) {
+        margin-bottom: 40px;
+        width: 100%;
+      }
     }
   }
 
@@ -213,6 +317,10 @@
     font-family: 'OswaldSemiBold';
     margin-bottom: 24px;
     text-transform: uppercase;
+
+    @media screen and (width <= 768px) {
+      font-size: 18px;
+    }
   }
 
   &__text-list,
@@ -232,10 +340,23 @@
 
   &__service-card {
     max-width: 286px;
+
+    @media screen and (width <= 768px) {
+      width: 100%;
+      max-width: 100%;
+    }
   }
 
   &__tabs-table {
     max-width: 922px;
     width: 100%;
+
+    @media screen and (width <= 768px) {
+      margin-bottom: 40px;
+
+      .table__row {
+        font-size: 14px;
+      }
+    }
   }
 }

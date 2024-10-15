@@ -189,5 +189,16 @@
     display: flex;
     justify-content: space-between;
     column-gap: 32px;
+
+    @media screen and (width <= 768px) {
+      flex-direction: column;
+    }
+  }
+
+  &__video-item {
+    @media screen and (width <= 768px) {
+      margin-bottom: 32px;
+      font-size: 16px;
+    }
   }
 }
