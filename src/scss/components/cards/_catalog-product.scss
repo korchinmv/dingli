@@ -43,6 +43,10 @@
         background-color: var(--accent-color);
       }
 
+      .catalog-product__img {
+        transform: scale(1.05);
+      }
+
       .catalog-product__title,
       .catalog-product__models {
         color: var(--accent-color);
@@ -75,5 +79,6 @@
 
   &__img {
     margin-top: auto;
+    transition: all ease 0.3s;
   }
 }

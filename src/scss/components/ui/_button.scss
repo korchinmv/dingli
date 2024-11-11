@@ -2,15 +2,18 @@
   font-size: 20px;
   text-transform: uppercase;
   text-align: center;
-  padding: 10px;
   display: flex;
   align-items: center;
-  padding: 12px 32px 12px 25px;
+  padding: 12px 10px 12px 25px;
   width: fit-content;
   line-height: 1.2;
   transition:
     background-color 0.3s ease-in-out,
     color 0.3s ease-in-out;
+
+  &::after {
+    transition: all 0.3s ease-in-out;
+  }
 
   @media screen and (width <= 768px) {
     font-size: 16px;
@@ -26,12 +29,20 @@
 
     &:hover {
       background-color: var(--orange-dark-color);
+
+      &::after {
+        background-color: var(--orange-dark-color);
+      }
     }
   }
 
   &--white {
     background-color: var(--white-color);
     color: var(--black-color);
+
+    &::after {
+      background-color: var(--white-color);
+    }
 
     svg {
       transition: all;
@@ -52,6 +63,10 @@
         path {
           stroke: var(--accent-color);
         }
+      }
+
+      &::after {
+        background-color: var(--white-color);
       }
     }
   }

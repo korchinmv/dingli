@@ -62,7 +62,7 @@
     background-color: var(--accent-color);
     border-radius: 50%;
     transition:
-      transform 0.4s ease-out,
+      transform 0.4s ease-in-out,
       opacity 0.3s;
     z-index: 1;
 

@@ -4,6 +4,20 @@
   min-height: 444px;
   width: 100%;
 
+  &__link {
+    &:hover {
+      .news-card__more {
+        color: var(--accent-color);
+      }
+
+      .news-card__icon {
+        path {
+          stroke: var(--accent-color);
+        }
+      }
+    }
+  }
+
   &--bg-grey {
     background-color: var(--grey-light-bg-color);
 
@@ -19,7 +33,7 @@
       }
     }
 
-    .news-card__link {
+    .news-card__more {
       color: var(--accent-color);
       font-family: 'RobotoSemiBold';
       text-transform: none;
@@ -54,7 +68,7 @@
       }
     }
 
-    .news-card__link {
+    .news-card__more {
       color: var(--accent-color);
       font-family: 'RobotoSemiBold';
       text-transform: none;
@@ -135,7 +149,7 @@
     align-self: flex-end;
   }
 
-  &__link {
+  &__more {
     margin-top: auto;
     text-transform: uppercase;
     font-size: 20px;

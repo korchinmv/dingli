@@ -2,7 +2,7 @@
   display: flex;
   flex-wrap: wrap;
 
-  &__item {
+  &__link {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -15,17 +15,42 @@
       font-size: 14px;
       margin-bottom: 8px;
     }
+  }
+
+  &__item {
+    @media screen and (width <= 768px) {
+      font-size: 14px;
+      margin-bottom: 8px;
+    }
+
+    &--orange,
+    &--dark-blue,
+    &--blue {
+      transition: all 0.3s ease;
+    }
 
     &--dark-blue {
       background-color: var(--dark-blue-color);
+
+      &:hover {
+        opacity: 0.8;
+      }
     }
 
     &--blue {
       background-color: var(--blue-color);
+
+      &:hover {
+        opacity: 0.8;
+      }
     }
 
     &--orange {
       background-color: var(--accent-color);
+
+      &:hover {
+        background-color: var(--orange-dark-color);
+      }
     }
 
     &:not(:last-child) {
