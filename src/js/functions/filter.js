@@ -38,6 +38,7 @@ if (filterHeightRangeSlider) {
   noUiSlider.create(filterHeightRangeSlider, {
     start: [4, 180],
     step: 1,
+    connect: true,
     range: {
       min: [4],
       max: [180],
@@ -66,6 +67,7 @@ if (filterWeightRangeSlider) {
   noUiSlider.create(filterWeightRangeSlider, {
     start: [0, 1800],
     step: 1,
+    connect: true,
     range: {
       min: [135],
       max: [1800],

@@ -1,4 +1,6 @@
 .filter {
+  background-color: var(--white-color);
+
   &__title {
     font-family: 'OswaldSemiBold';
     line-height: 1.2;
@@ -34,6 +36,10 @@
 
     .noUi-connects {
       height: 2px;
+      background-color: var(--grey-light-bg-color);
+    }
+
+    .noUi-connect {
       background-color: var(--accent-color);
     }
 
@@ -172,10 +178,11 @@
     border: 1px solid var(--grey-color);
     transition: border ease-in-out 0.3s;
     font-family: 'RobotoRegular';
-    opacity: 0.6;
     line-height: 1;
 
     &:focus {
+      color: var(--black-color-dark);
+      opacity: 1;
       border: 1px solid var(--accent-color);
     }
 
@@ -209,9 +216,17 @@
 
   &__add {
     margin-bottom: 5px;
+    max-width: 266px;
+
+    @media screen and (width <= 900px) {
+      max-width: calc(100% - 20px);
+    }
   }
 
   &__remove {
+    background-color: var(--white-color);
+    padding: 12px 25px;
+
     &:hover {
       background-color: var(--accent-color);
       color: var(--white-color);

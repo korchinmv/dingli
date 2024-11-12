@@ -16,7 +16,10 @@ export const validateForms = (selector, rules, checkboxes = [], afterSend) => {
   }
 
   if (telSelector) {
-    const inputMask = new Inputmask("+7 (999) 999-99-99");
+    const inputMask = new Inputmask({
+      mask: "+7 (999) 999-99-99",
+      showMaskOnHover: false,
+    });
     inputMask.mask(telSelector);
 
     for (let item of rules) {
