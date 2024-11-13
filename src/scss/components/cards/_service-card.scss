@@ -19,6 +19,12 @@
       position: absolute;
       bottom: -24px;
       right: -24px;
+
+      @media screen and (width <= 576px) {
+        width: 45px;
+        bottom: -12px;
+        right: -8px;
+      }
     }
   }
 
@@ -29,7 +35,7 @@
     position: relative;
 
     @media screen and (width <= 576px) {
-      padding: 12px 8px;
+      padding: 8px;
     }
 
     &:hover {

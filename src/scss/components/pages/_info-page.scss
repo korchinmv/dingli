@@ -115,11 +115,16 @@
   }
 
   &__item-link {
+    position: relative;
+    left: -20px;
     align-self: self-start;
+    max-width: fit-content;
+    width: 100%;
 
     @media screen and (width <= 768px) {
-      width: 100%;
+      max-width: calc(100% - 20px);
       justify-content: center;
+      left: 0;
     }
   }
 }

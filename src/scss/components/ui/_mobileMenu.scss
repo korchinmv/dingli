@@ -3,7 +3,7 @@
   z-index: 3;
   left: 0;
   right: 0;
-  top: calc(var(--header-height));
+  top: 64px;
   padding: 0 0 32px;
   width: 100%;
   background-color: var(--white-color);
@@ -56,30 +56,20 @@
   &__dropdown-menu {
     position: relative;
     overflow: hidden;
-    max-height: 0;
 
     &.show {
-      display: block;
       margin-top: 16px;
       padding-bottom: 16px;
-      max-height: 9999px;
-      transform: scaleY(1);
-      transition: all 0.3s ease-in-out;
-      animation: showAnimation 0.4s ease-in-out;
+      overflow: visible;
+      opacity: 1;
+      transition: all 0.5s ease;
     }
 
     &.hide {
-      margin-top: 0;
-      padding-bottom: 0;
       max-height: 0;
-      transform: scaleY(0);
-      transition: all 0.3s ease-out;
-      animation: hideAnimation 0.2s ease-out;
-    }
-
-    &.show,
-    &.hide {
-      transform-origin: 50% 0%;
+      overflow: hidden;
+      opacity: 0;
+      transition: all 0.5s ease;
     }
 
     &::after {
@@ -229,53 +219,5 @@
         }
       }
     }
-  }
-}
-
-@keyframes showAnimation {
-  0% {
-    transform: scaleY(0.1);
-  }
-
-  40% {
-    transform: scaleY(1.04);
-  }
-
-  60% {
-    transform: scaleY(0.98);
-  }
-
-  80% {
-    transform: scaleY(1.04);
-  }
-
-  100% {
-    transform: scaleY(0.98);
-  }
-
-  80% {
-    transform: scaleY(1.02);
-  }
-
-  100% {
-    transform: scaleY(1);
-  }
-}
-
-@keyframes hideAnimation {
-  0% {
-    transform: scaleY(1);
-  }
-
-  60% {
-    transform: scaleY(0.98);
-  }
-
-  80% {
-    transform: scaleY(1.02);
-  }
-
-  100% {
-    transform: scaleY(0);
   }
 }

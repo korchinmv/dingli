@@ -23,6 +23,7 @@
   &__title {
     font-size: 64px;
     margin-bottom: 40px;
+    text-transform: uppercase;
 
     @media screen and (width <= 1024px) {
       font-size: 48px;
@@ -30,6 +31,10 @@
 
     @media screen and (width <= 768px) {
       font-size: 32px;
+    }
+
+    &--orange {
+      color: var(--accent-color);
     }
   }
 

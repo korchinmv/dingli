@@ -172,12 +172,16 @@
   }
 
   &__card-btn {
+    position: relative;
+    left: -20px;
+
     svg {
       display: none;
     }
 
     @media screen and (width <= 768px) {
-      width: 100%;
+      left: 0;
+      width: calc(100% - 17px);
       justify-content: center;
 
       svg {

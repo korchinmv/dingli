@@ -74,7 +74,8 @@
   }
 
   &__btn {
-    width: 266px;
+    max-width: calc(100% - 17px);
+    width: 100%;
     justify-content: center;
     margin-bottom: 8px;
 

@@ -4,8 +4,23 @@
   min-height: 444px;
   width: 100%;
 
-  &__link {
+  &__more {
+    margin-top: auto;
+    text-transform: uppercase;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    transition: color 0.3s;
+
+    @media screen and (width <= 768px) {
+      font-size: 16px;
+    }
+
     &:hover {
+      .news-card__title {
+        color: var(--accent-color);
+      }
+
       .news-card__more {
         color: var(--accent-color);
       }
@@ -49,13 +64,16 @@
   }
 
   &--news-page {
-    flex-direction: row;
-    align-items: center;
     background-color: var(--grey-light-bg-color);
     min-height: auto;
 
-    @media screen and (width <= 990px) {
-      flex-direction: column;
+    .news-card__link {
+      display: flex;
+      align-items: center;
+
+      @media screen and (width <= 990px) {
+        flex-direction: column;
+      }
     }
 
     .news-card__img {
@@ -69,7 +87,6 @@
     }
 
     .news-card__more {
-      color: var(--accent-color);
       font-family: 'RobotoSemiBold';
       text-transform: none;
       font-size: 18px;
@@ -78,6 +95,18 @@
         path {
           stroke: var(--accent-color);
         }
+      }
+    }
+  }
+
+  &__link {
+    &:hover {
+      .news-card__more {
+        color: var(--accent-color);
+      }
+
+      .news-card__title {
+        color: var(--accent-color);
       }
     }
   }
@@ -135,6 +164,7 @@
     font-size: 20px;
     text-transform: uppercase;
     margin-bottom: 10px;
+    transition: color 0.3s;
 
     @media screen and (width <= 768px) {
       font-size: 18px;
@@ -149,34 +179,7 @@
     align-self: flex-end;
   }
 
-  &__more {
-    margin-top: auto;
-    text-transform: uppercase;
-    font-size: 20px;
-    display: flex;
-    align-items: center;
-    transition: color 0.3s;
-
-    @media screen and (width <= 768px) {
-      font-size: 16px;
-    }
-
-    &:hover {
-      color: var(--accent-color);
-
-      .news-card__icon {
-        path {
-          stroke: var(--accent-color);
-        }
-      }
-    }
-  }
-
   &__icon {
     margin-left: 8px;
-
-    path {
-      transition: all 0.3s;
-    }
   }
 }
