@@ -117,7 +117,7 @@
   &__item-link {
     position: relative;
     left: -20px;
-    align-self: self-start;
+    align-self: self-end;
     max-width: fit-content;
     width: 100%;
 
@@ -125,6 +125,7 @@
       max-width: calc(100% - 20px);
       justify-content: center;
       left: 0;
+      align-self: flex-start;
     }
   }
 }

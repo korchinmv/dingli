@@ -112,40 +112,22 @@
   }
 
   &__dropdown-menu {
-    position: relative;
-    overflow: hidden;
     max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: all 0.2s ease;
 
     &.show {
-      display: block;
       margin-top: 16px;
       padding-bottom: 16px;
-      max-height: 9999px;
-      transform: scaleY(1);
+      max-height: 100%;
+      overflow: visible;
+      opacity: 1;
       transition: all 0.3s ease-in-out;
-      animation: showAnimation 0.4s ease-in-out;
 
       .filter-box {
         margin-bottom: 40px;
       }
-    }
-
-    &.hide {
-      margin-top: 0;
-      padding-bottom: 0;
-      max-height: 0;
-      transform: scaleY(0);
-      transition: all 0.3s ease-out;
-      animation: hideAnimation 0.2s ease-out;
-
-      .filter-box {
-        margin-bottom: 15px;
-      }
-    }
-
-    &.show,
-    &.hide {
-      transform-origin: 50% 0%;
     }
   }
 

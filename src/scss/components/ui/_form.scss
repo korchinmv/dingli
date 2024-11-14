@@ -57,11 +57,16 @@
     font-size: 16px;
     font-family: 'RobotoRegular';
     line-height: 1.2;
+    border: 1px solid transparent;
 
     &::placeholder {
       font-size: 16px;
       font-family: 'RobotoRegular';
       opacity: 0.6;
+    }
+
+    &:focus {
+      border-color: var(--accent-color);
     }
   }
 
@@ -80,7 +85,14 @@
     margin-bottom: 8px;
 
     &--width {
-      width: 430px;
+      width: calc(430px - 17px);
+      position: relative;
+      left: -17px;
+
+      @media screen and (width <= 850px) {
+        left: 0;
+        width: calc(100% - 17px);
+      }
     }
   }
 

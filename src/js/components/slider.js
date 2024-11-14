@@ -143,8 +143,8 @@ const usedLiftCardSwiper = new Swiper(".used-lifts__card-slider", {
 });
 
 const productPageSwiperThumbs = new Swiper(".product__swiper-thumbs", {
-  spaceBetween: 8,
-  slidesPerView: 3,
+  spaceBetween: 4,
+  slidesPerView: 4,
   slideToClickedSlide: true,
   loop: true,
 
@@ -152,6 +152,7 @@ const productPageSwiperThumbs = new Swiper(".product__swiper-thumbs", {
     // when window width is >= 768px
     768: {
       spaceBetween: 8,
+      slidesPerView: 3,
       direction: "vertical",
     },
   },
