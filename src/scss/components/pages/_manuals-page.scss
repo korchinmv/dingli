@@ -64,48 +64,4 @@
       margin-bottom: 40px;
     }
   }
-
-  &__form {
-    display: flex;
-  }
-
-  &__input {
-    padding: 13px 16px 13px 16px;
-    width: 100%;
-    outline: transparent;
-
-    &::placeholder {
-      font-family: 'RobotoRegular';
-      font-size: 16px;
-      opacity: 0.8;
-    }
-  }
-
-  &__btn {
-    display: flex;
-    align-items: center;
-    clip-path: polygon(100% 0%, 0% 0%, 0% 100%, 90% 100%, 100% 70%);
-
-    @media screen and (width <= 768px) {
-      width: 71px;
-      padding: 16px 12px;
-      justify-content: center;
-      clip-path: polygon(100% 0%, 0% 0%, 0% 100%, 80% 100%, 100% 70%);
-    }
-
-    svg {
-      margin-left: 0;
-      margin-right: 8px;
-
-      @media screen and (width <= 768px) {
-        margin: 0;
-      }
-    }
-
-    span {
-      @media screen and (width <= 768px) {
-        display: none;
-      }
-    }
-  }
 }
