@@ -3,6 +3,10 @@
   position: relative;
   height: 100%;
 
+  &--white {
+    background-color: var(--white-color);
+  }
+
   &__title {
     text-transform: uppercase;
     font-size: 24px;

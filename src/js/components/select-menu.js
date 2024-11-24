@@ -19,3 +19,9 @@ if (selectArrayOptions) {
     });
   });
 }
+
+document.addEventListener("click", (e) => {
+  if (!selectMenu.contains(e.target) && !selectBtn.contains(e.target)) {
+    selectMenu.classList.remove("select-menu--active");
+  }
+});

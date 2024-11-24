@@ -12,11 +12,14 @@
   &__link {
     display: flex;
     flex-direction: column;
-    align-items: center;
 
     &:hover {
       .technic-card__img {
         transform: scale(1.1);
+      }
+
+      .technic-card__title {
+        color: var(--accent-color);
       }
     }
   }
@@ -172,6 +175,7 @@
     font-size: 20px;
     text-transform: uppercase;
     margin-bottom: 16px;
+    transition: color 0.3s;
 
     @media screen and (width <= 768px) {
       font-size: 18px;

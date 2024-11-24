@@ -64,7 +64,9 @@
   &__item {
     background-color: var(--grey-light-bg-color);
     display: flex;
+    flex-direction: row-reverse;
     justify-content: space-between;
+
     padding: 24px;
 
     @media screen and (width <= 768px) {
@@ -101,6 +103,7 @@
     text-transform: uppercase;
     font-family: 'OswaldBold';
     margin-bottom: 8px;
+    transition: color 0.3s;
 
     @media screen and (width <= 768px) {
       font-size: 18px;
@@ -137,6 +140,10 @@
       width: calc(100% - 17px);
       justify-content: center;
       left: 0;
+    }
+
+    &:hover + .parts-for-lifts__item-content .parts-for-lifts__item-title {
+      color: var(--accent-color);
     }
   }
 

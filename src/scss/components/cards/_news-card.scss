@@ -99,10 +99,22 @@
     }
   }
 
+  svg {
+    path {
+      transition: all 0.3s;
+    }
+  }
+
   &__link {
     &:hover {
       .news-card__more {
         color: var(--accent-color);
+
+        svg {
+          path {
+            stroke: var(--accent-color);
+          }
+        }
       }
 
       .news-card__title {

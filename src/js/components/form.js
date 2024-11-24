@@ -33,6 +33,7 @@ const rulesContactsForm = [
     rules: [
       {
         rule: "required",
+        rule: "email",
         value: true,
         errorMessage: "Напишите свою почту!",
       },
@@ -67,11 +68,17 @@ const rulesFooterForm = [
       {
         rule: "minLength",
         value: 3,
+        errorMessage: "Слишком короткое имя",
       },
       {
         rule: "required",
         value: true,
         errorMessage: "Заполните имя!",
+      },
+      {
+        rule: "customRegexp",
+        value: /^[A-zА-я]+$/i,
+        errorMessage: "Имя должно содержать буквы",
       },
     ],
   },
@@ -94,7 +101,11 @@ const rulesFooterForm = [
       {
         rule: "required",
         value: true,
-        errorMessage: "Напишите свою почту!",
+        errorMessage: "Напишите свою почту",
+      },
+      {
+        rule: "email",
+        errorMessage: "Не верно указана почта",
       },
     ],
   },
