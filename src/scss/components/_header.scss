@@ -1,8 +1,9 @@
 .header {
   padding: 16px 0 14px 0;
-  position: relative;
+  position: fixed;
   background-color: var(--white-color);
   z-index: 999;
+  width: 100%;
 
   @media screen and (max-width: 1024px) {
     padding: 12px 0;

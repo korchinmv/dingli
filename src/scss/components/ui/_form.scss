@@ -24,19 +24,40 @@
   &__placeholder {
     font-size: 16px;
     font-family: 'RobotoRegular';
-    opacity: 0.6;
+    opacity: 1;
     color: var(--black-color);
+    background-color: var(--white-color);
+    width: calc(100% - 12px);
     position: absolute;
     top: 50%;
     left: 11px;
     transform: translateY(-50%);
     transition:
       top 0.3s ease-in-out,
-      font-size 0.3s ease-in-out;
+      font-size 0.3s ease-in-out,
+      transform 0.3s ease-in-out;
+    z-index: 2;
+    height: 20px;
+    display: flex;
+    align-items: center;
 
     &--small-top {
       top: 20px;
     }
+  }
+
+  &__input:focus + .form__placeholder,
+  &__input:not(:placeholder-shown) + .form__placeholder {
+    font-size: 12px;
+    top: 1px;
+    transform: translateY(0);
+  }
+
+  &__textarea:focus + .form__placeholder,
+  &__textarea:not(:placeholder-shown) + .form__placeholder {
+    font-size: 12px;
+    top: 1px;
+    transform: translateY(0);
   }
 
   &__input {
@@ -45,6 +66,8 @@
 
   &__textarea {
     resize: none;
+    z-index: 1;
+    transition: height ease 0.3s;
   }
 
   &__input,
@@ -68,14 +91,6 @@
     &:focus {
       border-color: var(--accent-color);
     }
-  }
-
-  &__input:focus + .form__placeholder,
-  &__input:not(:placeholder-shown) + .form__placeholder,
-  &__textarea:focus + .form__placeholder,
-  &__textarea:not(:placeholder-shown) + .form__placeholder {
-    font-size: 12px;
-    top: 12px;
   }
 
   &__btn {

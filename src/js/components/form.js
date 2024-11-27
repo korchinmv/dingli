@@ -1,4 +1,9 @@
 import { validateForms } from "./../functions/validate-forms.js";
+const textarea = document.querySelector(".input-textarea");
+textarea.addEventListener("keyup", () => {
+  textarea.style.height = "auto";
+  textarea.style.height = `${textarea.scrollHeight}px`;
+});
 
 const rulesContactsForm = [
   {

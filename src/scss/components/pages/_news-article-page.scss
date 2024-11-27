@@ -1,16 +1,18 @@
 .news-article-page {
   &__head {
-    padding-top: 40px;
     background-color: var(--grey-light-bg-color);
     height: 622px;
     margin-bottom: 156px;
+    padding-top: 156px;
 
     @media screen and (width <= 1150px) {
       margin-bottom: 30px;
       height: auto;
+      padding-top: 88px;
     }
 
     @media screen and (width <= 768px) {
+      padding-top: 80px;
       height: 340px;
       margin-bottom: 110px;
     }

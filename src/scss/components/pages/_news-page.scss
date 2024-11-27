@@ -1,7 +1,7 @@
 .news-page {
   &__head {
     background-color: var(--grey-light-bg-color);
-    padding: 40px 0 16px;
+    padding: 156px 0 16px;
     margin-bottom: 40px;
 
     @media screen and (width <= 1100px) {
@@ -9,7 +9,7 @@
     }
 
     @media screen and (width <= 768px) {
-      padding: 16px 0;
+      padding: 80px 0;
     }
   }
 

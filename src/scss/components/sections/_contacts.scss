@@ -103,6 +103,12 @@
     @media screen and (width <= 850px) {
       display: none;
     }
+
+    .form__textarea {
+      max-height: 300px;
+      // overflow: hidden;
+      // height: 49px;
+    }
   }
 
   &__requisites {

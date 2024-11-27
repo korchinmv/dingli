@@ -2,6 +2,11 @@
   background-color: var(--grey-light-bg-color);
   position: relative;
   overflow: hidden;
+  padding-top: 116px;
+
+  @media screen and (width <= 1024px) {
+    padding-top: 64px;
+  }
 
   &::before {
     content: '';

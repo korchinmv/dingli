@@ -102,6 +102,7 @@
 
   &__details {
     width: fit-content;
+    height: 44px;
 
     @media screen and (width <= 576px) {
       justify-content: center;

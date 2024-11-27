@@ -1,14 +1,14 @@
 .protection {
   &__head {
-    background-color: var(--grey-dark-bg-color);
-    padding: 40px 0 80px;
+    background-color: var(--grey-light-bg-color);
+    padding: 156px 0 80px;
 
     @media screen and (width <= 1024px) {
-      padding: 24px 0 70px;
+      padding: 88px 0 70px;
     }
 
     @media screen and (width <= 768px) {
-      padding: 16px 0 56px;
+      padding: 80px 0 56px;
     }
   }
 
