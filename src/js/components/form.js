@@ -1,4 +1,5 @@
 import { validateForms } from "./../functions/validate-forms.js";
+
 const textarea = document.querySelector(".input-textarea");
 textarea.addEventListener("keyup", () => {
   textarea.style.height = "auto";
@@ -38,9 +39,12 @@ const rulesContactsForm = [
     rules: [
       {
         rule: "required",
-        rule: "email",
         value: true,
-        errorMessage: "Напишите свою почту!",
+        errorMessage: "Напишите свою почту",
+      },
+      {
+        rule: "email",
+        errorMessage: "Не верно указана почта",
       },
     ],
   },

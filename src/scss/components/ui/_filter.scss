@@ -207,11 +207,27 @@
 
   &__remove {
     background-color: var(--white-color);
-    padding: 12px 25px;
+    max-width: 266px;
+
+    &.cropped-corner {
+      &::after {
+        background-color: var(--white-color) !important;
+      }
+    }
+
+    @media screen and (width <= 900px) {
+      max-width: calc(100% - 20px);
+    }
 
     &:hover {
       background-color: var(--accent-color);
       color: var(--white-color);
+
+      &.cropped-corner {
+        &::after {
+          background-color: var(--accent-color) !important;
+        }
+      }
     }
   }
 
