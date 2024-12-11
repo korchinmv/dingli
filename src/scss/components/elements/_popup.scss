@@ -1,12 +1,23 @@
 .popup {
+  padding: 0 16px;
+
   &__container {
     padding: 32px;
     border-radius: 0;
+
+    @media screen and (width <= 768px) {
+      padding: 16px;
+    }
   }
 
   &__title {
     margin-bottom: 32px;
     line-height: 1.4;
+
+    @media screen and (width <= 768px) {
+      font-size: 24px;
+      margin-bottom: 24px;
+    }
   }
 
   &__wrapper {
@@ -50,6 +61,14 @@
     line-height: 1.2;
   }
 
+  &__text {
+    font-family: 'RobotoRegular';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.2;
+    margin-bottom: 32px;
+  }
+
   &__delivery {
     color: var(--accent-color);
     text-decoration: underline;
@@ -60,5 +79,94 @@
     right: 16px;
     top: 24px;
     opacity: 0.6;
+  }
+
+  &__body {
+    display: flex;
+    column-gap: 32px;
+    padding-bottom: 32px;
+    margin-bottom: 32px;
+    border-bottom: 1px solid rgba(62, 58, 57, 0.2);
+  }
+
+  &__body-img {
+    width: 286px;
+  }
+
+  &__body-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  &__body-descr {
+    font-family: 'RobotoRegular';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.2;
+  }
+
+  &__body-price-block {
+  }
+
+  &__body-price {
+    font-family: 'OswaldBold';
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.2;
+    text-transform: uppercase;
+    opacity: 0.6;
+    margin-right: 8px;
+  }
+
+  &__body-price-num {
+    font-family: 'OswaldBold';
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.2;
+    text-transform: uppercase;
+  }
+}
+
+.callback {
+  max-width: 440px;
+  width: 100%;
+
+  .form__input {
+    border: 1px solid var(--grey-light-bg-color);
+  }
+}
+
+.write-us {
+  max-width: 668px;
+  width: 100%;
+
+  .form__input {
+    border: 1px solid var(--grey-light-bg-color);
+  }
+
+  .form__textarea {
+    border: 1px solid var(--grey-light-bg-color);
+  }
+
+  .form__block {
+    @media screen and (width <= 568px) {
+      flex-direction: column;
+    }
+  }
+
+  .form__input-wrapper {
+    @media screen and (width <= 568px) {
+      &:not(:last-child) {
+        margin-bottom: 16px;
+      }
+    }
+  }
+
+  .form__btn {
+    left: 0;
+
+    @media screen and (width <= 568px) {
+      left: -9px;
+    }
   }
 }

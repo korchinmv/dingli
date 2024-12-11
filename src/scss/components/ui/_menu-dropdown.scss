@@ -8,7 +8,7 @@
 
   &__dropdown {
     background-color: var(--black-color);
-    width: 300px;
+    width: 330px;
     position: absolute;
     top: 47px;
     left: 0;
@@ -30,11 +30,13 @@
     width: 100%;
     position: relative;
     transition: background-color 0.3s ease;
+    font-size: 18px;
 
     svg {
       flex-shrink: 0;
       opacity: 0;
       transition: all 0.3s;
+      margin-left: 20px;
     }
 
     &:hover {
@@ -71,12 +73,12 @@
 
 @keyframes arrowSlide {
   0% {
-    margin-right: 30px;
     opacity: 0;
+    transform: translateX(-30px);
   }
 
   100% {
-    margin-right: 0;
+    transform: translateX(0);
     opacity: 1;
   }
 }

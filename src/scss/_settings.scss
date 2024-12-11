@@ -5,7 +5,6 @@
 }
 
 .page {
-  overflow-x: hidden;
   height: 100%;
   font-family: var(--font-family, sans-serif);
   -webkit-text-size-adjust: 100%;
@@ -20,7 +19,6 @@
   min-width: 345px;
   min-height: 100%;
   font-size: 16px;
-  overflow: hidden;
 
   &--no-scroll {
     overflow: hidden;

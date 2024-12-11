@@ -1,0 +1,221 @@
+<div class="popup graph-modal">
+  <div class="popup__container graph-modal__container" role="dialog" aria-modal="true" data-graph-target="city-modal">
+    <div class="graph-modal__content">
+
+      <h3 class="popup__title title">Выберите город</h3>
+
+      <div class="popup__wrapper">
+
+        <ul class="popup__city-list">
+          <li class="popup__city-item"><a class="popup__city-link" href="#">Москва</a></li>
+          <li class="popup__city-item"><a class="popup__city-link" href="#">Санкт-Петербург</a></li>
+          <li class="popup__city-item"><a class="popup__city-link" href="#">Ростов-на-Дону</a></li>
+          <li class="popup__city-item"><a class="popup__city-link" href="#">Казань</a></li>
+          <li class="popup__city-item"><a class="popup__city-link" href="#">Краснодар</a></li>
+          <li class="popup__city-item"><a class="popup__city-link" href="#">Новосибирск</a></li>
+          <li class="popup__city-item"><a class="popup__city-link" href="#">Екатеринбург</a></li>
+          <li class="popup__city-item"><a class="popup__city-link" href="#">Самара</a></li>
+          <li class="popup__city-item"><a class="popup__city-link" href="#">Пермь</a></li>
+          <li class="popup__city-item"><a class="popup__city-link" href="#">Нижний Новгород</a></li>
+        </ul>
+
+        <ul class="popup__city-list">
+          <li class="popup__city-item"><a class="popup__city-link" href="#">Челябинск</a></li>
+          <li class="popup__city-item"><a class="popup__city-link" href="#">Владивосток</a></li>
+          <li class="popup__city-item"><a class="popup__city-link" href="#">Уфа</a></li>
+          <li class="popup__city-item"><a class="popup__city-link" href="#">Ставрополь</a></li>
+          <li class="popup__city-item"><a class="popup__city-link" href="#">Симферополь</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <p class="popup__city-text">Не нашли свой город? У нас есть <a class="popup__delivery" href="#">доставка по России и
+        странам СНГ</a>.</p>
+
+    <button class="popup__btn btn-reset js-modal-close" aria-label="Закрыть модальное окно">
+      <div class="hamburger-lines hamburger-lines--active hamburger-lines--dark">
+        <span class="hamburger-lines__line line1"></span>
+        <span class="hamburger-lines__line line2"></span>
+        <span class="hamburger-lines__line line3"></span>
+      </div>
+    </button>
+  </div>
+
+  <div class="popup__container graph-modal__container callback" role="dialog" aria-modal="true"
+    data-graph-target="call-modal">
+    <div class="graph-modal__content">
+      <h3 class="popup__title title">Заказать звонок</h3>
+
+      <form class="popup__form form" id="callback-popup-form" action="#" novalidate="novalidate">
+        <div class="form__input-wrapper form__input-wrapper--margin">
+          <input class="form__input input-name" type="text" id="callback-popup-form-name" placeholder=""
+            data-validate-field="name">
+          <label class="form__placeholder" for="callback-popup-form-name">Ваше имя</label>
+        </div>
+
+        <div class="form__input-wrapper form__input-wrapper--margin">
+          <input class="form__input input-tel" type="tel" id="callback-popup-form-phone" placeholder=""
+            data-validate-field="phone" inputmode="text">
+          <label class="form__placeholder" for="callback-popup-form-phone">Телефон <span>*</span></label>
+        </div>
+
+        <button class="form__btn button button--orange cropped-corner">
+          Отправить
+          <svg width="19" height="16" viewBox="0 0 19 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 8H17M17 8L10 1M17 8L10 15" stroke="white" stroke-width="2.5"></path>
+          </svg>
+        </button>
+
+        <span class="form__text">Оставляя заявку, вы&nbsp;даете согласие <a class="form__text form__text--accent"
+            href="#">на&nbsp;обработку персональных данных</a></span>
+      </form>
+
+      <button class="popup__btn btn-reset js-modal-close" aria-label="Закрыть модальное окно">
+        <div class="hamburger-lines hamburger-lines--active hamburger-lines--dark">
+          <span class="hamburger-lines__line line1"></span>
+          <span class="hamburger-lines__line line2"></span>
+          <span class="hamburger-lines__line line3"></span>
+        </div>
+      </button>
+    </div>
+  </div>
+
+  <div class="popup__container graph-modal__container write-us" role="dialog" aria-modal="true"
+    data-graph-target="write-modal">
+    <div class="graph-modal__content">
+      <h3 class="popup__title title">Написать нам</h3>
+
+      <p class="popup__text">Оставьте заявку и наши специалисты свяжутся с вами</p>
+
+      <form class="form" id="write-us-popup-form" action="#" novalidate="novalidate">
+        <div class="form__block">
+          <div class="form__input-wrapper">
+            <input class="form__input input-name" type="text" id="write-us-popup-form-name" placeholder=""
+              data-validate-field="name">
+            <label class="form__placeholder" for="write-us-popup-form-name">Ваше имя</label>
+          </div>
+
+          <div class="form__input-wrapper">
+            <input class="form__input input-tel" type="tel" id="write-us-popup-form-phone" placeholder=""
+              data-validate-field="phone" inputmode="text">
+            <label class="form__placeholder" for="write-us-popup-form-phone">Телефон <span>*</span></label>
+          </div>
+        </div>
+
+
+        <div class="form__block">
+          <div class="form__input-wrapper">
+            <input class="form__input input-mail" type="text" id="write-us-popup-form-email" placeholder=""
+              data-validate-field="mail">
+            <label class="form__placeholder" for="email">Email <span>*</span></label>
+          </div>
+
+          <div class="form__input-wrapper">
+            <input class="form__input input-company" type="text" id="company" placeholder=""
+              data-validate-field="company">
+            <label class="form__placeholder" for="company">Компания <span>*</span></label>
+          </div>
+        </div>
+
+        <div class="form__input-wrapper form__input-wrapper--margin">
+          <textarea class="form__textarea input-textarea" id="textarea" placeholder=""
+            data-validate-field="textarea"></textarea>
+          <label class="form__placeholder" for="textarea">Комментарий <span>*</span></label>
+        </div>
+
+        <div class="form__block">
+          <button class="form__btn form__btn--width button button--orange cropped-corner">
+            Отправить
+            <svg width="19" height="16" viewBox="0 0 19 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M0 8H17M17 8L10 1M17 8L10 15" stroke="white" stroke-width="2.5"></path>
+            </svg>
+          </button>
+
+          <span class="form__text">Оставляя заявку, вы&nbsp;даете согласие <a class="form__text form__text--accent"
+              href="#">на&nbsp;обработку персональных данных</a>
+          </span>
+        </div>
+      </form>
+
+      <button class="popup__btn btn-reset js-modal-close" aria-label="Закрыть модальное окно">
+        <div class="hamburger-lines hamburger-lines--active hamburger-lines--dark">
+          <span class="hamburger-lines__line line1"></span>
+          <span class="hamburger-lines__line line2"></span>
+          <span class="hamburger-lines__line line3"></span>
+        </div>
+      </button>
+    </div>
+  </div>
+
+  <div class="popup__container graph-modal__container write-us" role="dialog" aria-modal="true"
+    data-graph-target="parts-modal">
+    <div class="graph-modal__content">
+      <h3 class="popup__title title">Ремкомплект Rexroth</h3>
+
+      <div class="popup__body">
+        <img class="popup__body-img" src="img/item-img.jpg" alt="Картинка">
+
+        <div class="popup__body-right">
+          <span class="popup__body-descr">R921851968 Rexroth</span>
+          <div class="popup__body-price-block">
+            <span class="popup__body-price">Цена:</span>
+            <span class="popup__body-price-num">40 000 ₽</span>
+          </div>
+        </div>
+      </div>
+
+      <form class="form" id="write-us-popup-form" action="#" novalidate="novalidate">
+        <div class="form__block">
+          <div class="form__input-wrapper">
+            <input class="form__input input-name" type="text" id="write-us-popup-form-name" placeholder=""
+              data-validate-field="name">
+            <label class="form__placeholder" for="write-us-popup-form-name">Ваше имя</label>
+          </div>
+
+          <div class="form__input-wrapper">
+            <input class="form__input input-tel" type="tel" id="write-us-popup-form-phone" placeholder=""
+              data-validate-field="phone" inputmode="text">
+            <label class="form__placeholder" for="write-us-popup-form-phone">Телефон <span>*</span></label>
+          </div>
+        </div>
+
+
+        <div class="form__block">
+          <div class="form__input-wrapper">
+            <input class="form__input input-mail" type="text" id="write-us-popup-form-email" placeholder=""
+              data-validate-field="mail">
+            <label class="form__placeholder" for="email">Email <span>*</span></label>
+          </div>
+
+          <div class="form__input-wrapper">
+            <input class="form__input input-company" type="text" id="company" placeholder=""
+              data-validate-field="company">
+            <label class="form__placeholder" for="company">Компания <span>*</span></label>
+          </div>
+        </div>
+
+        <div class="form__input-wrapper form__input-wrapper--margin">
+          <textarea class="form__textarea input-textarea" id="textarea" placeholder=""
+            data-validate-field="textarea"></textarea>
+          <label class="form__placeholder" for="textarea">Комментарий <span>*</span></label>
+        </div>
+
+
+        <button class="form__btn form__btn--width button button--orange cropped-corner">
+          Отправить
+          <svg width="19" height="16" viewBox="0 0 19 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 8H17M17 8L10 1M17 8L10 15" stroke="white" stroke-width="2.5"></path>
+          </svg>
+        </button>
+      </form>
+
+      <button class="popup__btn btn-reset js-modal-close" aria-label="Закрыть модальное окно">
+        <div class="hamburger-lines hamburger-lines--active hamburger-lines--dark">
+          <span class="hamburger-lines__line line1"></span>
+          <span class="hamburger-lines__line line2"></span>
+          <span class="hamburger-lines__line line3"></span>
+        </div>
+      </button>
+    </div>
+  </div>
+</div>
