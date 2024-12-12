@@ -29,17 +29,16 @@
     background-color: var(--white-color);
     width: calc(100% - 12px);
     position: absolute;
-    top: 50%;
+    top: 10px;
     left: 11px;
-    transform: translateY(-50%);
+    z-index: 2;
+    height: 16px;
+    display: flex;
+    align-items: center;
     transition:
       top 0.3s ease-in-out,
       font-size 0.3s ease-in-out,
       transform 0.3s ease-in-out;
-    z-index: 2;
-    height: 20px;
-    display: flex;
-    align-items: center;
 
     span {
       color: var(--accent-color);
@@ -54,13 +53,13 @@
   &__input:focus + .form__placeholder,
   &__input:not(:placeholder-shown) + .form__placeholder {
     font-size: 12px;
-    top: 12px;
+    top: 2px;
   }
 
   &__textarea:focus + .form__placeholder,
   &__textarea:not(:placeholder-shown) + .form__placeholder {
     font-size: 12px;
-    top: 12px;
+    top: 2px;
   }
 
   &__input {

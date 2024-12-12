@@ -154,6 +154,10 @@
   .form__textarea {
     border: 1px solid var(--grey-light-bg-color);
   }
+
+  .form__textarea {
+    height: 108px;
+  }
 }
 
 .callback {
