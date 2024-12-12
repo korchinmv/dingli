@@ -102,7 +102,6 @@
           </div>
         </div>
 
-
         <div class="form__block">
           <div class="form__input-wrapper">
             <input class="form__input input-mail" type="text" id="write-us-popup-form-email" placeholder=""
@@ -164,7 +163,7 @@
         </div>
       </div>
 
-      <form class="form" id="write-us-popup-form" action="#" novalidate="novalidate">
+      <form class="form" id="parts-popup-form" action="#" novalidate="novalidate">
         <div class="form__block">
           <div class="form__input-wrapper">
             <input class="form__input input-name" type="text" id="write-us-popup-form-name" placeholder=""
@@ -214,7 +213,7 @@
 
           <div class="form__checkboxes-wrap">
             <label class="form__checkbox custom-checkbox">
-              <input class="custom-checkbox__input input-checkbox visually-hidden" type="checkbox"
+              <input class="custom-checkbox__input input-checkbox-confirm visually-hidden" type="checkbox"
                 data-validate-field="checkbox">
               <span class="custom-checkbox__span"></span>
             </label>
@@ -246,7 +245,7 @@
     <div class="graph-modal__content">
       <h3 class="popup__title title">Заявка на запчасти</h3>
 
-      <form class="form" id="write-us-popup-form" action="#" novalidate="novalidate">
+      <form class="form" id="parts-requests-popup-form" action="#" novalidate="novalidate">
         <div class="form__block">
           <div class="form__input-wrapper">
             <input class="form__input input-name" type="text" id="write-us-popup-form-name" placeholder=""
@@ -333,7 +332,166 @@
 
           <div class="form__checkboxes-wrap">
             <label class="form__checkbox custom-checkbox">
+              <input class="custom-checkbox__input input-checkbox-confirm visually-hidden" type="checkbox"
+                data-validate-field="checkbox">
+              <span class="custom-checkbox__span"></span>
+            </label>
+
+            <span class="form__text">Отправить письмо с подтверждением заявки</span>
+          </div>
+        </div>
+
+        <button class="form__btn form__btn--width button button--orange cropped-corner">
+          Отправить
+          <svg width="19" height="16" viewBox="0 0 19 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 8H17M17 8L10 1M17 8L10 15" stroke="white" stroke-width="2.5"></path>
+          </svg>
+        </button>
+      </form>
+
+      <button class="popup__btn btn-reset js-modal-close" aria-label="Закрыть модальное окно">
+        <div class="hamburger-lines hamburger-lines--active hamburger-lines--dark">
+          <span class="hamburger-lines__line line1"></span>
+          <span class="hamburger-lines__line line2"></span>
+          <span class="hamburger-lines__line line3"></span>
+        </div>
+      </button>
+    </div>
+  </div>
+
+  <div class="popup__container graph-modal__container buy" role="dialog" aria-modal="true"
+    data-graph-target="buy-modal">
+    <div class="graph-modal__content">
+      <h3 class="popup__title title">Коленчатый подъемник
+        Dingli BA16CRT2</h3>
+
+      <div class="popup__body technic-card">
+        <img class="popup__body-img" src="img/catalog/kolen.png" alt="Картинка">
+
+        <div class="popup__body-right">
+          <ul class="technic-card__list">
+            <li class="technic-card__item">
+              <span class="technic-card__item-left">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g opacity="0.6">
+                    <path
+                      d="M2.5 8.33329V13.3333M10 4.16663V6.66663M8.33333 4.16663H11.6667M4.16667 10.8333H2.5M5 8.33329H6.66667L8.33333 6.66663H11.1517C11.3064 6.66671 11.458 6.70986 11.5896 6.79125C11.7212 6.87264 11.8275 6.98906 11.8967 7.12746L13.1033 9.53913C13.1725 9.67753 13.2788 9.79394 13.4104 9.87533C13.542 9.95672 13.6936 9.99988 13.8483 9.99996H15V8.33329H16.6667C16.8877 8.33329 17.0996 8.42109 17.2559 8.57737C17.4122 8.73365 17.5 8.94561 17.5 9.16663V14.1666C17.5 14.3876 17.4122 14.5996 17.2559 14.7559C17.0996 14.9122 16.8877 15 16.6667 15H15V13.3333H12.5V15C12.5 15.221 12.4122 15.4329 12.2559 15.5892C12.0996 15.7455 11.8877 15.8333 11.6667 15.8333H8.77917C8.64201 15.8333 8.50696 15.7995 8.38601 15.7348C8.26507 15.6701 8.16196 15.5766 8.08583 15.4625L6.66667 13.3333H5V8.33329Z"
+                      stroke="#3E3A39" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </g>
+                </svg>
+
+                Тип питания</span>
+              <span class="technic-card__item-right">Электро</span>
+            </li>
+            <li class="technic-card__item">
+              <span class="technic-card__item-left">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g opacity="0.6">
+                    <path
+                      d="M16 3H4M16 17H4M6.001 12.3396L9.99601 15.4507M9.99601 15.4507L14.006 12.3396M9.99601 15.4507V4.56178M6.001 7.67289L9.99601 4.56178M9.99601 4.56178L14.006 7.67289"
+                      stroke="#3E3A39" stroke-width="2" stroke-linecap="square" stroke-linejoin="round"></path>
+                  </g>
+                </svg>
+                Рабочая высота</span>
+              <span class="technic-card__item-right">10,8&nbsp;м</span>
+            </li>
+            <li class="technic-card__item">
+              <span class="technic-card__item-left">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g opacity="0.6">
+                    <path
+                      d="M7.5 4.1665C7.5 4.82955 7.76339 5.46543 8.23223 5.93427C8.70107 6.40311 9.33696 6.6665 10 6.6665C10.663 6.6665 11.2989 6.40311 11.7678 5.93427C12.2366 5.46543 12.5 4.82955 12.5 4.1665C12.5 3.50346 12.2366 2.86758 11.7678 2.39874C11.2989 1.9299 10.663 1.6665 10 1.6665C9.33696 1.6665 8.70107 1.9299 8.23223 2.39874C7.76339 2.86758 7.5 3.50346 7.5 4.1665Z"
+                      stroke="#3E3A39" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path
+                      d="M16.6654 16.6665H3.33203C3.65591 14.4977 5.02756 6.6665 5.02756 6.6665H14.9698C14.9698 6.6665 16.3415 14.4977 16.6654 16.6665Z"
+                      stroke="#3E3A39" stroke-width="2" stroke-linecap="round"></path>
+                  </g>
+                </svg>
+
+                Грузоподъемность</span>
+              <span class="technic-card__item-right">227 кг</span>
+            </li>
+            <li class="technic-card__item">
+              <span class="technic-card__item-left">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g opacity="0.6">
+                    <path
+                      d="M16.8 2H3.2C2.88174 2 2.57652 2.12643 2.35147 2.35147C2.12643 2.57652 2 2.88174 2 3.2V16.8C2 17.1183 2.12643 17.4235 2.35147 17.6485C2.57652 17.8736 2.88174 18 3.2 18H16.8C17.1183 18 17.4235 17.8736 17.6485 17.6485C17.8736 17.4235 18 17.1183 18 16.8V3.2C18 2.88174 17.8736 2.57652 17.6485 2.35147C17.4235 2.12643 17.1183 2 16.8 2Z"
+                      stroke="#3E3A39" stroke-width="2" stroke-linejoin="round"></path>
+                    <path
+                      d="M5 7.93897C6.38542 6.2723 8.05208 5.43896 10 5.43896C11.9479 5.43896 13.6146 6.2723 15 7.93897"
+                      stroke="#3E3A39" stroke-width="2" stroke-linecap="round"></path>
+                    <path
+                      d="M10 12.9165C10.3315 12.9165 10.6495 12.7848 10.8839 12.5504C11.1183 12.316 11.25 11.998 11.25 11.6665C11.25 11.335 11.1183 11.017 10.8839 10.7826C10.6495 10.5482 10.3315 10.4165 10 10.4165C9.66848 10.4165 9.35054 10.5482 9.11612 10.7826C8.8817 11.017 8.75 11.335 8.75 11.6665C8.75 11.998 8.8817 12.316 9.11612 12.5504C9.35054 12.7848 9.66848 12.9165 10 12.9165Z"
+                      fill="#3E3A39"></path>
+                    <path d="M7.91797 8.75L10.0046 11.6667" stroke="#3E3A39" stroke-width="2" stroke-linecap="round">
+                    </path>
+                  </g>
+                </svg>
+
+                Вес</span>
+              <span class="technic-card__item-right">8 650 кг</span>
+            </li>
+          </ul>
+
+          <div class="popup__body-price-block">
+            <span class="popup__body-price">Цена:</span>
+            <span class="popup__body-price-num">40 000 ₽</span>
+          </div>
+        </div>
+      </div>
+
+      <form class="form" id="buy-form" action="#" novalidate="novalidate">
+        <div class="form__block">
+          <div class="form__input-wrapper">
+            <input class="form__input input-name" type="text" id="write-us-popup-form-name" placeholder=""
+              data-validate-field="name">
+            <label class="form__placeholder" for="write-us-popup-form-name">Ваше имя</label>
+          </div>
+
+          <div class="form__input-wrapper">
+            <input class="form__input input-tel" type="tel" id="write-us-popup-form-phone" placeholder=""
+              data-validate-field="phone" inputmode="text">
+            <label class="form__placeholder" for="write-us-popup-form-phone">Телефон <span>*</span></label>
+          </div>
+        </div>
+
+        <div class="form__block">
+          <div class="form__input-wrapper">
+            <input class="form__input input-mail" type="text" id="write-us-popup-form-email" placeholder=""
+              data-validate-field="mail">
+            <label class="form__placeholder" for="email">Email <span>*</span></label>
+          </div>
+
+          <div class="form__input-wrapper">
+            <input class="form__input input-company" type="text" id="company" placeholder=""
+              data-validate-field="company">
+            <label class="form__placeholder" for="company">Компания <span>*</span></label>
+          </div>
+        </div>
+
+        <div class="form__input-wrapper form__input-wrapper--margin">
+          <textarea class="form__textarea input-textarea" id="textarea" placeholder=""
+            data-validate-field="textarea"></textarea>
+          <label class="form__placeholder" for="textarea">Комментарий <span>*</span></label>
+        </div>
+
+        <div class="form__checkboxes">
+          <div class="form__checkboxes-wrap">
+            <label class="form__checkbox custom-checkbox">
               <input class="custom-checkbox__input input-checkbox visually-hidden" type="checkbox"
+                data-validate-field="checkbox">
+              <span class="custom-checkbox__span"></span>
+            </label>
+
+            <span class="form__text">Согласен с <a class="form__text form__text--accent" href="#"
+                target="_blank">политикой
+                конфиденциальности</a></span>
+          </div>
+
+          <div class="form__checkboxes-wrap">
+            <label class="form__checkbox custom-checkbox">
+              <input class="custom-checkbox__input input-checkbox-confirm visually-hidden" type="checkbox"
                 data-validate-field="checkbox">
               <span class="custom-checkbox__span"></span>
             </label>

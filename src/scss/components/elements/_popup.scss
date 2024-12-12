@@ -76,8 +76,8 @@
 
   &__btn {
     position: absolute;
-    right: 16px;
-    top: 24px;
+    right: 6px;
+    top: 18px;
     opacity: 0.6;
   }
 
@@ -122,9 +122,6 @@
       font-size: 14px;
       margin-bottom: 16px;
     }
-  }
-
-  &__body-price-block {
   }
 
   &__body-price {
@@ -192,7 +189,8 @@
 }
 
 .parts,
-.parts-requests {
+.parts-requests,
+.buy {
   max-width: 668px;
   width: 100%;
 
@@ -203,9 +201,15 @@
   .form__checkboxes-wrap {
     display: flex;
     align-items: center;
+    position: relative;
+
+    .just-validate-error-label {
+      left: 30px;
+      bottom: -12px;
+    }
 
     &:not(:last-child) {
-      margin-bottom: 8px;
+      margin-bottom: 12px;
     }
   }
 
@@ -239,7 +243,7 @@
 
 .parts-requests {
   .form__file-lable {
-    margin: 8px 0 16px 0;
+    margin: 12px 0 16px 0;
   }
 
   .form__dwd-file {
@@ -282,5 +286,48 @@
 
   &__icon {
     margin-right: 8px;
+  }
+}
+
+.buy {
+  .popup__body {
+    flex-direction: row;
+    justify-content: space-between;
+
+    @media screen and (width <= 768px) {
+      flex-direction: column;
+    }
+  }
+
+  .popup__body-img {
+    width: 286px;
+    height: 208px;
+    object-fit: contain;
+
+    @media screen and (width <= 768px) {
+      width: 100%;
+      margin-bottom: 16px;
+    }
+  }
+
+  .technic-card {
+    padding: 0 0 32px 0;
+  }
+
+  .technic-card__list {
+    max-width: 286px;
+    width: 100%;
+
+    @media screen and (width <= 768px) {
+      max-width: 100%;
+    }
+  }
+
+  .technic-card__item-left {
+    opacity: 0.6;
+  }
+
+  .popup__body-right {
+    flex-grow: 1;
   }
 }
