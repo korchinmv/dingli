@@ -48,6 +48,10 @@
     &--small-top {
       top: 20px;
     }
+
+    &--centered {
+      top: 17px;
+    }
   }
 
   &__input:focus + .form__placeholder,

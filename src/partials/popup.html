@@ -1,520 +1,525 @@
 <div class="popup graph-modal">
-	<div class="popup__container graph-modal__container" role="dialog" aria-modal="true" data-graph-target="city-modal">
-		<div class="graph-modal__content">
-
-			<h3 class="popup__title title">Выберите город</h3>
-
-			<div class="popup__wrapper">
-
-				<ul class="popup__city-list">
-					<li class="popup__city-item"><a class="popup__city-link" href="#">Москва</a></li>
-					<li class="popup__city-item"><a class="popup__city-link" href="#">Санкт-Петербург</a></li>
-					<li class="popup__city-item"><a class="popup__city-link" href="#">Ростов-на-Дону</a></li>
-					<li class="popup__city-item"><a class="popup__city-link" href="#">Казань</a></li>
-					<li class="popup__city-item"><a class="popup__city-link" href="#">Краснодар</a></li>
-					<li class="popup__city-item"><a class="popup__city-link" href="#">Новосибирск</a></li>
-					<li class="popup__city-item"><a class="popup__city-link" href="#">Екатеринбург</a></li>
-					<li class="popup__city-item"><a class="popup__city-link" href="#">Самара</a></li>
-					<li class="popup__city-item"><a class="popup__city-link" href="#">Пермь</a></li>
-					<li class="popup__city-item"><a class="popup__city-link" href="#">Нижний Новгород</a></li>
-				</ul>
-
-				<ul class="popup__city-list">
-					<li class="popup__city-item"><a class="popup__city-link" href="#">Челябинск</a></li>
-					<li class="popup__city-item"><a class="popup__city-link" href="#">Владивосток</a></li>
-					<li class="popup__city-item"><a class="popup__city-link" href="#">Уфа</a></li>
-					<li class="popup__city-item"><a class="popup__city-link" href="#">Ставрополь</a></li>
-					<li class="popup__city-item"><a class="popup__city-link" href="#">Симферополь</a></li>
-				</ul>
-			</div>
-		</div>
-
-		<p class="popup__city-text">Не нашли свой город? У нас есть <a class="popup__delivery" href="#">доставка по России и
-				странам СНГ</a>.</p>
-
-		<button class="popup__btn btn-reset js-modal-close" aria-label="Закрыть модальное окно">
-			<div class="hamburger-lines hamburger-lines--active hamburger-lines--dark">
-				<span class="hamburger-lines__line line1"></span>
-				<span class="hamburger-lines__line line2"></span>
-				<span class="hamburger-lines__line line3"></span>
-			</div>
-		</button>
-	</div>
-
-	<div class="popup__container graph-modal__container callback" role="dialog" aria-modal="true"
-		data-graph-target="call-modal">
-		<div class="graph-modal__content">
-			<h3 class="popup__title title">Заказать звонок</h3>
-
-			<form class="popup__form form" id="callback-popup-form" action="#" novalidate="novalidate">
-				<div class="form__input-wrapper form__input-wrapper--margin">
-					<input class="form__input input-name" type="text" id="callback-popup-form-name" placeholder=""
-						data-validate-field="name">
-					<label class="form__placeholder" for="callback-popup-form-name">Ваше имя</label>
-				</div>
-
-				<div class="form__input-wrapper form__input-wrapper--margin">
-					<input class="form__input input-tel" type="tel" id="callback-popup-form-phone" placeholder=""
-						data-validate-field="phone" inputmode="text">
-					<label class="form__placeholder" for="callback-popup-form-phone">Телефон <span>*</span></label>
-				</div>
-
-				<button class="form__btn button button--orange cropped-corner">
-					Отправить
-					<svg width="19" height="16" viewBox="0 0 19 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-						<path d="M0 8H17M17 8L10 1M17 8L10 15" stroke="white" stroke-width="2.5"></path>
-					</svg>
-				</button>
-
-				<span class="form__text">Оставляя заявку, вы&nbsp;даете согласие <a class="form__text form__text--accent"
-						href="#">на&nbsp;обработку персональных данных</a></span>
-			</form>
-
-			<button class="popup__btn btn-reset js-modal-close" aria-label="Закрыть модальное окно">
-				<div class="hamburger-lines hamburger-lines--active hamburger-lines--dark">
-					<span class="hamburger-lines__line line1"></span>
-					<span class="hamburger-lines__line line2"></span>
-					<span class="hamburger-lines__line line3"></span>
-				</div>
-			</button>
-		</div>
-	</div>
-
-	<div class="popup__container graph-modal__container write-us" role="dialog" aria-modal="true"
-		data-graph-target="write-modal">
-		<div class="graph-modal__content">
-			<h3 class="popup__title title">Написать нам</h3>
-
-			<p class="popup__text">Оставьте заявку и наши специалисты свяжутся с вами</p>
-
-			<form class="form" id="write-us-popup-form" action="#" novalidate="novalidate">
-				<div class="form__block">
-					<div class="form__input-wrapper">
-						<input class="form__input input-name" type="text" id="write-us-popup-form-name" placeholder=""
-							data-validate-field="name">
-						<label class="form__placeholder" for="write-us-popup-form-name">Ваше имя</label>
-					</div>
-
-					<div class="form__input-wrapper">
-						<input class="form__input input-tel" type="tel" id="write-us-popup-form-phone" placeholder=""
-							data-validate-field="phone" inputmode="text">
-						<label class="form__placeholder" for="write-us-popup-form-phone">Телефон <span>*</span></label>
-					</div>
-				</div>
-
-				<div class="form__block">
-					<div class="form__input-wrapper">
-						<input class="form__input input-mail" type="text" id="write-us-popup-form-email" placeholder=""
-							data-validate-field="mail">
-						<label class="form__placeholder" for="email">Email <span>*</span></label>
-					</div>
-
-					<div class="form__input-wrapper">
-						<input class="form__input input-company" type="text" id="company" placeholder=""
-							data-validate-field="company">
-						<label class="form__placeholder" for="company">Компания <span>*</span></label>
-					</div>
-				</div>
-
-				<div class="form__input-wrapper form__input-wrapper--margin">
-					<textarea class="form__textarea input-textarea" id="textarea" placeholder=""
-						data-validate-field="textarea"></textarea>
-					<label class="form__placeholder" for="textarea">Комментарий <span>*</span></label>
-				</div>
-
-				<div class="form__block">
-					<button class="form__btn form__btn--width button button--orange cropped-corner">
-						Отправить
-						<svg width="19" height="16" viewBox="0 0 19 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-							<path d="M0 8H17M17 8L10 1M17 8L10 15" stroke="white" stroke-width="2.5"></path>
-						</svg>
-					</button>
-
-					<span class="form__text">Оставляя заявку, вы&nbsp;даете согласие <a class="form__text form__text--accent"
-							href="#">на&nbsp;обработку персональных данных</a>
-					</span>
-				</div>
-			</form>
-
-			<button class="popup__btn btn-reset js-modal-close" aria-label="Закрыть модальное окно">
-				<div class="hamburger-lines hamburger-lines--active hamburger-lines--dark">
-					<span class="hamburger-lines__line line1"></span>
-					<span class="hamburger-lines__line line2"></span>
-					<span class="hamburger-lines__line line3"></span>
-				</div>
-			</button>
-		</div>
-	</div>
-
-	<div class="popup__container graph-modal__container parts" role="dialog" aria-modal="true"
-		data-graph-target="parts-modal">
-		<div class="graph-modal__content">
-			<h3 class="popup__title title">Ремкомплект Rexroth</h3>
-
-			<div class="popup__body">
-				<img class="popup__body-img" src="img/item-img.jpg" alt="Картинка">
-
-				<div class="popup__body-right">
-					<span class="popup__body-descr">R921851968 Rexroth</span>
-					<div class="popup__body-price-block">
-						<span class="popup__body-price">Цена:</span>
-						<span class="popup__body-price-num">40 000 ₽</span>
-					</div>
-				</div>
-			</div>
-
-			<form class="form" id="parts-popup-form" action="#" novalidate="novalidate">
-				<div class="form__block">
-					<div class="form__input-wrapper">
-						<input class="form__input input-name" type="text" id="write-us-popup-form-name" placeholder=""
-							data-validate-field="name">
-						<label class="form__placeholder" for="write-us-popup-form-name">Ваше имя</label>
-					</div>
-
-					<div class="form__input-wrapper">
-						<input class="form__input input-tel" type="tel" id="write-us-popup-form-phone" placeholder=""
-							data-validate-field="phone" inputmode="text">
-						<label class="form__placeholder" for="write-us-popup-form-phone">Телефон <span>*</span></label>
-					</div>
-				</div>
-
-				<div class="form__block">
-					<div class="form__input-wrapper">
-						<input class="form__input input-mail" type="text" id="write-us-popup-form-email" placeholder=""
-							data-validate-field="mail">
-						<label class="form__placeholder" for="email">Email <span>*</span></label>
-					</div>
-
-					<div class="form__input-wrapper">
-						<input class="form__input input-company" type="text" id="company" placeholder=""
-							data-validate-field="company">
-						<label class="form__placeholder" for="company">Компания <span>*</span></label>
-					</div>
-				</div>
-
-				<div class="form__input-wrapper form__input-wrapper--margin">
-					<textarea class="form__textarea input-textarea" id="textarea" placeholder=""
-						data-validate-field="textarea"></textarea>
-					<label class="form__placeholder" for="textarea">Комментарий <span>*</span></label>
-				</div>
-
-				<div class="form__checkboxes">
-					<div class="form__checkboxes-wrap">
-						<label class="form__checkbox custom-checkbox">
-							<input class="custom-checkbox__input input-checkbox visually-hidden" type="checkbox"
-								data-validate-field="checkbox">
-							<span class="custom-checkbox__span"></span>
-						</label>
-
-						<span class="form__text">Согласен с <a class="form__text form__text--accent" href="#"
-								target="_blank">политикой
-								конфиденциальности</a></span>
-					</div>
-
-					<div class="form__checkboxes-wrap">
-						<label class="form__checkbox custom-checkbox">
-							<input class="custom-checkbox__input input-checkbox-confirm visually-hidden" type="checkbox"
-								data-validate-field="checkbox">
-							<span class="custom-checkbox__span"></span>
-						</label>
-
-						<span class="form__text">Отправить письмо с подтверждением заявки</span>
-					</div>
-				</div>
-
-				<button class="form__btn form__btn--width button button--orange cropped-corner">
-					Отправить
-					<svg width="19" height="16" viewBox="0 0 19 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-						<path d="M0 8H17M17 8L10 1M17 8L10 15" stroke="white" stroke-width="2.5"></path>
-					</svg>
-				</button>
-			</form>
-
-			<button class="popup__btn btn-reset js-modal-close" aria-label="Закрыть модальное окно">
-				<div class="hamburger-lines hamburger-lines--active hamburger-lines--dark">
-					<span class="hamburger-lines__line line1"></span>
-					<span class="hamburger-lines__line line2"></span>
-					<span class="hamburger-lines__line line3"></span>
-				</div>
-			</button>
-		</div>
-	</div>
-
-	<div class="popup__container graph-modal__container parts-requests" role="dialog" aria-modal="true"
-		data-graph-target="parts-requests-modal">
-		<div class="graph-modal__content">
-			<h3 class="popup__title title">Заявка на запчасти</h3>
-
-			<form class="form" id="parts-requests-popup-form" action="#" novalidate="novalidate">
-				<div class="form__block">
-					<div class="form__input-wrapper">
-						<input class="form__input input-name" type="text" id="write-us-popup-form-name" placeholder=""
-							data-validate-field="name">
-						<label class="form__placeholder" for="write-us-popup-form-name">Ваше имя</label>
-					</div>
-
-					<div class="form__input-wrapper">
-						<input class="form__input input-tel" type="tel" id="write-us-popup-form-phone" placeholder=""
-							data-validate-field="phone" inputmode="text">
-						<label class="form__placeholder" for="write-us-popup-form-phone">Телефон <span>*</span></label>
-					</div>
-				</div>
-
-				<div class="form__block">
-					<div class="form__input-wrapper">
-						<input class="form__input input-mail" type="text" id="write-us-popup-form-email" placeholder=""
-							data-validate-field="mail">
-						<label class="form__placeholder" for="email">Email <span>*</span></label>
-					</div>
-
-					<div class="form__input-wrapper">
-						<input class="form__input input-company" type="text" id="company" placeholder=""
-							data-validate-field="company">
-						<label class="form__placeholder" for="company">Компания <span>*</span></label>
-					</div>
-				</div>
-
-				<div class="form__input-wrapper">
-					<textarea class="form__textarea input-textarea" id="textarea" placeholder=""
-						data-validate-field="textarea"></textarea>
-					<label class="form__placeholder" for="textarea">Комментарий <span>*</span></label>
-				</div>
-
-				<label class="form__file-lable input-file">
-					<svg class="input-file__icon" width="32" height="32" viewBox="0 0 32 32" fill="none"
-						xmlns="http://www.w3.org/2000/svg">
-						<path
-							d="M4.56641 15.9501C4.56605 16.1482 4.62451 16.3418 4.73437 16.5066C4.84422 16.6714 5.00053 16.7998 5.18348 16.8757C5.36643 16.9515 5.56777 16.9713 5.76199 16.9326C5.95621 16.8939 6.13455 16.7983 6.27441 16.6581L15.4644 7.46411C16.4022 6.52631 17.6742 5.99945 19.0004 5.99945C19.6571 5.99945 20.3074 6.1288 20.9141 6.38011C21.5208 6.63141 22.0721 6.99976 22.5364 7.46411C23.0008 7.92847 23.3691 8.47974 23.6204 9.08644C23.8717 9.69315 24.0011 10.3434 24.0011 11.0001C24.0011 11.6568 23.8717 12.3071 23.6204 12.9138C23.3691 13.5205 23.0008 14.0718 22.5364 14.5361L11.9304 25.1421C11.5532 25.5064 11.048 25.708 10.5236 25.7035C9.99921 25.6989 9.49759 25.4886 9.12677 25.1178C8.75595 24.7469 8.54562 24.2453 8.54106 23.7209C8.5365 23.1965 8.73809 22.6913 9.10241 22.3141L19.7084 11.7081C19.8014 11.6151 19.8751 11.5048 19.9255 11.3833C19.9758 11.2618 20.0017 11.1316 20.0017 11.0001C20.0017 10.8686 19.9758 10.7384 19.9255 10.6169C19.8751 10.4955 19.8014 10.3851 19.7084 10.2921C19.6154 10.1991 19.5051 10.1254 19.3836 10.0751C19.2621 10.0247 19.1319 9.99885 19.0004 9.99885C18.8689 9.99885 18.7387 10.0247 18.6172 10.0751C18.4958 10.1254 18.3854 10.1991 18.2924 10.2921L7.68641 20.9001C7.30437 21.2691 6.99964 21.7105 6.79 22.1985C6.58037 22.6865 6.47002 23.2114 6.46541 23.7425C6.46079 24.2736 6.562 24.8003 6.76312 25.2919C6.96424 25.7835 7.26126 26.2301 7.63683 26.6057C8.0124 26.9813 8.45901 27.2783 8.95059 27.4794C9.44218 27.6805 9.9689 27.7817 10.5 27.7771C11.0311 27.7725 11.556 27.6622 12.044 27.4525C12.532 27.2429 12.9734 26.9382 13.3424 26.5561L23.9484 15.9501C25.2612 14.6373 25.9988 12.8567 25.9988 11.0001C25.9988 9.1435 25.2612 7.36293 23.9484 6.05011C22.6356 4.73729 20.855 3.99976 18.9984 3.99976C17.1418 3.99976 15.3612 4.73729 14.0484 6.05011L4.86041 15.2421C4.7676 15.3352 4.69405 15.4456 4.64394 15.5671C4.59384 15.6885 4.56617 15.8187 4.56641 15.9501Z"
-							fill="#ED6C00" />
-					</svg>
-
-					<input class="input-file__input" type="file" name="file">
-					<span class="input-file__text">Выбрать файл</span>
-
-				</label>
-
-				<div class="form__dwd-file">
-					<div class="form__dwd-file-left">
-						<svg class="form__dwd-file-icon" width="32" height="32" viewBox="0 0 32 32" fill="none"
-							xmlns="http://www.w3.org/2000/svg">
-							<path
-								d="M26.0743 3.04761H5.92616C4.34309 3.04761 3.04785 4.34285 3.04785 5.92591V26.0741C3.04785 27.6571 4.34309 28.9524 5.92616 28.9524H26.0743C27.6574 28.9524 28.9526 27.6571 28.9526 26.0741V5.92591C28.9526 4.34285 27.6574 3.04761 26.0743 3.04761ZM12.4023 15.2804C12.4023 16.4317 11.3949 17.4391 10.2436 17.4391H8.80447V20.3174H6.64574V11.6825H10.2436C11.3949 11.6825 12.4023 12.6899 12.4023 13.8413V15.2804ZM19.5981 18.1587C19.5981 19.31 18.5907 20.3174 17.4394 20.3174H13.8415V11.6825H17.4394C18.5907 11.6825 19.5981 12.6899 19.5981 13.8413V18.1587ZM25.3547 13.8413H23.196V15.2804H25.3547V17.4391H23.196V20.3174H21.0373V11.6825H25.3547V13.8413ZM16.0002 13.8413H17.4394V18.1587H16.0002V13.8413ZM8.80447 13.8413H10.2436V15.2804H8.80447V13.8413Z"
-								fill="#ED6C00" />
-						</svg>
-
-						<div class="form__dwd-file-wrap">
-							<span class="form__dwd-file-name">Приложенный документ</span>
-							<span class="form__dwd-file-descr">PDF 161.41 KB</span>
-						</div>
-
-					</div>
-
-					<button class="form__dwd-file-delete">
-						<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-							<rect x="1" y="1" width="22" height="22" rx="11" stroke="#ED6C00" stroke-width="2" />
-							<path d="M8 8L16 16M16 8L8 16" stroke="#ED6C00" stroke-width="2" />
-						</svg>
-					</button>
-				</div>
-
-				<div class="form__checkboxes">
-					<div class="form__checkboxes-wrap">
-						<label class="form__checkbox custom-checkbox">
-							<input class="custom-checkbox__input input-checkbox visually-hidden" type="checkbox"
-								data-validate-field="checkbox">
-							<span class="custom-checkbox__span"></span>
-						</label>
-
-						<span class="form__text">Согласен с <a class="form__text form__text--accent" href="#"
-								target="_blank">политикой
-								конфиденциальности</a></span>
-					</div>
-
-					<div class="form__checkboxes-wrap">
-						<label class="form__checkbox custom-checkbox">
-							<input class="custom-checkbox__input input-checkbox-confirm visually-hidden" type="checkbox"
-								data-validate-field="checkbox">
-							<span class="custom-checkbox__span"></span>
-						</label>
-
-						<span class="form__text">Отправить письмо с подтверждением заявки</span>
-					</div>
-				</div>
-
-				<button class="form__btn form__btn--width button button--orange cropped-corner">
-					Отправить
-					<svg width="19" height="16" viewBox="0 0 19 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-						<path d="M0 8H17M17 8L10 1M17 8L10 15" stroke="white" stroke-width="2.5"></path>
-					</svg>
-				</button>
-			</form>
-
-			<button class="popup__btn btn-reset js-modal-close" aria-label="Закрыть модальное окно">
-				<div class="hamburger-lines hamburger-lines--active hamburger-lines--dark">
-					<span class="hamburger-lines__line line1"></span>
-					<span class="hamburger-lines__line line2"></span>
-					<span class="hamburger-lines__line line3"></span>
-				</div>
-			</button>
-		</div>
-	</div>
-
-	<div class="popup__container graph-modal__container buy" role="dialog" aria-modal="true"
-		data-graph-target="buy-modal">
-		<div class="graph-modal__content">
-			<h3 class="popup__title title">Коленчатый подъемник
-				Dingli BA16CRT2</h3>
-
-			<div class="popup__body technic-card">
-				<img class="popup__body-img" src="img/catalog/kolen.png" alt="Картинка">
-
-				<div class="popup__body-right">
-					<ul class="technic-card__list">
-						<li class="technic-card__item">
-							<span class="technic-card__item-left">
-								<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<g opacity="0.6">
-										<path
-											d="M2.5 8.33329V13.3333M10 4.16663V6.66663M8.33333 4.16663H11.6667M4.16667 10.8333H2.5M5 8.33329H6.66667L8.33333 6.66663H11.1517C11.3064 6.66671 11.458 6.70986 11.5896 6.79125C11.7212 6.87264 11.8275 6.98906 11.8967 7.12746L13.1033 9.53913C13.1725 9.67753 13.2788 9.79394 13.4104 9.87533C13.542 9.95672 13.6936 9.99988 13.8483 9.99996H15V8.33329H16.6667C16.8877 8.33329 17.0996 8.42109 17.2559 8.57737C17.4122 8.73365 17.5 8.94561 17.5 9.16663V14.1666C17.5 14.3876 17.4122 14.5996 17.2559 14.7559C17.0996 14.9122 16.8877 15 16.6667 15H15V13.3333H12.5V15C12.5 15.221 12.4122 15.4329 12.2559 15.5892C12.0996 15.7455 11.8877 15.8333 11.6667 15.8333H8.77917C8.64201 15.8333 8.50696 15.7995 8.38601 15.7348C8.26507 15.6701 8.16196 15.5766 8.08583 15.4625L6.66667 13.3333H5V8.33329Z"
-											stroke="#3E3A39" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-									</g>
-								</svg>
-
-								Тип питания</span>
-							<span class="technic-card__item-right">Электро</span>
-						</li>
-						<li class="technic-card__item">
-							<span class="technic-card__item-left">
-								<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<g opacity="0.6">
-										<path
-											d="M16 3H4M16 17H4M6.001 12.3396L9.99601 15.4507M9.99601 15.4507L14.006 12.3396M9.99601 15.4507V4.56178M6.001 7.67289L9.99601 4.56178M9.99601 4.56178L14.006 7.67289"
-											stroke="#3E3A39" stroke-width="2" stroke-linecap="square" stroke-linejoin="round"></path>
-									</g>
-								</svg>
-								Рабочая высота</span>
-							<span class="technic-card__item-right">10,8&nbsp;м</span>
-						</li>
-						<li class="technic-card__item">
-							<span class="technic-card__item-left">
-								<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<g opacity="0.6">
-										<path
-											d="M7.5 4.1665C7.5 4.82955 7.76339 5.46543 8.23223 5.93427C8.70107 6.40311 9.33696 6.6665 10 6.6665C10.663 6.6665 11.2989 6.40311 11.7678 5.93427C12.2366 5.46543 12.5 4.82955 12.5 4.1665C12.5 3.50346 12.2366 2.86758 11.7678 2.39874C11.2989 1.9299 10.663 1.6665 10 1.6665C9.33696 1.6665 8.70107 1.9299 8.23223 2.39874C7.76339 2.86758 7.5 3.50346 7.5 4.1665Z"
-											stroke="#3E3A39" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-										<path
-											d="M16.6654 16.6665H3.33203C3.65591 14.4977 5.02756 6.6665 5.02756 6.6665H14.9698C14.9698 6.6665 16.3415 14.4977 16.6654 16.6665Z"
-											stroke="#3E3A39" stroke-width="2" stroke-linecap="round"></path>
-									</g>
-								</svg>
-
-								Грузоподъемность</span>
-							<span class="technic-card__item-right">227 кг</span>
-						</li>
-						<li class="technic-card__item">
-							<span class="technic-card__item-left">
-								<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<g opacity="0.6">
-										<path
-											d="M16.8 2H3.2C2.88174 2 2.57652 2.12643 2.35147 2.35147C2.12643 2.57652 2 2.88174 2 3.2V16.8C2 17.1183 2.12643 17.4235 2.35147 17.6485C2.57652 17.8736 2.88174 18 3.2 18H16.8C17.1183 18 17.4235 17.8736 17.6485 17.6485C17.8736 17.4235 18 17.1183 18 16.8V3.2C18 2.88174 17.8736 2.57652 17.6485 2.35147C17.4235 2.12643 17.1183 2 16.8 2Z"
-											stroke="#3E3A39" stroke-width="2" stroke-linejoin="round"></path>
-										<path
-											d="M5 7.93897C6.38542 6.2723 8.05208 5.43896 10 5.43896C11.9479 5.43896 13.6146 6.2723 15 7.93897"
-											stroke="#3E3A39" stroke-width="2" stroke-linecap="round"></path>
-										<path
-											d="M10 12.9165C10.3315 12.9165 10.6495 12.7848 10.8839 12.5504C11.1183 12.316 11.25 11.998 11.25 11.6665C11.25 11.335 11.1183 11.017 10.8839 10.7826C10.6495 10.5482 10.3315 10.4165 10 10.4165C9.66848 10.4165 9.35054 10.5482 9.11612 10.7826C8.8817 11.017 8.75 11.335 8.75 11.6665C8.75 11.998 8.8817 12.316 9.11612 12.5504C9.35054 12.7848 9.66848 12.9165 10 12.9165Z"
-											fill="#3E3A39"></path>
-										<path d="M7.91797 8.75L10.0046 11.6667" stroke="#3E3A39" stroke-width="2" stroke-linecap="round">
-										</path>
-									</g>
-								</svg>
-
-								Вес</span>
-							<span class="technic-card__item-right">8 650 кг</span>
-						</li>
-					</ul>
-
-					<div class="popup__body-price-block">
-						<span class="popup__body-price">Цена:</span>
-						<span class="popup__body-price-num">40 000 ₽</span>
-					</div>
-				</div>
-			</div>
-
-			<form class="form" id="buy-form" action="#" novalidate="novalidate">
-				<div class="form__block">
-					<div class="form__input-wrapper">
-						<input class="form__input input-name" type="text" id="write-us-popup-form-name" placeholder=""
-							data-validate-field="name">
-						<label class="form__placeholder" for="write-us-popup-form-name">Ваше имя</label>
-					</div>
-
-					<div class="form__input-wrapper">
-						<input class="form__input input-tel" type="tel" id="write-us-popup-form-phone" placeholder=""
-							data-validate-field="phone" inputmode="text">
-						<label class="form__placeholder" for="write-us-popup-form-phone">Телефон <span>*</span></label>
-					</div>
-				</div>
-
-				<div class="form__block">
-					<div class="form__input-wrapper">
-						<input class="form__input input-mail" type="text" id="write-us-popup-form-email" placeholder=""
-							data-validate-field="mail">
-						<label class="form__placeholder" for="email">Email <span>*</span></label>
-					</div>
-
-					<div class="form__input-wrapper">
-						<input class="form__input input-company" type="text" id="company" placeholder=""
-							data-validate-field="company">
-						<label class="form__placeholder" for="company">Компания <span>*</span></label>
-					</div>
-				</div>
-
-				<div class="form__input-wrapper form__input-wrapper--margin">
-					<textarea class="form__textarea input-textarea" id="textarea" placeholder=""
-						data-validate-field="textarea"></textarea>
-					<label class="form__placeholder" for="textarea">Комментарий <span>*</span></label>
-				</div>
-
-				<div class="form__checkboxes">
-					<div class="form__checkboxes-wrap">
-						<label class="form__checkbox custom-checkbox">
-							<input class="custom-checkbox__input input-checkbox visually-hidden" type="checkbox"
-								data-validate-field="checkbox">
-							<span class="custom-checkbox__span"></span>
-						</label>
-
-						<span class="form__text">Согласен с <a class="form__text form__text--accent" href="#"
-								target="_blank">политикой
-								конфиденциальности</a></span>
-					</div>
-
-					<div class="form__checkboxes-wrap">
-						<label class="form__checkbox custom-checkbox">
-							<input class="custom-checkbox__input input-checkbox-confirm visually-hidden" type="checkbox"
-								data-validate-field="checkbox">
-							<span class="custom-checkbox__span"></span>
-						</label>
-
-						<span class="form__text">Отправить письмо с подтверждением заявки</span>
-					</div>
-				</div>
-
-				<button class="form__btn form__btn--width button button--orange cropped-corner">
-					Отправить
-					<svg width="19" height="16" viewBox="0 0 19 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-						<path d="M0 8H17M17 8L10 1M17 8L10 15" stroke="white" stroke-width="2.5"></path>
-					</svg>
-				</button>
-			</form>
-
-			<button class="popup__btn btn-reset js-modal-close" aria-label="Закрыть модальное окно">
-				<div class="hamburger-lines hamburger-lines--active hamburger-lines--dark">
-					<span class="hamburger-lines__line line1"></span>
-					<span class="hamburger-lines__line line2"></span>
-					<span class="hamburger-lines__line line3"></span>
-				</div>
-			</button>
-		</div>
-	</div>
+  <div class="popup__container graph-modal__container" role="dialog" aria-modal="true" data-graph-target="city-modal">
+    <div class="graph-modal__content">
+
+      <h3 class="popup__title title">Выберите город</h3>
+
+      <div class="popup__wrapper">
+
+        <ul class="popup__city-list">
+          <li class="popup__city-item"><a class="popup__city-link" href="#">Москва</a></li>
+          <li class="popup__city-item"><a class="popup__city-link" href="#">Санкт-Петербург</a></li>
+          <li class="popup__city-item"><a class="popup__city-link" href="#">Ростов-на-Дону</a></li>
+          <li class="popup__city-item"><a class="popup__city-link" href="#">Казань</a></li>
+          <li class="popup__city-item"><a class="popup__city-link" href="#">Краснодар</a></li>
+          <li class="popup__city-item"><a class="popup__city-link" href="#">Новосибирск</a></li>
+          <li class="popup__city-item"><a class="popup__city-link" href="#">Екатеринбург</a></li>
+          <li class="popup__city-item"><a class="popup__city-link" href="#">Самара</a></li>
+          <li class="popup__city-item"><a class="popup__city-link" href="#">Пермь</a></li>
+          <li class="popup__city-item"><a class="popup__city-link" href="#">Нижний Новгород</a></li>
+        </ul>
+
+        <ul class="popup__city-list">
+          <li class="popup__city-item"><a class="popup__city-link" href="#">Челябинск</a></li>
+          <li class="popup__city-item"><a class="popup__city-link" href="#">Владивосток</a></li>
+          <li class="popup__city-item"><a class="popup__city-link" href="#">Уфа</a></li>
+          <li class="popup__city-item"><a class="popup__city-link" href="#">Ставрополь</a></li>
+          <li class="popup__city-item"><a class="popup__city-link" href="#">Симферополь</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <p class="popup__city-text">Не нашли свой город? У нас есть <a class="popup__delivery" href="#">доставка по России и
+        странам СНГ</a>.</p>
+
+    <button class="popup__btn btn-reset js-modal-close" aria-label="Закрыть модальное окно">
+      <div class="hamburger-lines hamburger-lines--active hamburger-lines--dark">
+        <span class="hamburger-lines__line line1"></span>
+        <span class="hamburger-lines__line line2"></span>
+        <span class="hamburger-lines__line line3"></span>
+      </div>
+    </button>
+  </div>
+
+  <div class="popup__container graph-modal__container callback" role="dialog" aria-modal="true"
+    data-graph-target="call-modal">
+    <div class="graph-modal__content">
+      <h3 class="popup__title title">Заказать звонок</h3>
+
+      <form class="popup__form form" id="callback-popup-form" action="#" novalidate="novalidate">
+        <div class="form__input-wrapper form__input-wrapper--margin">
+          <input class="form__input input-name" type="text" id="callback-popup-form-name" placeholder=""
+            data-validate-field="name">
+          <label class="form__placeholder form__placeholder--centered" for="callback-popup-form-name">Ваше имя</label>
+        </div>
+
+        <div class="form__input-wrapper form__input-wrapper--margin">
+          <input class="form__input input-tel" type="tel" id="callback-popup-form-phone" placeholder=""
+            data-validate-field="phone" inputmode="text">
+          <label class="form__placeholder form__placeholder--centered" for="callback-popup-form-phone">Телефон
+            <span>*</span></label>
+        </div>
+
+        <button class="form__btn button button--orange cropped-corner">
+          Отправить
+          <svg width="19" height="16" viewBox="0 0 19 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 8H17M17 8L10 1M17 8L10 15" stroke="white" stroke-width="2.5"></path>
+          </svg>
+        </button>
+
+        <span class="form__text">Оставляя заявку, вы&nbsp;даете согласие <a class="form__text form__text--accent"
+            href="#">на&nbsp;обработку персональных данных</a></span>
+      </form>
+
+      <button class="popup__btn btn-reset js-modal-close" aria-label="Закрыть модальное окно">
+        <div class="hamburger-lines hamburger-lines--active hamburger-lines--dark">
+          <span class="hamburger-lines__line line1"></span>
+          <span class="hamburger-lines__line line2"></span>
+          <span class="hamburger-lines__line line3"></span>
+        </div>
+      </button>
+    </div>
+  </div>
+
+  <div class="popup__container graph-modal__container write-us" role="dialog" aria-modal="true"
+    data-graph-target="write-modal">
+    <div class="graph-modal__content">
+      <h3 class="popup__title title">Написать нам</h3>
+
+      <p class="popup__text">Оставьте заявку и наши специалисты свяжутся с вами</p>
+
+      <form class="form" id="write-us-popup-form" action="#" novalidate="novalidate">
+        <div class="form__block">
+          <div class="form__input-wrapper">
+            <input class="form__input input-name" type="text" id="write-us-popup-form-name" placeholder=""
+              data-validate-field="name">
+            <label class="form__placeholder form__placeholder--centered" for="write-us-popup-form-name">Ваше имя</label>
+          </div>
+
+          <div class="form__input-wrapper">
+            <input class="form__input input-tel" type="tel" id="write-us-popup-form-phone" placeholder=""
+              data-validate-field="phone" inputmode="text">
+            <label class="form__placeholder form__placeholder--centered" for="write-us-popup-form-phone">Телефон
+              <span>*</span></label>
+          </div>
+        </div>
+
+        <div class="form__block">
+          <div class="form__input-wrapper">
+            <input class="form__input input-mail" type="text" id="write-us-popup-form-email" placeholder=""
+              data-validate-field="mail">
+            <label class="form__placeholder form__placeholder--centered" for="email">Email <span>*</span></label>
+          </div>
+
+          <div class="form__input-wrapper">
+            <input class="form__input input-company" type="text" id="company" placeholder=""
+              data-validate-field="company">
+            <label class="form__placeholder form__placeholder--centered" for="company">Компания <span>*</span></label>
+          </div>
+        </div>
+
+        <div class="form__input-wrapper form__input-wrapper--margin">
+          <textarea class="form__textarea input-textarea" id="textarea" placeholder=""
+            data-validate-field="textarea"></textarea>
+          <label class="form__placeholder" for="textarea">Комментарий <span>*</span></label>
+        </div>
+
+        <div class="form__block">
+          <button class="form__btn form__btn--width button button--orange cropped-corner">
+            Отправить
+            <svg width="19" height="16" viewBox="0 0 19 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M0 8H17M17 8L10 1M17 8L10 15" stroke="white" stroke-width="2.5"></path>
+            </svg>
+          </button>
+
+          <span class="form__text">Оставляя заявку, вы&nbsp;даете согласие <a class="form__text form__text--accent"
+              href="#">на&nbsp;обработку персональных данных</a>
+          </span>
+        </div>
+      </form>
+
+      <button class="popup__btn btn-reset js-modal-close" aria-label="Закрыть модальное окно">
+        <div class="hamburger-lines hamburger-lines--active hamburger-lines--dark">
+          <span class="hamburger-lines__line line1"></span>
+          <span class="hamburger-lines__line line2"></span>
+          <span class="hamburger-lines__line line3"></span>
+        </div>
+      </button>
+    </div>
+  </div>
+
+  <div class="popup__container graph-modal__container parts" role="dialog" aria-modal="true"
+    data-graph-target="parts-modal">
+    <div class="graph-modal__content">
+      <h3 class="popup__title title">Ремкомплект Rexroth</h3>
+
+      <div class="popup__body">
+        <img class="popup__body-img" src="img/item-img.jpg" alt="Картинка">
+
+        <div class="popup__body-right">
+          <span class="popup__body-descr">R921851968 Rexroth</span>
+          <div class="popup__body-price-block">
+            <span class="popup__body-price">Цена:</span>
+            <span class="popup__body-price-num">40 000 ₽</span>
+          </div>
+        </div>
+      </div>
+
+      <form class="form" id="parts-popup-form" action="#" novalidate="novalidate">
+        <div class="form__block">
+          <div class="form__input-wrapper">
+            <input class="form__input input-name" type="text" id="write-us-popup-form-name" placeholder=""
+              data-validate-field="name">
+            <label class="form__placeholder form__placeholder--centered" for="write-us-popup-form-name">Ваше имя</label>
+          </div>
+
+          <div class="form__input-wrapper">
+            <input class="form__input input-tel" type="tel" id="write-us-popup-form-phone" placeholder=""
+              data-validate-field="phone" inputmode="text">
+            <label class="form__placeholder form__placeholder--centered" for="write-us-popup-form-phone">Телефон
+              <span>*</span></label>
+          </div>
+        </div>
+
+        <div class="form__block">
+          <div class="form__input-wrapper">
+            <input class="form__input input-mail" type="text" id="write-us-popup-form-email" placeholder=""
+              data-validate-field="mail">
+            <label class="form__placeholder form__placeholder--centered" for="email">Email <span>*</span></label>
+          </div>
+
+          <div class="form__input-wrapper">
+            <input class="form__input input-company" type="text" id="company" placeholder=""
+              data-validate-field="company">
+            <label class="form__placeholder form__placeholder--centered" for="company">Компания <span>*</span></label>
+          </div>
+        </div>
+
+        <div class="form__input-wrapper form__input-wrapper--margin">
+          <textarea class="form__textarea input-textarea" id="textarea" placeholder=""
+            data-validate-field="textarea"></textarea>
+          <label class="form__placeholder" for="textarea">Комментарий <span>*</span></label>
+        </div>
+
+        <div class="form__checkboxes">
+          <div class="form__checkboxes-wrap">
+            <label class="form__checkbox custom-checkbox">
+              <input class="custom-checkbox__input input-checkbox visually-hidden" type="checkbox"
+                data-validate-field="checkbox">
+              <span class="custom-checkbox__span"></span>
+            </label>
+
+            <span class="form__text">Согласен с <a class="form__text form__text--accent" href="#"
+                target="_blank">политикой
+                конфиденциальности</a></span>
+          </div>
+
+          <div class="form__checkboxes-wrap">
+            <label class="form__checkbox custom-checkbox">
+              <input class="custom-checkbox__input input-checkbox-confirm visually-hidden" type="checkbox"
+                data-validate-field="checkbox">
+              <span class="custom-checkbox__span"></span>
+            </label>
+
+            <span class="form__text">Отправить письмо с подтверждением заявки</span>
+          </div>
+        </div>
+
+        <button class="form__btn form__btn--width button button--orange cropped-corner">
+          Отправить
+          <svg width="19" height="16" viewBox="0 0 19 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 8H17M17 8L10 1M17 8L10 15" stroke="white" stroke-width="2.5"></path>
+          </svg>
+        </button>
+      </form>
+
+      <button class="popup__btn btn-reset js-modal-close" aria-label="Закрыть модальное окно">
+        <div class="hamburger-lines hamburger-lines--active hamburger-lines--dark">
+          <span class="hamburger-lines__line line1"></span>
+          <span class="hamburger-lines__line line2"></span>
+          <span class="hamburger-lines__line line3"></span>
+        </div>
+      </button>
+    </div>
+  </div>
+
+  <div class="popup__container graph-modal__container parts-requests" role="dialog" aria-modal="true"
+    data-graph-target="parts-requests-modal">
+    <div class="graph-modal__content">
+      <h3 class="popup__title title">Заявка на запчасти</h3>
+
+      <form class="form" id="parts-requests-popup-form" action="#" novalidate="novalidate">
+        <div class="form__block">
+          <div class="form__input-wrapper">
+            <input class="form__input input-name" type="text" id="write-us-popup-form-name" placeholder=""
+              data-validate-field="name">
+            <label class="form__placeholder form__placeholder--centered" for="write-us-popup-form-name">Ваше имя</label>
+          </div>
+
+          <div class="form__input-wrapper">
+            <input class="form__input input-tel" type="tel" id="write-us-popup-form-phone" placeholder=""
+              data-validate-field="phone" inputmode="text">
+            <label class="form__placeholder form__placeholder--centered" for="write-us-popup-form-phone">Телефон
+              <span>*</span></label>
+          </div>
+        </div>
+
+        <div class="form__block">
+          <div class="form__input-wrapper">
+            <input class="form__input input-mail" type="text" id="write-us-popup-form-email" placeholder=""
+              data-validate-field="mail">
+            <label class="form__placeholder form__placeholder--centered" for="email">Email <span>*</span></label>
+          </div>
+
+          <div class="form__input-wrapper">
+            <input class="form__input input-company" type="text" id="company" placeholder=""
+              data-validate-field="company">
+            <label class="form__placeholder form__placeholder--centered" for="company">Компания <span>*</span></label>
+          </div>
+        </div>
+
+        <div class="form__input-wrapper">
+          <textarea class="form__textarea input-textarea" id="textarea" placeholder=""
+            data-validate-field="textarea"></textarea>
+          <label class="form__placeholder" for="textarea">Комментарий <span>*</span></label>
+        </div>
+
+        <label class="form__file-lable input-file">
+          <svg class="input-file__icon" width="32" height="32" viewBox="0 0 32 32" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M4.56641 15.9501C4.56605 16.1482 4.62451 16.3418 4.73437 16.5066C4.84422 16.6714 5.00053 16.7998 5.18348 16.8757C5.36643 16.9515 5.56777 16.9713 5.76199 16.9326C5.95621 16.8939 6.13455 16.7983 6.27441 16.6581L15.4644 7.46411C16.4022 6.52631 17.6742 5.99945 19.0004 5.99945C19.6571 5.99945 20.3074 6.1288 20.9141 6.38011C21.5208 6.63141 22.0721 6.99976 22.5364 7.46411C23.0008 7.92847 23.3691 8.47974 23.6204 9.08644C23.8717 9.69315 24.0011 10.3434 24.0011 11.0001C24.0011 11.6568 23.8717 12.3071 23.6204 12.9138C23.3691 13.5205 23.0008 14.0718 22.5364 14.5361L11.9304 25.1421C11.5532 25.5064 11.048 25.708 10.5236 25.7035C9.99921 25.6989 9.49759 25.4886 9.12677 25.1178C8.75595 24.7469 8.54562 24.2453 8.54106 23.7209C8.5365 23.1965 8.73809 22.6913 9.10241 22.3141L19.7084 11.7081C19.8014 11.6151 19.8751 11.5048 19.9255 11.3833C19.9758 11.2618 20.0017 11.1316 20.0017 11.0001C20.0017 10.8686 19.9758 10.7384 19.9255 10.6169C19.8751 10.4955 19.8014 10.3851 19.7084 10.2921C19.6154 10.1991 19.5051 10.1254 19.3836 10.0751C19.2621 10.0247 19.1319 9.99885 19.0004 9.99885C18.8689 9.99885 18.7387 10.0247 18.6172 10.0751C18.4958 10.1254 18.3854 10.1991 18.2924 10.2921L7.68641 20.9001C7.30437 21.2691 6.99964 21.7105 6.79 22.1985C6.58037 22.6865 6.47002 23.2114 6.46541 23.7425C6.46079 24.2736 6.562 24.8003 6.76312 25.2919C6.96424 25.7835 7.26126 26.2301 7.63683 26.6057C8.0124 26.9813 8.45901 27.2783 8.95059 27.4794C9.44218 27.6805 9.9689 27.7817 10.5 27.7771C11.0311 27.7725 11.556 27.6622 12.044 27.4525C12.532 27.2429 12.9734 26.9382 13.3424 26.5561L23.9484 15.9501C25.2612 14.6373 25.9988 12.8567 25.9988 11.0001C25.9988 9.1435 25.2612 7.36293 23.9484 6.05011C22.6356 4.73729 20.855 3.99976 18.9984 3.99976C17.1418 3.99976 15.3612 4.73729 14.0484 6.05011L4.86041 15.2421C4.7676 15.3352 4.69405 15.4456 4.64394 15.5671C4.59384 15.6885 4.56617 15.8187 4.56641 15.9501Z"
+              fill="#ED6C00" />
+          </svg>
+
+          <input class="input-file__input" type="file" name="file">
+          <span class="input-file__text">Выбрать файл</span>
+
+        </label>
+
+        <div class="form__dwd-file">
+          <div class="form__dwd-file-left">
+            <svg class="form__dwd-file-icon" width="32" height="32" viewBox="0 0 32 32" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M26.0743 3.04761H5.92616C4.34309 3.04761 3.04785 4.34285 3.04785 5.92591V26.0741C3.04785 27.6571 4.34309 28.9524 5.92616 28.9524H26.0743C27.6574 28.9524 28.9526 27.6571 28.9526 26.0741V5.92591C28.9526 4.34285 27.6574 3.04761 26.0743 3.04761ZM12.4023 15.2804C12.4023 16.4317 11.3949 17.4391 10.2436 17.4391H8.80447V20.3174H6.64574V11.6825H10.2436C11.3949 11.6825 12.4023 12.6899 12.4023 13.8413V15.2804ZM19.5981 18.1587C19.5981 19.31 18.5907 20.3174 17.4394 20.3174H13.8415V11.6825H17.4394C18.5907 11.6825 19.5981 12.6899 19.5981 13.8413V18.1587ZM25.3547 13.8413H23.196V15.2804H25.3547V17.4391H23.196V20.3174H21.0373V11.6825H25.3547V13.8413ZM16.0002 13.8413H17.4394V18.1587H16.0002V13.8413ZM8.80447 13.8413H10.2436V15.2804H8.80447V13.8413Z"
+                fill="#ED6C00" />
+            </svg>
+
+            <div class="form__dwd-file-wrap">
+              <span class="form__dwd-file-name">Приложенный документ</span>
+              <span class="form__dwd-file-descr">PDF 161.41 KB</span>
+            </div>
+
+          </div>
+
+          <button class="form__dwd-file-delete">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="1" y="1" width="22" height="22" rx="11" stroke="#ED6C00" stroke-width="2" />
+              <path d="M8 8L16 16M16 8L8 16" stroke="#ED6C00" stroke-width="2" />
+            </svg>
+          </button>
+        </div>
+
+        <div class="form__checkboxes">
+          <div class="form__checkboxes-wrap">
+            <label class="form__checkbox custom-checkbox">
+              <input class="custom-checkbox__input input-checkbox visually-hidden" type="checkbox"
+                data-validate-field="checkbox">
+              <span class="custom-checkbox__span"></span>
+            </label>
+
+            <span class="form__text">Согласен с <a class="form__text form__text--accent" href="#"
+                target="_blank">политикой
+                конфиденциальности</a></span>
+          </div>
+
+          <div class="form__checkboxes-wrap">
+            <label class="form__checkbox custom-checkbox">
+              <input class="custom-checkbox__input input-checkbox-confirm visually-hidden" type="checkbox"
+                data-validate-field="checkbox">
+              <span class="custom-checkbox__span"></span>
+            </label>
+
+            <span class="form__text">Отправить письмо с подтверждением заявки</span>
+          </div>
+        </div>
+
+        <button class="form__btn form__btn--width button button--orange cropped-corner">
+          Отправить
+          <svg width="19" height="16" viewBox="0 0 19 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 8H17M17 8L10 1M17 8L10 15" stroke="white" stroke-width="2.5"></path>
+          </svg>
+        </button>
+      </form>
+
+      <button class="popup__btn btn-reset js-modal-close" aria-label="Закрыть модальное окно">
+        <div class="hamburger-lines hamburger-lines--active hamburger-lines--dark">
+          <span class="hamburger-lines__line line1"></span>
+          <span class="hamburger-lines__line line2"></span>
+          <span class="hamburger-lines__line line3"></span>
+        </div>
+      </button>
+    </div>
+  </div>
+
+  <div class="popup__container graph-modal__container buy" role="dialog" aria-modal="true"
+    data-graph-target="buy-modal">
+    <div class="graph-modal__content">
+      <h3 class="popup__title title">Коленчатый подъемник
+        Dingli BA16CRT2</h3>
+
+      <div class="popup__body technic-card">
+        <img class="popup__body-img" src="img/catalog/kolen.png" alt="Картинка">
+
+        <div class="popup__body-right">
+          <ul class="technic-card__list">
+            <li class="technic-card__item">
+              <span class="technic-card__item-left">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g opacity="0.6">
+                    <path
+                      d="M2.5 8.33329V13.3333M10 4.16663V6.66663M8.33333 4.16663H11.6667M4.16667 10.8333H2.5M5 8.33329H6.66667L8.33333 6.66663H11.1517C11.3064 6.66671 11.458 6.70986 11.5896 6.79125C11.7212 6.87264 11.8275 6.98906 11.8967 7.12746L13.1033 9.53913C13.1725 9.67753 13.2788 9.79394 13.4104 9.87533C13.542 9.95672 13.6936 9.99988 13.8483 9.99996H15V8.33329H16.6667C16.8877 8.33329 17.0996 8.42109 17.2559 8.57737C17.4122 8.73365 17.5 8.94561 17.5 9.16663V14.1666C17.5 14.3876 17.4122 14.5996 17.2559 14.7559C17.0996 14.9122 16.8877 15 16.6667 15H15V13.3333H12.5V15C12.5 15.221 12.4122 15.4329 12.2559 15.5892C12.0996 15.7455 11.8877 15.8333 11.6667 15.8333H8.77917C8.64201 15.8333 8.50696 15.7995 8.38601 15.7348C8.26507 15.6701 8.16196 15.5766 8.08583 15.4625L6.66667 13.3333H5V8.33329Z"
+                      stroke="#3E3A39" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </g>
+                </svg>
+
+                Тип питания</span>
+              <span class="technic-card__item-right">Электро</span>
+            </li>
+            <li class="technic-card__item">
+              <span class="technic-card__item-left">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g opacity="0.6">
+                    <path
+                      d="M16 3H4M16 17H4M6.001 12.3396L9.99601 15.4507M9.99601 15.4507L14.006 12.3396M9.99601 15.4507V4.56178M6.001 7.67289L9.99601 4.56178M9.99601 4.56178L14.006 7.67289"
+                      stroke="#3E3A39" stroke-width="2" stroke-linecap="square" stroke-linejoin="round"></path>
+                  </g>
+                </svg>
+                Рабочая высота</span>
+              <span class="technic-card__item-right">10,8&nbsp;м</span>
+            </li>
+            <li class="technic-card__item">
+              <span class="technic-card__item-left">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g opacity="0.6">
+                    <path
+                      d="M7.5 4.1665C7.5 4.82955 7.76339 5.46543 8.23223 5.93427C8.70107 6.40311 9.33696 6.6665 10 6.6665C10.663 6.6665 11.2989 6.40311 11.7678 5.93427C12.2366 5.46543 12.5 4.82955 12.5 4.1665C12.5 3.50346 12.2366 2.86758 11.7678 2.39874C11.2989 1.9299 10.663 1.6665 10 1.6665C9.33696 1.6665 8.70107 1.9299 8.23223 2.39874C7.76339 2.86758 7.5 3.50346 7.5 4.1665Z"
+                      stroke="#3E3A39" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path
+                      d="M16.6654 16.6665H3.33203C3.65591 14.4977 5.02756 6.6665 5.02756 6.6665H14.9698C14.9698 6.6665 16.3415 14.4977 16.6654 16.6665Z"
+                      stroke="#3E3A39" stroke-width="2" stroke-linecap="round"></path>
+                  </g>
+                </svg>
+
+                Грузоподъемность</span>
+              <span class="technic-card__item-right">227 кг</span>
+            </li>
+            <li class="technic-card__item">
+              <span class="technic-card__item-left">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g opacity="0.6">
+                    <path
+                      d="M16.8 2H3.2C2.88174 2 2.57652 2.12643 2.35147 2.35147C2.12643 2.57652 2 2.88174 2 3.2V16.8C2 17.1183 2.12643 17.4235 2.35147 17.6485C2.57652 17.8736 2.88174 18 3.2 18H16.8C17.1183 18 17.4235 17.8736 17.6485 17.6485C17.8736 17.4235 18 17.1183 18 16.8V3.2C18 2.88174 17.8736 2.57652 17.6485 2.35147C17.4235 2.12643 17.1183 2 16.8 2Z"
+                      stroke="#3E3A39" stroke-width="2" stroke-linejoin="round"></path>
+                    <path
+                      d="M5 7.93897C6.38542 6.2723 8.05208 5.43896 10 5.43896C11.9479 5.43896 13.6146 6.2723 15 7.93897"
+                      stroke="#3E3A39" stroke-width="2" stroke-linecap="round"></path>
+                    <path
+                      d="M10 12.9165C10.3315 12.9165 10.6495 12.7848 10.8839 12.5504C11.1183 12.316 11.25 11.998 11.25 11.6665C11.25 11.335 11.1183 11.017 10.8839 10.7826C10.6495 10.5482 10.3315 10.4165 10 10.4165C9.66848 10.4165 9.35054 10.5482 9.11612 10.7826C8.8817 11.017 8.75 11.335 8.75 11.6665C8.75 11.998 8.8817 12.316 9.11612 12.5504C9.35054 12.7848 9.66848 12.9165 10 12.9165Z"
+                      fill="#3E3A39"></path>
+                    <path d="M7.91797 8.75L10.0046 11.6667" stroke="#3E3A39" stroke-width="2" stroke-linecap="round">
+                    </path>
+                  </g>
+                </svg>
+
+                Вес</span>
+              <span class="technic-card__item-right">8 650 кг</span>
+            </li>
+          </ul>
+
+          <div class="popup__body-price-block">
+            <span class="popup__body-price">Цена:</span>
+            <span class="popup__body-price-num">6 291 576 ₽</span>
+          </div>
+        </div>
+      </div>
+
+      <form class="form" id="buy-form" action="#" novalidate="novalidate">
+        <div class="form__block">
+          <div class="form__input-wrapper">
+            <input class="form__input input-name" type="text" id="write-us-popup-form-name" placeholder=""
+              data-validate-field="name">
+            <label class="form__placeholder form__placeholder--centered" for="write-us-popup-form-name">Ваше имя</label>
+          </div>
+
+          <div class="form__input-wrapper">
+            <input class="form__input input-tel" type="tel" id="write-us-popup-form-phone" placeholder=""
+              data-validate-field="phone" inputmode="text">
+            <label class="form__placeholder form__placeholder--centered" for="write-us-popup-form-phone">Телефон
+              <span>*</span></label>
+          </div>
+        </div>
+
+        <div class="form__block">
+          <div class="form__input-wrapper">
+            <input class="form__input input-mail" type="text" id="write-us-popup-form-email" placeholder=""
+              data-validate-field="mail">
+            <label class="form__placeholder form__placeholder--centered" for="email">Email <span>*</span></label>
+          </div>
+
+          <div class="form__input-wrapper">
+            <input class="form__input input-company" type="text" id="company" placeholder=""
+              data-validate-field="company">
+            <label class="form__placeholder form__placeholder--centered" for="company">Компания <span>*</span></label>
+          </div>
+        </div>
+
+        <div class="form__input-wrapper form__input-wrapper--margin">
+          <textarea class="form__textarea input-textarea" id="textarea" placeholder=""
+            data-validate-field="textarea"></textarea>
+          <label class="form__placeholder" for="textarea">Комментарий <span>*</span></label>
+        </div>
+
+        <div class="form__checkboxes">
+          <div class="form__checkboxes-wrap">
+            <label class="form__checkbox custom-checkbox">
+              <input class="custom-checkbox__input input-checkbox visually-hidden" type="checkbox"
+                data-validate-field="checkbox">
+              <span class="custom-checkbox__span"></span>
+            </label>
+
+            <span class="form__text">Согласен с <a class="form__text form__text--accent" href="#"
+                target="_blank">политикой
+                конфиденциальности</a></span>
+          </div>
+
+          <div class="form__checkboxes-wrap">
+            <label class="form__checkbox custom-checkbox">
+              <input class="custom-checkbox__input input-checkbox-confirm visually-hidden" type="checkbox"
+                data-validate-field="checkbox">
+              <span class="custom-checkbox__span"></span>
+            </label>
+
+            <span class="form__text">Отправить письмо с подтверждением заявки</span>
+          </div>
+        </div>
+
+        <button class="form__btn form__btn--width button button--orange cropped-corner">
+          Отправить
+          <svg width="19" height="16" viewBox="0 0 19 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 8H17M17 8L10 1M17 8L10 15" stroke="white" stroke-width="2.5"></path>
+          </svg>
+        </button>
+      </form>
+
+      <button class="popup__btn btn-reset js-modal-close" aria-label="Закрыть модальное окно">
+        <div class="hamburger-lines hamburger-lines--active hamburger-lines--dark">
+          <span class="hamburger-lines__line line1"></span>
+          <span class="hamburger-lines__line line2"></span>
+          <span class="hamburger-lines__line line3"></span>
+        </div>
+      </button>
+    </div>
+  </div>
 </div>

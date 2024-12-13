@@ -12,7 +12,7 @@
 
   &__title {
     margin-bottom: 32px;
-    line-height: 1.4;
+    line-height: 1.2;
 
     @media screen and (width <= 768px) {
       font-size: 24px;
@@ -157,6 +157,19 @@
 
   .form__textarea {
     height: 108px;
+
+    @media screen and (width <= 768px) {
+      height: 132px;
+    }
+  }
+
+  .form__text {
+    opacity: 1;
+    font-size: 16px;
+
+    @media screen and (width <= 768px) {
+      font-size: 14px;
+    }
   }
 }
 
@@ -219,10 +232,6 @@
 
   .form__checkbox {
     margin-right: 8px;
-  }
-
-  .form__text {
-    opacity: 1;
   }
 
   .form__btn {
@@ -303,6 +312,11 @@
     }
   }
 
+  .popup__title {
+    max-width: 584px;
+    width: 100%;
+  }
+
   .popup__body-img {
     width: 286px;
     height: 208px;
@@ -311,6 +325,7 @@
     @media screen and (width <= 768px) {
       width: 100%;
       margin-bottom: 16px;
+      height: 226px;
     }
   }
 
@@ -321,6 +336,10 @@
   .technic-card__list {
     max-width: 286px;
     width: 100%;
+    border-top: 1px solid #e3e3e3;
+    border-bottom: 1px solid #e3e3e3;
+    padding: 8px 0;
+    margin-bottom: 22px;
 
     @media screen and (width <= 768px) {
       max-width: 100%;
