@@ -176,6 +176,10 @@
 .callback {
   max-width: 440px;
   width: 100%;
+
+  .form__btn {
+    margin-bottom: 16px;
+  }
 }
 
 .write-us {
