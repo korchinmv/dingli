@@ -40,7 +40,6 @@
   }
 
   &__item {
-    display: flex;
   }
 
   &__slider {
@@ -108,5 +107,9 @@
     @media screen and (width <= 768px) {
       margin-bottom: 32px;
     }
+  }
+
+  .swiper-slide {
+    height: auto;
   }
 }
