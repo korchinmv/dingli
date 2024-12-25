@@ -55,6 +55,45 @@
     font-family: 'RobotoRegular';
     line-height: 1.4;
     font-size: 16px;
+    margin-bottom: 63px;
+  }
+
+  &__socials-text {
+    font-family: 'RobotoMedium';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.4;
+    opacity: 0.6;
+    margin-bottom: 8px;
+    display: block;
+  }
+
+  &__socials-list {
+    display: flex;
+    column-gap: 24px;
+    flex-wrap: wrap;
+
+    @media screen and (width <= 768px) {
+      column-gap: 16px;
+    }
+  }
+
+  &__socials-link {
+    font-family: 'RobotoRegular';
+    font-weight: 400;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    transition: opacity 0.3s;
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    svg {
+      margin-right: 4px;
+      margin-bottom: 3px;
+    }
   }
 
   &__form-mobile {
@@ -106,8 +145,6 @@
 
     .form__textarea {
       max-height: 300px;
-      // overflow: hidden;
-      // height: 49px;
     }
   }
 
@@ -132,10 +169,6 @@
       position: absolute;
       left: 0;
       top: 0;
-
-      @media screen and (width <= 850px) {
-        display: none;
-      }
     }
   }
 

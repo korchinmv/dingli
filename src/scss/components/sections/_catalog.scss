@@ -50,6 +50,8 @@
   }
 
   &__details {
+    position: relative;
+    right: 20px;
     width: fit-content;
 
     &--mobile {
@@ -57,9 +59,10 @@
 
       @media screen and (width <= 576px) {
         display: block !important;
-        width: 100%;
+        width: calc(100% - 20px);
         text-align: center;
         font-size: 16px;
+        right: 0;
       }
     }
 
