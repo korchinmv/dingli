@@ -3,6 +3,7 @@
     background-color: var(--grey-light-bg-color);
     padding: 156px 0 16px;
     margin-bottom: 40px;
+    overflow: hidden;
 
     @media screen and (width <= 1100px) {
       position: relative;

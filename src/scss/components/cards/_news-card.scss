@@ -10,6 +10,7 @@
     font-size: 20px;
     display: flex;
     align-items: center;
+    margin-top: auto;
     transition: color 0.3s;
 
     @media screen and (width <= 768px) {
@@ -69,7 +70,6 @@
 
     .news-card__link {
       display: flex;
-      align-items: center;
 
       @media screen and (width <= 990px) {
         flex-direction: column;
@@ -79,7 +79,6 @@
     .news-card__img {
       width: 373px;
       height: 201px;
-      margin-bottom: 0;
 
       @media screen and (width <= 990px) {
         width: 100%;
@@ -106,6 +105,12 @@
   }
 
   &__link {
+    padding: 32px;
+
+    @media screen and (width <= 990px) {
+      padding: 16px;
+    }
+
     &:hover {
       .news-card__more {
         color: var(--accent-color);
@@ -123,20 +128,11 @@
     }
   }
 
-  &__body {
-    padding: 32px;
-
-    @media screen and (width <= 990px) {
-      padding: 16px;
-    }
-  }
-
   &__img-wrapper {
     flex-shrink: 0;
-    padding: 32px 0 32px 32px;
+    margin-right: 40px;
 
     @media screen and (width <= 990px) {
-      padding: 0;
       flex-shrink: 1;
       width: 100%;
     }
@@ -148,7 +144,15 @@
 
   &__img {
     width: 100%;
-    margin-bottom: 16px;
+
+    @media screen and (width <= 990px) {
+      margin-bottom: 16px;
+    }
+  }
+
+  &__body {
+    display: flex;
+    flex-direction: column;
   }
 
   &__content {
