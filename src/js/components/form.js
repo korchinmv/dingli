@@ -25,7 +25,7 @@ const rulesContactsForm = [
       },
     ],
   },
-  {
+  /*{
     ruleSelector: ".input-tel",
     tel: true,
     telError: "Введите корректный телефон",
@@ -36,7 +36,7 @@ const rulesContactsForm = [
         errorMessage: "Заполните телефон!",
       },
     ],
-  },
+  },*/
   {
     ruleSelector: ".input-mail",
     mailError: "Введите корректно адресс почты",
@@ -178,7 +178,7 @@ const rulesBuyForm = [
       },
     ],
   },
-  {
+  /*{
     ruleSelector: ".input-tel",
     tel: true,
     telError: "Введите корректный телефон",
@@ -189,7 +189,7 @@ const rulesBuyForm = [
         errorMessage: "Заполните телефон!",
       },
     ],
-  },
+  },*/
   {
     ruleSelector: ".input-mail",
     mailError: "Введите корректно адресс почты",

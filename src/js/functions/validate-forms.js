@@ -50,8 +50,10 @@ export const validateForms = (selector, rules, checkboxes = [], afterSend) => {
 
   validation.onSuccess((ev) => {
     let formData = new FormData(ev.target);
+    let formSentEvent = new CustomEvent("send");
+    ev.target.dispatchEvent(formSentEvent);
 
-    let xhr = new XMLHttpRequest();
+    /*let xhr = new XMLHttpRequest();
 
     xhr.onreadystatechange = function () {
       if (xhr.readyState === 4) {
@@ -67,6 +69,6 @@ export const validateForms = (selector, rules, checkboxes = [], afterSend) => {
     xhr.open("POST", "mail.php", true);
     xhr.send(formData);
 
-    ev.target.reset();
+    ev.target.reset();*/
   });
 };

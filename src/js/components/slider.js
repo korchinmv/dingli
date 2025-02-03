@@ -1,12 +1,16 @@
 // Подключение свайпера
 import Swiper from "swiper";
-import { Navigation, Pagination, Thumbs } from "swiper/modules";
-Swiper.use([Navigation, Pagination, Thumbs]);
+import {Autoplay, Navigation, Pagination, Thumbs} from "swiper/modules";
+Swiper.use([Navigation, Pagination, Thumbs, Autoplay]);
 
 const heroSwiper = new Swiper(".hero__slider", {
   loop: true,
   slidesPerView: 1,
-  initialSlide: 1,
+  initialSlide: 0,
+  speed: 700,
+  autoplay: {
+    delay: 5000,
+  },
   navigation: {
     nextEl: ".hero__slider-controls-next",
     prevEl: ".hero__slider-controls-prev",
@@ -164,6 +168,10 @@ const productPageSwiper = new Swiper(".product__swiper", {
   navigation: {
     nextEl: ".product__swiper-next",
     prevEl: ".product__swiper-prev",
+  },
+  pagination: {
+    el: ".product__swiper-pagination",
+    clickable: true,
   },
   // breakpoints: {
   //   // when window width is >= 768px

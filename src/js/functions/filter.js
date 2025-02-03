@@ -34,7 +34,7 @@ if (openFilterBtn) {
 }
 
 //Слайдер фильтра по высоте
-if (filterHeightRangeSlider) {
+/*if (filterHeightRangeSlider) {
   noUiSlider.create(filterHeightRangeSlider, {
     start: [4, 180],
     step: 1,
@@ -89,7 +89,7 @@ if (filterWeightRangeSlider) {
   inputSecondWeightRangeSlider.addEventListener("change", function () {
     filterWeightRangeSlider.noUiSlider.set([null, this.value]);
   });
-}
+}*/
 
 //Дропдауны с чекбоксами в фильтре
 if (filterDropdown) {
