@@ -1,0 +1,95 @@
+.actions-detail {
+  &__head {
+    background-color: var(--grey-light-bg-color);
+    padding: 156px 0 80px;
+
+    @media screen and (width <= 1024px) {
+      padding: 88px 0 70px;
+    }
+
+    @media screen and (width <= 768px) {
+      padding: 80px 0 56px;
+    }
+  }
+
+  &__breadcrumbs {
+    margin-bottom: 80px;
+
+    @media screen and (width <= 1024px) {
+      margin-bottom: 60px;
+    }
+
+    @media screen and (width <= 768px) {
+      margin-bottom: 40px;
+    }
+  }
+
+  &__title {
+    margin-bottom: 24px;
+
+    @media screen and (width <= 768px) {
+      margin-bottom: 0;
+    }
+  }
+
+  &__date {
+    display: flex;
+    align-items: center;
+    color: var(--accent-color);
+    font-family: 'RobotoSemiBold';
+
+    svg {
+      margin-right: 4px;
+      margin-bottom: 3px;
+    }
+
+    @media screen and (width <= 768px) {
+      display: none;
+    }
+  }
+
+  &__date-text {
+    margin-right: 4px;
+  }
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    padding: 64px 0 80px;
+
+    @media screen and (width <= 1024px) {
+      flex-direction: column-reverse;
+      padding: 56px 0;
+    }
+  }
+
+  &__text {
+    margin-right: 32px;
+
+    @media screen and (width <= 1024px) {
+      margin-right: 0;
+    }
+  }
+
+  &__image {
+    height: 290px;
+
+    @media screen and (width <= 1024px) {
+      margin-bottom: 24px;
+    }
+
+    @media screen and (width <= 768px) {
+      height: 223px;
+    }
+  }
+
+  &__text-block {
+    &:not(:last-child) {
+      margin-bottom: 16px;
+    }
+  }
+
+  &__text-list {
+    margin-bottom: 16px;
+  }
+}
