@@ -210,6 +210,14 @@ input {
 }
 
 .text-list {
+  &__title {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.4;
+    margin-bottom: 16px;
+    font-family: 'RobotoSemiBold';
+  }
+
   &__item {
     position: relative;
     padding-left: 28px;

@@ -1,0 +1,115 @@
+.blog-article-page {
+  &__head {
+    background-color: var(--grey-light-bg-color);
+    padding: 156px 0 24px;
+    margin-bottom: 40px;
+
+    @media screen and (width <= 768px) {
+      padding: 80px 0 16px;
+      margin-bottom: 32px;
+    }
+  }
+
+  &__breadcrumbs {
+    margin-bottom: 80px;
+
+    @media screen and (width <= 990px) {
+      margin-bottom: 60px;
+    }
+
+    @media screen and (width <= 768px) {
+      margin-bottom: 40px;
+    }
+  }
+
+  &__title {
+    margin-bottom: 40px;
+
+    @media screen and (width <= 768px) {
+      margin-bottom: 24px;
+    }
+  }
+
+  &__banner {
+    margin-bottom: 24px;
+
+    @media screen and (width <= 768px) {
+      margin-bottom: 16px;
+    }
+  }
+
+  &__head-bot {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__date {
+    display: flex;
+    align-items: center;
+    font-family: 'RobotoMedium';
+    font-size: 16px;
+    opacity: 0.6;
+
+    svg {
+      margin: 0 4px 4px 0;
+    }
+  }
+
+  &__social {
+    display: flex;
+    align-items: center;
+  }
+
+  &__social-text {
+    opacity: 0.6;
+    font-family: 'RobotoMedium';
+    font-size: 16px;
+    margin: 3px 16px 0 0;
+
+    @media screen and (width <= 768px) {
+      display: none;
+    }
+  }
+
+  &__socials {
+    display: flex;
+    column-gap: 8px;
+  }
+
+  &__content {
+    padding: 0 160px;
+  }
+
+  &__subtitle {
+    font-family: 'OswaldSemiBold';
+    font-size: 24px;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+    line-height: 1.2;
+  }
+
+  &__image {
+    margin-bottom: 40px;
+  }
+
+  &__table-title {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.4;
+    margin-bottom: 35px;
+    font-family: 'RobotoSemiBold';
+  }
+
+  &__text-block {
+    &:not(:last-child) {
+      margin-bottom: 40px;
+    }
+  }
+
+  &__text-list {
+    &:not(:last-child) {
+      margin-bottom: 24px;
+    }
+  }
+}

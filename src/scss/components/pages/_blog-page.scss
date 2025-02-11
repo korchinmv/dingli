@@ -2,7 +2,7 @@
   &__head {
     background-color: var(--grey-light-bg-color);
     padding: 156px 0 16px;
-    margin-bottom: 40px;
+    margin-bottom: 80px;
     overflow: hidden;
 
     @media screen and (width <= 1100px) {
@@ -10,7 +10,8 @@
     }
 
     @media screen and (width <= 768px) {
-      padding: 80px 0;
+      padding: 80px 0 56px;
+      margin-bottom: 56px;
     }
   }
 
@@ -74,5 +75,16 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 32px;
+    margin-bottom: 80px;
+
+    @media screen and (width <= 990px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media screen and (width <= 768px) {
+      grid-template-columns: repeat(1, 1fr);
+      gap: 16px;
+      margin-bottom: 56px;
+    }
   }
 }
