@@ -196,16 +196,16 @@ input {
       font-family: 'RobotoBold';
     }
 
-    &--hidden {
-      opacity: 0;
-      visibility: hidden;
-      overflow: hidden;
-      height: 0;
+    // &--hidden {
+    //   opacity: 0;
+    //   visibility: hidden;
+    //   overflow: hidden;
+    //   height: 0;
 
-      &:not(:last-child) {
-        margin-bottom: 0;
-      }
-    }
+    //   &:not(:last-child) {
+    //     margin-bottom: 0;
+    //   }
+    // }
   }
 }
 

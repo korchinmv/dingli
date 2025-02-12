@@ -78,7 +78,11 @@
   }
 
   &__content {
-    padding: 0 160px;
+    padding: 0 160px 80px 160px;
+
+    @media screen and (width <= 990px) {
+      padding: 0 0 56px 0;
+    }
   }
 
   &__subtitle {
@@ -87,6 +91,10 @@
     text-transform: uppercase;
     margin-bottom: 24px;
     line-height: 1.2;
+
+    @media screen and (width <= 768px) {
+      font-size: 18px;
+    }
   }
 
   &__image {
@@ -110,6 +118,107 @@
   &__text-list {
     &:not(:last-child) {
       margin-bottom: 24px;
+    }
+  }
+
+  &__bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 0;
+    border-top: 1px solid var(--grey-dark-bg-color);
+    border-bottom: 1px solid var(--grey-dark-bg-color);
+  }
+
+  &__hash {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.4;
+    text-transform: uppercase;
+    font-family: 'OswaldSemiBold';
+  }
+
+  &__table-wrapper {
+    background-color: var(--grey-light-bg-color);
+    padding: 16px;
+    margin-bottom: 40px;
+
+    @media screen and (width <= 768px) {
+      overflow: visible;
+    }
+  }
+
+  &__table {
+    width: 100%;
+
+    @media screen and (width <= 768px) {
+      display: inline-flex;
+      flex-wrap: wrap;
+      overflow-x: auto;
+      flex-direction: column;
+    }
+
+    th,
+    td {
+      max-width: 270px;
+      width: 100%;
+      padding: 0;
+      text-align: left;
+
+      @media screen and (width <= 768px) {
+        max-width: auto;
+        width: 270px;
+        font-size: 16px;
+
+        white-space: nowrap;
+        overflow: hidden;
+      }
+
+      &:not(:last-child) {
+        margin-right: 10px;
+      }
+    }
+  }
+
+  &__table-head {
+    margin-bottom: 16px;
+    display: block;
+  }
+
+  &__table-head-row {
+    padding-bottom: 16px;
+    border-bottom: 2px solid var(--black-color);
+    display: flex;
+    justify-content: space-between;
+
+    @media screen and (width <= 768px) {
+      font-size: 14px;
+    }
+  }
+
+  &__table-name {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.4;
+    font-family: 'RobotoBold';
+    text-align: left;
+  }
+
+  &__table-row {
+    display: flex;
+    justify-content: space-between;
+
+    &:not(:last-child) {
+      border-bottom: 1px solid var(--grey-dark-bg-color);
+      padding-bottom: 16px;
+      margin-bottom: 16px;
+    }
+
+    td {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 1.4;
+      font-family: 'RobotoRegular';
     }
   }
 }
