@@ -25,7 +25,7 @@ const rulesContactsForm = [
       },
     ],
   },
-  /*{
+  {
     ruleSelector: ".input-tel",
     tel: true,
     telError: "Введите корректный телефон",
@@ -36,7 +36,7 @@ const rulesContactsForm = [
         errorMessage: "Заполните телефон!",
       },
     ],
-  },*/
+  },
   {
     ruleSelector: ".input-mail",
     mailError: "Введите корректно адресс почты",
@@ -250,6 +250,7 @@ const rulesBuyForm = [
 validateForms("#footer-form", rulesFooterForm, afterForm);
 validateForms("#contacts-form", rulesContactsForm, afterForm);
 validateForms("#contacts-form-mobile", rulesContactsForm, afterForm);
+validateForms("#leasing-page-form", rulesContactsForm, afterForm);
 
 //popups
 validateForms("#write-us-popup-form", rulesContactsForm, afterForm);

@@ -281,6 +281,64 @@
         </li>
       </ul>
 
+      <div class="leasing-page__form">
+        <h3 class="leasing-page__title-block title-block">Заявка на лизинг подъемников</h3>
+
+        <p class="leasing-page__form-text">Оставьте заявку и наши специалисты свяжутся с вами</p>
+
+        <form class="form" id="leasing-page-form" action="#" novalidate="novalidate">
+          <div class="form__block">
+            <div class="form__input-wrapper">
+              <input class="form__input input-name" type="text" id="write-us-popup-form-name" placeholder=""
+                data-validate-field="name">
+              <label class="form__placeholder form__placeholder--centered" for="write-us-popup-form-name">Ваше
+                имя <span>*</span></label>
+            </div>
+
+            <div class="form__input-wrapper">
+              <input class="form__input input-tel" type="tel" id="write-us-popup-form-phone" placeholder=""
+                data-validate-field="phone" inputmode="text">
+              <label class="form__placeholder form__placeholder--centered" for="write-us-popup-form-phone">Телефон
+                <span>*</span></label>
+            </div>
+
+            <div class="form__input-wrapper">
+              <input class="form__input input-mail" type="text" id="write-us-popup-form-email" placeholder=""
+                data-validate-field="mail">
+              <label class="form__placeholder form__placeholder--centered" for="email">Email <span>*</span></label>
+            </div>
+
+            <div class="form__input-wrapper">
+              <input class="form__input input-company" type="text" id="company" placeholder=""
+                data-validate-field="company">
+              <label class="form__placeholder form__placeholder--centered" for="company">Название компании
+                <span>*</span></label>
+            </div>
+          </div>
+
+          <div class="form__input-wrapper form__input-wrapper--margin">
+            <textarea class="form__textarea input-textarea" id="textarea" placeholder=""
+              data-validate-field="textarea"></textarea>
+            <label class="form__placeholder" for="textarea">Комментарий <span>*</span></label>
+          </div>
+
+          <div class="form__block">
+            <button class="form__btn button button--white cropped-corner">
+              Отправить заявку
+              <svg width="19" height="16" viewBox="0 0 19 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 8H17M17 8L10 1M17 8L10 15" stroke="#000" stroke-width="2.5"></path>
+              </svg>
+            </button>
+
+            <span class="form__text">Отправляя данную форму Вы соглашаетесь на <a class="form__text form__text--accent"
+                href="#">обработку персональных данных</a>
+            </span>
+          </div>
+        </form>
+      </div>
+
+      <h3 class="leasing-page__title-block title-block">Сотрудничаем с ведущими лизинговыми компаниями</h3>
+
       <ul class="leasing-page__company">
         <li class="leasing-page__company-item">
           <img class="leasing-page__company-img" src="img/leasing/company.jpg" alt="Картинка">
@@ -399,6 +457,46 @@
                 <path d="M0 8H17M17 8L10 1M17 8L10 15" stroke="#ed6c00" stroke-width="2.5"></path>
               </svg>
             </button>
+          </div>
+        </li>
+      </ul>
+
+      <ul class="leasing-page__accordion accordion">
+        <li class="accordion__item">
+          <button class="accordion__btn">
+            <span class="accordion__name">Вопрос 1
+            </span>
+
+            <div class="accordion__decor"></div>
+          </button>
+          <div class="accordion__content text">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque, molestiae? Laboriosam iste id quibusdam
+              numquam, officiis at eos aspernatur quasi.</p>
+          </div>
+        </li>
+
+        <li class="accordion__item">
+          <button class="accordion__btn">
+            <span class="accordion__name">Вопрос 2
+            </span>
+
+            <div class="accordion__decor"></div>
+          </button>
+          <div class="accordion__content text">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima, ipsum nisi! Incidunt, repellat quod
+              libero voluptas non eius rem enim.</p>
+          </div>
+        </li>
+
+        <li class="accordion__item">
+          <button class="accordion__btn">
+            <span class="accordion__name">Вопрос 3</span>
+
+            <div class="accordion__decor"></div>
+          </button>
+          <div class="accordion__content text">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia quisquam quidem provident earum
+              consectetur est distinctio corporis amet iusto voluptatem.</p>
           </div>
         </li>
       </ul>
