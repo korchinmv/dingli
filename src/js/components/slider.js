@@ -1,6 +1,6 @@
 // Подключение свайпера
 import Swiper from "swiper";
-import {Autoplay, Navigation, Pagination, Thumbs} from "swiper/modules";
+import { Autoplay, Navigation, Pagination, Thumbs } from "swiper/modules";
 Swiper.use([Navigation, Pagination, Thumbs, Autoplay]);
 
 const heroSwiper = new Swiper(".hero__slider", {
@@ -181,5 +181,32 @@ const productPageSwiper = new Swiper(".product__swiper", {
   // },
   thumbs: {
     swiper: productPageSwiperThumbs,
+  },
+});
+
+const certificatesSwiper = new Swiper(".certificates__slider", {
+  slidesPerView: 1,
+  spaceBetween: 8,
+  navigation: {
+    nextEl: ".certificates__slider-controls-next",
+    prevEl: ".certificates__slider-controls-prev",
+  },
+  pagination: {
+    el: ".certificates__pagination",
+    clickable: true,
+  },
+  breakpoints: {
+    990: {
+      slidesPerView: 3.3,
+      spaceBetween: 32,
+    },
+    768: {
+      slidesPerView: 3,
+      spaceBetween: 32,
+    },
+    576: {
+      slidesPerView: 2,
+      spaceBetween: 20,
+    },
   },
 });

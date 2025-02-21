@@ -10,3 +10,4 @@ import "./components/select-menu.js";
 import "./components/tabs.js";
 import "./components/form.js";
 import "./components/accordion.js";
+import "./components/fancybox.js";
