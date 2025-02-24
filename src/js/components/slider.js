@@ -153,7 +153,6 @@ const productPageSwiperThumbs = new Swiper(".product__swiper-thumbs", {
   loop: true,
 
   breakpoints: {
-    // when window width is >= 768px
     768: {
       spaceBetween: 8,
       slidesPerView: 3,
@@ -173,14 +172,45 @@ const productPageSwiper = new Swiper(".product__swiper", {
     el: ".product__swiper-pagination",
     clickable: true,
   },
-  // breakpoints: {
-  //   // when window width is >= 768px
-  //   768: {
-  //     spaceBetween: 8,
-  //   },
-  // },
   thumbs: {
     swiper: productPageSwiperThumbs,
+  },
+});
+
+const projectPageSwiperThumbs = new Swiper(".project-detail__swiper-thumbs", {
+  spaceBetween: 4,
+  slidesPerView: 4,
+  slideToClickedSlide: true,
+  clickable: true,
+  freeMode: true,
+  loop: true,
+  breakpoints: {
+    768: {
+      spaceBetween: 8,
+      slidesPerView: 4,
+      direction: "vertical",
+    },
+
+    576: {
+      spaceBetween: 8,
+      slidesPerView: 5,
+    },
+  },
+});
+
+const projectPageSwiper = new Swiper(".project-detail__swiper", {
+  spaceBetween: 4,
+  loop: true,
+  navigation: {
+    nextEl: ".project-detail__swiper-next",
+    prevEl: ".project-detail__swiper-prev",
+  },
+  pagination: {
+    el: ".project-detail__swiper-pagination",
+    clickable: true,
+  },
+  thumbs: {
+    swiper: projectPageSwiperThumbs,
   },
 });
 

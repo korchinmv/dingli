@@ -1,7 +1,7 @@
 .leasing-page {
   &__head {
     background-color: var(--grey-light-bg-color);
-    padding: 156px 0 80px;
+    padding: 156px 0 40px;
     overflow: hidden;
 
     @media screen and (width <= 1100px) {
@@ -59,7 +59,6 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 32px;
-    margin-bottom: 24px;
 
     @media screen and (width <= 990px) {
       grid-template-columns: repeat(2, 1fr);
@@ -117,6 +116,18 @@
   &__text-list {
     &:not(:last-child) {
       margin-bottom: 20px;
+    }
+  }
+
+  &__text-block {
+    &--mb80 {
+      &.text-block {
+        margin-bottom: 80px;
+
+        @media screen and (width <= 768px) {
+          margin-bottom: 40px;
+        }
+      }
     }
   }
 

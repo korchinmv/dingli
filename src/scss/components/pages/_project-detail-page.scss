@@ -1,0 +1,245 @@
+.project-detail {
+  &__head {
+    padding: 156px 0 80px;
+    background-color: var(--grey-light-bg-color);
+
+    @media screen and (width <= 768px) {
+      padding: 80px 0 56px;
+    }
+  }
+
+  &__head-wrapper {
+    display: flex;
+    column-gap: 32px;
+
+    @media screen and (width <= 1200px) {
+      flex-direction: column;
+    }
+  }
+
+  &__head-slider {
+    display: flex;
+
+    @media screen and (width <= 768px) {
+      flex-direction: column;
+    }
+
+    margin-bottom: 40px;
+  }
+
+  @media screen and (width <= 768px) {
+    margin-bottom: 12px;
+  }
+
+  &__breadcrumbs {
+    margin-bottom: 80px;
+
+    @media screen and (width <= 1024px) {
+      margin-bottom: 60px;
+    }
+
+    @media screen and (width <= 768px) {
+      margin-bottom: 40px;
+    }
+  }
+
+  &__title {
+    margin-bottom: 70px;
+
+    @media screen and (width <= 768px) {
+      margin-bottom: 40px;
+    }
+  }
+
+  &__head-left {
+    max-width: 445px;
+
+    @media screen and (width <= 1200px) {
+      max-width: 100%;
+    }
+  }
+
+  &__head-text {
+    margin-bottom: 40px;
+
+    @media screen and (width <= 768px) {
+      margin-bottom: 32px;
+    }
+  }
+
+  &__list {
+    &--mobile {
+      display: none;
+
+      @media screen and (width <= 1200px) {
+        display: block !important;
+      }
+    }
+
+    @media screen and (width <= 1200px) {
+      display: none;
+    }
+  }
+
+  &__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &:not(:last-child) {
+      border-bottom: 1px solid var(--grey-dark-bg-color);
+      padding-bottom: 16px;
+      margin-bottom: 16px;
+    }
+  }
+
+  &__item-descr {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.4;
+    opacity: 0.6;
+    font-family: 'RobotoRegular';
+  }
+
+  &__item-name {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.4;
+    font-family: 'RobotoSemiBold';
+  }
+
+  &__swiper-thumbs {
+    max-height: 457px;
+    width: 127px;
+
+    @media screen and (width <= 768px) {
+      height: 76px;
+      width: 100%;
+    }
+
+    .swiper-slide {
+      display: flex;
+      justify-content: center;
+      cursor: pointer;
+
+      .project-detail__img {
+        object-fit: cover;
+        width: 100%;
+        border: 2px solid transparent;
+        transition: all 0.3s;
+
+        @media screen and (width <= 768px) {
+        }
+
+        @media screen and (width <= 576px) {
+          height: 76px;
+          width: 76px;
+        }
+      }
+    }
+
+    .swiper-slide-thumb-active {
+      .project-detail__img {
+        border-color: var(--accent-color);
+      }
+    }
+  }
+
+  &__swiper {
+    margin-right: 8px;
+    max-width: 628px;
+    width: 100%;
+
+    @media screen and (width <= 1200px) {
+      max-width: 100%;
+    }
+
+    @media screen and (width <= 768px) {
+      margin: 0 0 8px 0;
+    }
+
+    .swiper-slide {
+      display: flex;
+      justify-content: center;
+
+      .project-detail__img {
+        cursor: grab;
+        max-height: 457px;
+        width: 100%;
+
+        @media screen and (width <= 768px) {
+          max-height: 250px;
+        }
+      }
+    }
+  }
+
+  &__swiper-next,
+  &__swiper-prev {
+    display: none;
+    width: 20px;
+
+    @media screen and (width <= 768px) {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  &__swiper-prev {
+    left: -4px;
+  }
+
+  &__swiper-next {
+    right: -4px;
+  }
+
+  &__body {
+    padding: 60px 0 80px;
+
+    @media screen and (width <= 768px) {
+      padding: 56px 0;
+    }
+  }
+
+  &__inner {
+    display: flex;
+    column-gap: 32px;
+
+    @media screen and (width <= 768px) {
+      flex-direction: column;
+    }
+  }
+
+  &__inner-left {
+    max-width: 922px;
+    width: 100%;
+  }
+
+  &__section-subtitle {
+    margin-bottom: 24px;
+  }
+
+  &__text-block {
+    margin-bottom: 40px;
+  }
+
+  &__service-card {
+    flex-shrink: 0;
+
+    &.service-card {
+      padding: 16px;
+      width: 286px;
+
+      @media screen and (width <= 768px) {
+        width: 100%;
+      }
+    }
+  }
+
+  &__files-list {
+    @media screen and (width <= 768px) {
+      margin-bottom: 56px;
+    }
+  }
+}
